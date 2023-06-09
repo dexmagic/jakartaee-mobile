@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Jakarta EE"
 include ':app'
 include ':jafapi'
+include ':jaxbapi'
