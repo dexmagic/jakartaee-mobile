@@ -7,12 +7,19 @@ I was porting some libraries to Android that are built on Java Architecture for 
 1. Lots of people seem to have the same need.
 2. The Android project used to build JAXB need to be set up to support Android 19 and higher (see links on Java 19 below).
 3. There is a need for a complete XML binding on Android, and JAXB isn't implemented on Android.
+4. As Java itself changes, I need a working project to verify what features of the Java language are actually supported in any Android production build.
+
+Jakarta EE to the rescue! 
+
+There are some additional benefits in creating this project that have to do with building Android libraries and apps on the latest version of Android Studio, Gradle Plugin, and Java source level.
+
 4. Java 9 Modules means that liraries written for Android need to avoid namespace collisions.
 5. Any JAXB solution on Android close as possible to Oracles' implementation on the Java platform. This is required to minimize the work required to port existing JAXB generate code (client code and potentially server code as well) to Android.
+6. I need to stay ahead of the impact using ```sourceCompatibility JavaVersion.VERSION_19``` and higher would have Android applications.
+7. I need to know how gradle plugin 8.0 and higher impact older Android applications so I can migrate them.
 
-Jakarta EE to the rescue!
+And what better way to achieve all those goals than to build an app with the latest Gradle plugin and highest available Java Source compatability.  So this project ports the relevant code at https://github.com/jakartaee to run on Android, AND specifies the source compatability of ANDROID_19.
 
-So this project ports the relevant code at https://github.com/jakartaee to run on Android.
 
 ## Some Useful Links
 
@@ -41,8 +48,20 @@ android {
     }
 }
 ```
+
+Lots of reading is required to fully understand all the reaasons you would specify JavaVersion.VERSION_19 and higher in your gradle files. So here are some convenient links to help you catch up if you need to.
+
+### Gradle Compatability and Java Version 19
+
+As of this writing (June 9, 2023) Gradle does not support Java 20, so the highest Java version I could specify is VERSION_19.
+
+ * Gradle's compatability matrix drives what version of Java is available: https://docs.gradle.org/current/userguide/compatibility.html
  * What you get by specifying JavaVersion.VERSION_19 and higher: https://developer.android.com/studio/write/java8-support
  * Google's release notes related to Java Version 8: https://github.com/google/desugar_jdk_libs/blob/master/CHANGELOG.md
+ * A list of Java 8 features supported in older apps too as a reference: https://developer.android.com/studio/write/java8-support-table
+
+Some notes:
+ * Gradle 7.6 is the first version that supports Android 19.
 
 
 ### Oracle Source Docs and Information
