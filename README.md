@@ -17,6 +17,7 @@ There are some additional benefits in creating this project that have to do with
 5. Any JAXB solution on Android close as possible to Oracles' implementation on the Java platform. This is required to minimize the work required to port existing JAXB generate code (client code and potentially server code as well) to Android.
 6. I need to stay ahead of the impact using ```sourceCompatibility JavaVersion.VERSION_19``` and higher would have Android applications.
 7. I need to know how gradle plugin 8.0 and higher impact older Android applications so I can migrate them.
+8. I need to be able to modify and test the Android port without the risk of introducing any issues the original project.
 
 And what better way to achieve all those goals than to build an app with the latest Gradle plugin and highest available Java Source compatability.  So this project ports the relevant code at https://github.com/jakartaee to run on Android, AND specifies the source compatability of ANDROID_19.
 
