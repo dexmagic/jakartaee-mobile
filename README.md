@@ -21,6 +21,38 @@ There are some additional benefits in creating this project that have to do with
 And what better way to achieve all those goals than to build an app with the latest Gradle plugin and highest available Java Source compatability.  So this project ports the relevant code at https://github.com/jakartaee to run on Android, AND specifies the source compatability of ANDROID_19.
 
 
+## About This Project
+
+This project copies code from https://github.com/jakartaee with the minimal changes possible. At the moment this is the most viable option to create an Android port. Some changes that cannot be merged back into the original repository are required, however. So simply making direct copies of source that can be compiled on the Android platform is the best option at the moment. 
+
+For example, ```module-info.java``` files need to be left out because they create errors. Including this file from the jaxb-api project into the module ```jaxbapi``` of this repository ...
+
+```java
+
+module jakarta.xml.bind {
+    requires transitive jakarta.activation;
+    requires transitive java.xml;
+    requires java.logging;
+
+    exports jakarta.xml.bind;
+    exports jakarta.xml.bind.annotation;
+    exports jakarta.xml.bind.annotation.adapters;
+    exports jakarta.xml.bind.attachment;
+    exports jakarta.xml.bind.helpers;
+    exports jakarta.xml.bind.util;
+
+    uses jakarta.xml.bind.JAXBContextFactory;
+}
+```
+
+causes the following error:
+
+```
+jakartaee-mobile/android/jaxbapi/src/main/java/module-info.java:18: error: module not found: jakarta.activation
+    requires transitive jakarta.activation;
+                               ^
+```
+
 ## Some Useful Links
 
 ### Java 8 And Beyond
