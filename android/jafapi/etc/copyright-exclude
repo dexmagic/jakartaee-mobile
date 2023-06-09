@@ -1,0 +1,8 @@
+copyright-exclude
+LICENSE
+CONTRIBUTING.md
+README
+NOTICE.md
+/speclicense.html
+doc/spec/
+spec/src/main/asciidoc/license-efsl.adoc
