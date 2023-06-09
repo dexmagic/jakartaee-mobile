@@ -99,49 +99,10 @@ class ModuleUtil {
     }
 
     /**
-     * Implementation may be defined in other module than {@code jakarta.xml.bind}. In that case openness
-     * {@linkplain Module#isOpen open} of classes should be delegated to implementation module.
-     *
-     * @param classes used to resolve module for {@linkplain Module#addOpens(String, Module)}
-     * @param factorySPI used to resolve {@link Module} of the implementation.
-     *
-     * @throws JAXBException if ony of a classes package is not open to {@code jakarta.xml.bind} module.
+     * Not used on Android
      */
     public static void delegateAddOpensToImplModule(Class<?>[] classes, Class<?> factorySPI) throws JAXBException {
-        final Module implModule = factorySPI.getModule();
-
-        Module jaxbModule = JAXBContext.class.getModule();
-
-        if (!jaxbModule.isNamed()) {
-            //we are not on the module path, so assume class-path mode
-            if (LOGGER.isLoggable(Level.FINE)) {
-                LOGGER.log(Level.FINE, "Using jakarta.xml.bind-api on the class path.");
-            }
-            return;
-        }
-
-        for (Class<?> cls : classes) {
-            Class<?> jaxbClass = cls.isArray() ?
-                    cls.getComponentType() : cls;
-
-            final Module classModule = jaxbClass.getModule();
-            final String packageName = jaxbClass.getPackageName();
-            //no need for unnamed and java.base types
-            if (!classModule.isNamed() || classModule.getName().equals("java.base")) {
-                continue;
-            }
-            //report error if they are not open to jakarta.xml.bind
-            if (!classModule.isOpen(packageName, jaxbModule)) {
-                throw new JAXBException(Messages.format(Messages.JAXB_CLASSES_NOT_OPEN,
-                        packageName, jaxbClass.getName(), classModule.getName()));
-            }
-            //propagate openness to impl module
-            classModule.addOpens(packageName, implModule);
-            if (LOGGER.isLoggable(Level.FINE)) {
-                LOGGER.log(Level.FINE, "Propagating openness of package {0} in {1} to {2}.",
-                        new String[]{ packageName, classModule.getName(), implModule.getName() });
-            }
-        }
+        throw new UnsupportedOperationException("not supported on Android.");
     }
 
 }
