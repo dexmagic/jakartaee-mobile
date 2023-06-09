@@ -1,6 +1,6 @@
-# jakartaee-mobile Readme File.
-Ricahrd Schilling (https://github.com/dexmagic/)   
-June 9, 2023  
+# jakartaee-mobile Readme 
+Richard Schilling (https://github.com/dexmagic/)   
+June 9, 2023
 Seattle  
 
 I was porting some libraries to Android that are built on Java Architecture for XML Binding (JAXB) to Android and ran into some barriers. I'll repeat them here for anyone else who has struggled with the same thing: 
