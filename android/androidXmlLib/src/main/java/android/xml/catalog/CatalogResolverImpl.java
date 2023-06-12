@@ -24,7 +24,6 @@
  */
 package android.xml.catalog;
 
-import com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
@@ -197,7 +196,7 @@ final class CatalogResolverImpl implements CatalogResolver {
     private void setEntityResolver(SAXSource source) {
         XMLReader reader = source.getXMLReader();
         if (reader == null) {
-            SAXParserFactory spFactory = new SAXParserFactoryImpl();
+            SAXParserFactory spFactory = SAXParserFactory.newInstance();
             spFactory.setNamespaceAware(true);
             try {
                 reader = spFactory.newSAXParser().getXMLReader();
