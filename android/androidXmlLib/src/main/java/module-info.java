@@ -12,5 +12,5 @@
  */
 module android.xml {
     exports android.xml;
-
+    requires android;
 }

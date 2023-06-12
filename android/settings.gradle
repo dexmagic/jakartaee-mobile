@@ -17,7 +17,6 @@ include ':app'
 include ':jafapi'
 include ':jaxbapi'
 include ':fauxLib'
-=======
 
 /*
  * comment out this library to see what classes jaxbapi library needs to compile.
@@ -33,5 +32,4 @@ include ':jaxbTemporaryLib'
  * the places where I need to modify the library I'm porting to Android.
  */
 // include ':fauxLib'
-
 include ':androidXmlLib'
