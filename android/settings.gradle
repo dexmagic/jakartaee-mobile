@@ -16,7 +16,7 @@ rootProject.name = "Jakarta EE"
 include ':app'
 include ':jafapi'
 include ':jaxbapi'
-include ':fauxLib'
+// include ':fauxLib'
 
 /*
  * comment out this library to see what classes jaxbapi library needs to compile.
