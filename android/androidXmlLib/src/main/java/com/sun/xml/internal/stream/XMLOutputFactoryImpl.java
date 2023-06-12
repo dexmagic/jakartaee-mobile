@@ -35,7 +35,7 @@ import android.xml.stream.XMLStreamWriter;
 import javax.xml.transform.Result;
 import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.stream.StreamResult;
-import javax.xml.transform.stax.StAXResult;
+import android.xml.transform.stax.StAXResult;
 import com.sun.org.apache.xerces.internal.impl.Constants;
 import com.sun.org.apache.xerces.internal.impl.PropertyManager;
 import com.sun.xml.internal.stream.writers.XMLDOMWriterImpl;

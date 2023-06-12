@@ -210,7 +210,7 @@ import java.util.Map;
  *
  * <pre>{@code
  *      SAXParserFactory spf = SAXParserFactory.newInstance();
- *      spf.setFeature(XMLConstants.USE_CATALOG, true); [1]
+ *      spf.setFeature(android.xml.XMLConstants.USE_CATALOG, true); [1]
  *      SAXParser parser = spf.newSAXParser();
  *      parser.setProperty(CatalogFeatures.Feature.FILES.getPropertyName(), "file:///etc/xml/catalog");
  * }</pre>

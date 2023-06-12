@@ -23,19 +23,20 @@
 
 package com.sun.org.apache.xalan.internal.xsltc.trax;
 
+import com.sun.org.apache.bcel.internal.classfile.Module;
 import com.sun.org.apache.xalan.internal.utils.ObjectFactory;
 import com.sun.org.apache.xalan.internal.xsltc.DOM;
 import com.sun.org.apache.xalan.internal.xsltc.Translet;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.Constants;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMsg;
 import com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet;
+
 import java.io.IOException;
 import java.io.NotSerializableException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.ObjectStreamField;
 import java.io.Serializable;
-import java.lang.RuntimePermission;
 import java.lang.module.Configuration;
 import java.lang.module.ModuleDescriptor;
 import java.lang.module.ModuleFinder;
@@ -54,11 +55,13 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Properties;
 import java.util.Set;
+
 import javax.xml.XMLConstants;
 import javax.xml.transform.Templates;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.URIResolver;
+
 import jdk.xml.internal.JdkConstants;
 import jdk.xml.internal.SecuritySupport;
 
@@ -242,7 +245,7 @@ public final class TemplatesImpl implements Templates, Serializable {
         _indentNumber = indentNumber;
         _tfactory = tfactory;
         _overrideDefaultParser = tfactory.overrideDefaultParser();
-        _accessExternalStylesheet = (String) tfactory.getAttribute(XMLConstants.ACCESS_EXTERNAL_STYLESHEET);
+        _accessExternalStylesheet = (String) tfactory.getAttribute(android.xml.XMLConstants.ACCESS_EXTERNAL_STYLESHEET);
     }
     /**
      * Need for de-serialization, see readObject().

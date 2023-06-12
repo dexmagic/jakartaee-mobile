@@ -194,7 +194,7 @@ public class XMLEntityManager implements XMLComponent, XMLEntityResolver {
                 ALLOW_JAVA_ENCODINGS,
                 WARN_ON_DUPLICATE_ENTITYDEF,
                 STANDARD_URI_CONFORMANT,
-                XMLConstants.USE_CATALOG
+                android.xml.XMLConstants.USE_CATALOG
     };
 
     /** Feature defaults. */
@@ -1045,7 +1045,7 @@ public class XMLEntityManager implements XMLComponent, XMLEntityResolver {
                         fCatalogResolver = CatalogManager.catalogResolver(fCatalogFeatures);
                     }
                     InputSource is = fCatalogResolver.resolveEntity(publicId, literalSystemId);
-                    if (is != null && !is.isEmpty()) {
+                    if (is != null /*&& !is.isEmpty()*/) {
                         staxInputSource = new StaxXMLInputSource(new XMLInputSource(is, true), true);
                     }
                 } catch (CatalogException e) {
@@ -1156,7 +1156,7 @@ public class XMLEntityManager implements XMLComponent, XMLEntityResolver {
                     }
                 } catch (CatalogException e) {}
 
-                if (is != null && !is.isEmpty()) {
+                if (is != null /*&& !is.isEmpty()*/) {
                     xmlInputSource = new XMLInputSource(is, true);
                 } else if (literalSystemId != null) {
                     if (fCatalogResolver == null) {
@@ -1169,7 +1169,7 @@ public class XMLEntityManager implements XMLComponent, XMLEntityResolver {
                     } catch (CatalogException e) {
                         throw new XNIException(e);
                     }
-                    if (source != null && !source.isEmpty()) {
+                    if (source != null /*&& !source.isEmpty()*/) {
                         xmlInputSource = new XMLInputSource(publicId, source.getSystemId(), baseSystemId, true);
                     }
                 }
@@ -1551,7 +1551,7 @@ public class XMLEntityManager implements XMLComponent, XMLEntityResolver {
         fLoadExternalDTD = !((Boolean)propertyManager.getProperty(Constants.ZEPHYR_PROPERTY_PREFIX + Constants.IGNORE_EXTERNAL_DTD));
 
         //Use Catalog
-        fUseCatalog = (Boolean)propertyManager.getProperty(XMLConstants.USE_CATALOG);
+        fUseCatalog = (Boolean)propertyManager.getProperty(android.xml.XMLConstants.USE_CATALOG);
         fCatalogFile = (String)propertyManager.getProperty(JdkXmlUtils.CATALOG_FILES);
         fDefer = (String)propertyManager.getProperty(JdkXmlUtils.CATALOG_DEFER);
         fPrefer = (String)propertyManager.getProperty(JdkXmlUtils.CATALOG_PREFER);
@@ -1644,7 +1644,7 @@ public class XMLEntityManager implements XMLComponent, XMLEntityResolver {
         fAccessExternalDTD = spm.getValue(XMLSecurityPropertyManager.Property.ACCESS_EXTERNAL_DTD);
 
         //Use Catalog
-        fUseCatalog = componentManager.getFeature(XMLConstants.USE_CATALOG, true);
+        fUseCatalog = componentManager.getFeature(android.xml.XMLConstants.USE_CATALOG, true);
         fCatalogFile = (String)componentManager.getProperty(JdkXmlUtils.CATALOG_FILES);
         fDefer = (String)componentManager.getProperty(JdkXmlUtils.CATALOG_DEFER);
         fPrefer = (String)componentManager.getProperty(JdkXmlUtils.CATALOG_PREFER);
@@ -1746,7 +1746,7 @@ public class XMLEntityManager implements XMLComponent, XMLEntityResolver {
                 fLoadExternalDTD = state;
                 return;
             }
-        } else if (featureId.equals(XMLConstants.USE_CATALOG)) {
+        } else if (featureId.equals(android.xml.XMLConstants.USE_CATALOG)) {
             fUseCatalog = state;
         }
 

@@ -105,10 +105,10 @@ public class DocumentBuilderImpl extends DocumentBuilder
             JdkConstants.XML_SECURITY_PROPERTY_MANAGER;
 
     /** property identifier: access external dtd. */
-    public static final String ACCESS_EXTERNAL_DTD = XMLConstants.ACCESS_EXTERNAL_DTD;
+    public static final String ACCESS_EXTERNAL_DTD = android.xml.XMLConstants.ACCESS_EXTERNAL_DTD;
 
     /** Property identifier: access to external schema */
-    public static final String ACCESS_EXTERNAL_SCHEMA = XMLConstants.ACCESS_EXTERNAL_SCHEMA;
+    public static final String ACCESS_EXTERNAL_SCHEMA = android.xml.XMLConstants.ACCESS_EXTERNAL_SCHEMA;
 
 
     private final DOMParser domParser;

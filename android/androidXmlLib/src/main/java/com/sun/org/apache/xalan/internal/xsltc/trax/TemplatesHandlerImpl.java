@@ -103,10 +103,10 @@ public class TemplatesHandlerImpl
         if (tfactory.getFeature(XMLConstants.FEATURE_SECURE_PROCESSING))
             xsltc.setSecureProcessing(true);
 
-        xsltc.setProperty(XMLConstants.ACCESS_EXTERNAL_STYLESHEET,
-                (String)tfactory.getAttribute(XMLConstants.ACCESS_EXTERNAL_STYLESHEET));
-        xsltc.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD,
-                (String)tfactory.getAttribute(XMLConstants.ACCESS_EXTERNAL_DTD));
+        xsltc.setProperty(android.xml.XMLConstants.ACCESS_EXTERNAL_STYLESHEET,
+                (String)tfactory.getAttribute(android.xml.XMLConstants.ACCESS_EXTERNAL_STYLESHEET));
+        xsltc.setProperty(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD,
+                (String)tfactory.getAttribute(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD));
         xsltc.setProperty(JdkConstants.SECURITY_MANAGER,
                 tfactory.getAttribute(JdkConstants.SECURITY_MANAGER));
 
@@ -116,7 +116,7 @@ public class TemplatesHandlerImpl
         else
             xsltc.setTemplateInlining(false);
 
-        _useCatalog = tfactory.getFeature(XMLConstants.USE_CATALOG);
+        _useCatalog = tfactory.getFeature(android.xml.XMLConstants.USE_CATALOG);
         _catalogFeatures = (CatalogFeatures)tfactory.getAttribute(JdkXmlFeatures.CATALOG_FEATURES);
         xsltc.setProperty(JdkXmlFeatures.CATALOG_FEATURES, _catalogFeatures);
 

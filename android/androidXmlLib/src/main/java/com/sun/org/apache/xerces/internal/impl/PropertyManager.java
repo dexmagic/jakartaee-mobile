@@ -147,7 +147,7 @@ public class PropertyManager {
         supportedProps.put(XML_SECURITY_PROPERTY_MANAGER, fSecurityPropertyMgr);
 
         // Initialize Catalog features
-        supportedProps.put(XMLConstants.USE_CATALOG, JdkXmlUtils.USE_CATALOG_DEFAULT);
+        supportedProps.put(android.xml.XMLConstants.USE_CATALOG, JdkXmlUtils.USE_CATALOG_DEFAULT);
         for (CatalogFeatures.Feature f : CatalogFeatures.Feature.values()) {
             supportedProps.put(f.getPropertyName(), null);
         }

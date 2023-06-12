@@ -186,7 +186,7 @@ public class XMLDocumentFragmentScannerImpl
                 NOTIFY_BUILTIN_REFS,
                 NOTIFY_CHAR_REFS,
                 Constants.STAX_REPORT_CDATA_EVENT,
-                XMLConstants.USE_CATALOG
+                android.xml.XMLConstants.USE_CATALOG
     };
 
     /** Feature defaults. */

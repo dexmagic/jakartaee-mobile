@@ -43,7 +43,7 @@ public class JdkXmlFeatures {
 
     public static final String CATALOG_FEATURES = "android.xml.catalog.catalogFeatures";
 
-    public final static String PROPERTY_USE_CATALOG = XMLConstants.USE_CATALOG;
+    public final static String PROPERTY_USE_CATALOG = android.xml.XMLConstants.USE_CATALOG;
 
     public static enum XmlFeature {
         /**

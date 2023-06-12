@@ -744,7 +744,7 @@ public class XSDHandler {
         fAnnotationValidator.setProperty(LOCALE, fLocale);
 
         // Passing on the Catalog settings
-        fAnnotationValidator.setFeature(XMLConstants.USE_CATALOG, fUseCatalog);
+        fAnnotationValidator.setFeature(android.xml.XMLConstants.USE_CATALOG, fUseCatalog);
         fAnnotationValidator.setProperty(JdkXmlUtils.CATALOG_FILES, fCatalogFile);
         fAnnotationValidator.setProperty(JdkXmlUtils.CATALOG_DEFER, fDefer);
         fAnnotationValidator.setProperty(JdkXmlUtils.CATALOG_PREFER, fPrefer);
@@ -2299,10 +2299,10 @@ public class XSDHandler {
                     catch (SAXException se) {}
 
                     try {
-                        parser.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, fAccessExternalDTD);
+                        parser.setProperty(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD, fAccessExternalDTD);
                     } catch (SAXNotRecognizedException exc) {
                         XMLSecurityManager.printWarning(parser.getClass().getName(),
-                                XMLConstants.ACCESS_EXTERNAL_DTD, exc);
+                                android.xml.XMLConstants.ACCESS_EXTERNAL_DTD, exc);
                     }
                 }
                 // If XML names and Namespace URIs are already internalized we
@@ -3670,9 +3670,9 @@ public class XSDHandler {
         fSchemaParser.setFeature(JdkConstants.OVERRIDE_PARSER, fOverrideDefaultParser);
         fEntityManager.setFeature(JdkConstants.OVERRIDE_PARSER, fOverrideDefaultParser);
         // Passing the Catalog settings to the parser
-        fUseCatalog = componentManager.getFeature(XMLConstants.USE_CATALOG);
-        fSchemaParser.setFeature(XMLConstants.USE_CATALOG, fUseCatalog);
-        fEntityManager.setFeature(XMLConstants.USE_CATALOG, fUseCatalog);
+        fUseCatalog = componentManager.getFeature(android.xml.XMLConstants.USE_CATALOG);
+        fSchemaParser.setFeature(android.xml.XMLConstants.USE_CATALOG, fUseCatalog);
+        fEntityManager.setFeature(android.xml.XMLConstants.USE_CATALOG, fUseCatalog);
 
         fCatalogFile = (String)componentManager.getProperty(JdkXmlUtils.CATALOG_FILES);
         fDefer = (String)componentManager.getProperty(JdkXmlUtils.CATALOG_DEFER);

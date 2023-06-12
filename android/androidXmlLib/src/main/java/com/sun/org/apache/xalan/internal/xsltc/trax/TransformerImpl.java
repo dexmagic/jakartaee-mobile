@@ -77,8 +77,8 @@ import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.sax.SAXResult;
 import javax.xml.transform.sax.SAXSource;
-import javax.xml.transform.stax.StAXResult;
-import javax.xml.transform.stax.StAXSource;
+import android.xml.transform.stax.StAXResult;
+import android.xml.transform.stax.StAXSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 import jdk.xml.internal.JdkConstants;
@@ -294,22 +294,22 @@ public final class TransformerImpl extends Transformer
         _indentNumber = indentNumber;
         _tfactory = tfactory;
         _overrideDefaultParser = _tfactory.overrideDefaultParser();
-        _accessExternalDTD = (String)_tfactory.getAttribute(XMLConstants.ACCESS_EXTERNAL_DTD);
+        _accessExternalDTD = (String)_tfactory.getAttribute(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD);
         _securityManager = (XMLSecurityManager)_tfactory.getAttribute(JdkConstants.SECURITY_MANAGER);
         _readerManager = XMLReaderManager.getInstance(_overrideDefaultParser);
-        _readerManager.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, _accessExternalDTD);
+        _readerManager.setProperty(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD, _accessExternalDTD);
         _readerManager.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, _isSecureProcessing);
         _readerManager.setProperty(JdkConstants.SECURITY_MANAGER, _securityManager);
         _cdataChunkSize = JdkXmlUtils.getValue(_tfactory.getAttribute(JdkConstants.CDATA_CHUNK_SIZE),
                 JdkConstants.CDATA_CHUNK_SIZE_DEFAULT);
         _readerManager.setProperty(JdkConstants.CDATA_CHUNK_SIZE, _cdataChunkSize);
 
-        _useCatalog = _tfactory.getFeature(XMLConstants.USE_CATALOG);
+        _useCatalog = _tfactory.getFeature(android.xml.XMLConstants.USE_CATALOG);
         if (_useCatalog) {
             _catalogFeatures = (CatalogFeatures)_tfactory.getAttribute(JdkXmlFeatures.CATALOG_FEATURES);
             String catalogFiles = _catalogFeatures.get(CatalogFeatures.Feature.DEFER);
             if (catalogFiles != null) {
-                _readerManager.setFeature(XMLConstants.USE_CATALOG, _useCatalog);
+                _readerManager.setFeature(android.xml.XMLConstants.USE_CATALOG, _useCatalog);
                 _readerManager.setProperty(JdkXmlFeatures.CATALOG_FEATURES, _catalogFeatures);
             }
         }
@@ -382,7 +382,7 @@ public final class TransformerImpl extends Transformer
             throw new TransformerException(err.toString());
         }
 
-        if (!_isIdentity && (_uriResolver != null || (_tfactory.getFeature(XMLConstants.USE_CATALOG)
+        if (!_isIdentity && (_uriResolver != null || (_tfactory.getFeature(android.xml.XMLConstants.USE_CATALOG)
                     && _tfactory.getAttribute(JdkXmlUtils.CATALOG_FILES) != null))) {
             _translet.setDOMCache(this);
         }
@@ -753,7 +753,7 @@ public final class TransformerImpl extends Transformer
 
                 DocumentBuilderFactory builderF = JdkXmlUtils.getDOMFactory(_overrideDefaultParser);
                 try {
-                    builderF.setFeature(XMLConstants.USE_CATALOG, _useCatalog);
+                    builderF.setFeature(android.xml.XMLConstants.USE_CATALOG, _useCatalog);
                 } catch (ParserConfigurationException e) {
                     supportCatalog = false;
                 }

@@ -508,7 +508,7 @@ public class XML11Configuration extends ParserConfigurationSettings
             EXTERNAL_PARAMETER_ENTITIES,
             PARSER_SETTINGS,
             XMLConstants.FEATURE_SECURE_PROCESSING,
-            XMLConstants.USE_CATALOG,
+            android.xml.XMLConstants.USE_CATALOG,
             JdkConstants.RESET_SYMBOL_TABLE,
             JdkConstants.OVERRIDE_PARSER
         };
@@ -535,7 +535,7 @@ public class XML11Configuration extends ParserConfigurationSettings
         fFeatures.put(USE_GRAMMAR_POOL_ONLY, Boolean.FALSE);
         fFeatures.put(PARSER_SETTINGS, Boolean.TRUE);
         fFeatures.put(XMLConstants.FEATURE_SECURE_PROCESSING, Boolean.TRUE);
-        fFeatures.put(XMLConstants.USE_CATALOG, JdkXmlUtils.USE_CATALOG_DEFAULT);
+        fFeatures.put(android.xml.XMLConstants.USE_CATALOG, JdkXmlUtils.USE_CATALOG_DEFAULT);
         fFeatures.put(JdkConstants.RESET_SYMBOL_TABLE, JdkConstants.RESET_SYMBOL_TABLE_DEFAULT);
         fFeatures.put(JdkConstants.OVERRIDE_PARSER, JdkConstants.OVERRIDE_PARSER_DEFAULT);
 

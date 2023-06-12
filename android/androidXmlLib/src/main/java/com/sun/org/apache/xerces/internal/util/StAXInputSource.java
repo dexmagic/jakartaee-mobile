@@ -28,7 +28,7 @@ import android.xml.stream.XMLStreamReader;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
 
 /**
- * <p>An <code>XMLInputSource</code> analogue to <code>javax.xml.transform.stax.StAXSource</code>.</p>
+ * <p>An <code>XMLInputSource</code> analogue to <code>android.xml.transform.stax.StAXSource</code>.</p>
  *
  */
 public final class StAXInputSource extends XMLInputSource {

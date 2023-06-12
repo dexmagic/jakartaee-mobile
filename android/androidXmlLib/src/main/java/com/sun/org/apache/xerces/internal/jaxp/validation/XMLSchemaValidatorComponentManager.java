@@ -268,7 +268,7 @@ final class XMLSchemaValidatorComponentManager extends ParserConfigurationSettin
                 NORMALIZE_DATA,
                 SCHEMA_ELEMENT_DEFAULT,
                 SCHEMA_AUGMENT_PSVI,
-                XMLConstants.USE_CATALOG,
+                android.xml.XMLConstants.USE_CATALOG,
                 JdkConstants.OVERRIDE_PARSER
         };
         addRecognizedFeatures(recognizedFeatures);
@@ -276,7 +276,7 @@ final class XMLSchemaValidatorComponentManager extends ParserConfigurationSettin
         fFeatures.put(NORMALIZE_DATA, Boolean.FALSE);
         fFeatures.put(SCHEMA_ELEMENT_DEFAULT, Boolean.FALSE);
         fFeatures.put(SCHEMA_AUGMENT_PSVI, Boolean.TRUE);
-        fFeatures.put(XMLConstants.USE_CATALOG, grammarContainer.getFeature(XMLConstants.USE_CATALOG));
+        fFeatures.put(android.xml.XMLConstants.USE_CATALOG, grammarContainer.getFeature(android.xml.XMLConstants.USE_CATALOG));
         fFeatures.put(JdkConstants.OVERRIDE_PARSER, grammarContainer.getFeature(JdkConstants.OVERRIDE_PARSER));
 
         addRecognizedParamsAndSetDefaults(fEntityManager, grammarContainer);
@@ -359,7 +359,7 @@ final class XMLSchemaValidatorComponentManager extends ParserConfigurationSettin
      * Set the state of a feature.
      *
      * @param featureId The unique identifier (URI) of the feature.
-     * @param state The requested state of the feature (true or false).
+     * @param value The requested state of the feature (true or false).
      *
      * @exception XMLConfigurationException If the requested feature is not known.
      */

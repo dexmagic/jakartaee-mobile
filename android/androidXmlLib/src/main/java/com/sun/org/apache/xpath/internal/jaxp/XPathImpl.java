@@ -27,7 +27,7 @@ import javax.xml.namespace.NamespaceContext;
 import javax.xml.namespace.QName;
 import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathEvaluationResult;
+import android.xml.xpath.XPathEvaluationResult;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFunctionResolver;

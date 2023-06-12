@@ -178,7 +178,7 @@ XSLoader, DOMConfiguration {
         NAMESPACE_GROWTH,
         TOLERATE_DUPLICATES,
         OVERRIDE_PARSER,
-        XMLConstants.USE_CATALOG
+        android.xml.XMLConstants.USE_CATALOG
     };
 
     // property identifiers
@@ -230,10 +230,10 @@ XSLoader, DOMConfiguration {
             JdkConstants.XML_SECURITY_PROPERTY_MANAGER;
 
     /** Property identifier: access to external dtd */
-    public static final String ACCESS_EXTERNAL_DTD = XMLConstants.ACCESS_EXTERNAL_DTD;
+    public static final String ACCESS_EXTERNAL_DTD = android.xml.XMLConstants.ACCESS_EXTERNAL_DTD;
 
     /** Property identifier: access to external schema */
-    public static final String ACCESS_EXTERNAL_SCHEMA = XMLConstants.ACCESS_EXTERNAL_SCHEMA;
+    public static final String ACCESS_EXTERNAL_SCHEMA = android.xml.XMLConstants.ACCESS_EXTERNAL_SCHEMA;
 
     // recognized properties
     private static final String [] RECOGNIZED_PROPERTIES = {

@@ -38,9 +38,9 @@ public final class XMLSecurityPropertyManager extends FeaturePropertyBase {
      * Properties managed by the security property manager
      */
     public static enum Property {
-        ACCESS_EXTERNAL_DTD(XMLConstants.ACCESS_EXTERNAL_DTD,
+        ACCESS_EXTERNAL_DTD(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD,
                 JdkConstants.EXTERNAL_ACCESS_DEFAULT),
-        ACCESS_EXTERNAL_STYLESHEET(XMLConstants.ACCESS_EXTERNAL_STYLESHEET,
+        ACCESS_EXTERNAL_STYLESHEET(android.xml.XMLConstants.ACCESS_EXTERNAL_STYLESHEET,
                 JdkConstants.EXTERNAL_ACCESS_DEFAULT);
 
         final String name;

@@ -133,7 +133,7 @@ public class XMLReaderManager {
         }
 
         //reader is cached, but this property might have been reset
-        JdkXmlUtils.setXMLReaderPropertyIfSupport(reader, XMLConstants.ACCESS_EXTERNAL_DTD,
+        JdkXmlUtils.setXMLReaderPropertyIfSupport(reader, android.xml.XMLConstants.ACCESS_EXTERNAL_DTD,
                 _accessExternalDTD, true);
 
         JdkXmlUtils.setXMLReaderPropertyIfSupport(reader, JdkConstants.CDATA_CHUNK_SIZE,
@@ -212,7 +212,7 @@ public class XMLReaderManager {
     public void setFeature(String name, boolean value) {
         if (name.equals(XMLConstants.FEATURE_SECURE_PROCESSING)) {
             _secureProcessing = value;
-        } else if (XMLConstants.USE_CATALOG.equals(name)) {
+        } else if (android.xml.XMLConstants.USE_CATALOG.equals(name)) {
             _useCatalog = value;
         }
     }
@@ -221,7 +221,7 @@ public class XMLReaderManager {
      * Get property value
      */
     public Object getProperty(String name) {
-        if (name.equals(XMLConstants.ACCESS_EXTERNAL_DTD)) {
+        if (name.equals(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD)) {
             return _accessExternalDTD;
         } else if (name.equals(JdkConstants.SECURITY_MANAGER)) {
             return _xmlSecurityManager;
@@ -233,7 +233,7 @@ public class XMLReaderManager {
      * Set property.
      */
     public void setProperty(String name, Object value) {
-        if (name.equals(XMLConstants.ACCESS_EXTERNAL_DTD)) {
+        if (name.equals(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD)) {
             _accessExternalDTD = (String)value;
         } else if (name.equals(JdkConstants.SECURITY_MANAGER)) {
             _xmlSecurityManager = (XMLSecurityManager)value;

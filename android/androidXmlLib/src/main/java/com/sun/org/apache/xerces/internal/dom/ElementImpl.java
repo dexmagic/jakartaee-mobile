@@ -408,7 +408,7 @@ public class ElementImpl
      * -- unlike removeAttributeNode, which will throw a not-found exception in
      * that case.
      *
-     * @throws DOMException(NO_MODIFICATION_ALLOWED_ERR) if the node is
+     * @throws DOMException if the node is
      * readonly.
      */
     public void removeAttribute(String name) {
@@ -440,9 +440,9 @@ public class ElementImpl
      * want to remove an attribute by name, use removeAttribute().
      *
      * @return the Attribute object that was removed.
-     * @throws DOMException(NOT_FOUND_ERR) if oldattr is not an attribute of
+     * @throws DOMException / NOT_FOUND_ERR if oldattr is not an attribute of
      * this Element.
-     * @throws DOMException(NO_MODIFICATION_ALLOWED_ERR) if the node is
+     * @throws DOMException / NO_MODIFICATION_ALLOWED_ERR if the node is
      * readonly.
      */
     public Attr removeAttributeNode(Attr oldAttr)
@@ -478,10 +478,10 @@ public class ElementImpl
      * value rather than inherited from the DTD as a default. Again,
      * setAttributeNode can be used to achieve other results.
      *
-     * @throws DOMException(INVALID_NAME_ERR) if the name is not acceptable.
+     * @throws DOMException / INVALID_NAME_ERR if the name is not acceptable.
      * (Attribute factory will do that test for us.)
      *
-     * @throws DOMException(NO_MODIFICATION_ALLOWED_ERR) if the node is
+     * @throws DOMException / NO_MODIFICATION_ALLOWED_ERR if the node is
      * readonly.
      */
         public void setAttribute(String name, String value) {
@@ -524,7 +524,7 @@ public class ElementImpl
      * complex tree structure -- in particular, those which had entity
      * references mixed into their text.
      *
-     * @throws DOMException(INUSE_ATTRIBUTE_ERR) if the Attribute object has
+     * @throws DOMException INUSE_ATTRIBUTE_ERR if the Attribute object has
      * already been assigned to another Element.
      */
     public Attr setAttributeNode(Attr newAttr)
@@ -611,12 +611,12 @@ public class ElementImpl
      * @param qualifiedName The qualified name of the attribute to create or
      * alter.
      * @param value The value to set in string form.
-     * @throws INVALID_CHARACTER_ERR: Raised if the specified name contains an
+     * @throws DOMException: INVALID_CHARACTER_ERR Raised if the specified name contains an
      * invalid character.
      *
-     * @throws NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.
+     * @throws DOMException: NO_MODIFICATION_ALLOWED_ERR Raised if this node is readonly.
      *
-     * @throws NAMESPACE_ERR: Raised if the qualifiedName has a prefix that is
+     * @throws DOMException: NAMESPACE_ERR Raised if the qualifiedName has a prefix that is
      * "xml" and the namespaceURI is neither null nor an empty string nor
      * "http://www.w3.org/XML/1998/namespace", or if the qualifiedName has a
      * prefix that is "xmlns" but the namespaceURI is neither null nor an empty
@@ -703,7 +703,7 @@ public class ElementImpl
      * @param namespaceURI The namespace URI of the attribute to remove.
      *
      * @param localName The local name of the attribute to remove.
-     * @throws NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.
+     * @throws DOMException / NO_MODIFICATION_ALLOWED_ERR Raised if this node is readonly.
      * @since WD-DOM-Level-2-19990923
      */
     public void removeAttributeNS(String namespaceURI, String localName) {
@@ -758,12 +758,12 @@ public class ElementImpl
      * @return Attr If the newAttr attribute replaces an existing attribute with
      * the same local name and namespace URI, the * previously existing Attr
      * node is returned, otherwise null is returned.
-     * @throws WRONG_DOCUMENT_ERR: Raised if newAttr was created from a
+     * @throws DOMException / WRONG_DOCUMENT_ERR: Raised if newAttr was created from a
      * different document than the one that created the element.
      *
-     * @throws NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.
+     * @throws DOMException / NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.
      *
-     * @throws INUSE_ATTRIBUTE_ERR: Raised if newAttr is already an attribute of
+     * @throws DOMException / INUSE_ATTRIBUTE_ERR: Raised if newAttr is already an attribute of
      * another Element object. The DOM user must explicitly clone Attr nodes to
      * re-use them in other elements.
      * @since WD-DOM-Level-2-19990923

@@ -25,7 +25,7 @@ import com.sun.org.apache.xpath.internal.objects.XObject;
 import javax.xml.namespace.QName;
 import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathEvaluationResult;
+import android.xml.xpath.XPathEvaluationResult;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFunctionException;
@@ -138,7 +138,7 @@ public class XPathExpressionImpl extends XPathImplUtil implements XPathExpressio
         return (String)this.evaluate(source, XPathConstants.STRING);
     }
 
-    @Override
+    // @Override
     public <T>T evaluateExpression(Object item, Class<T> type)
         throws XPathExpressionException {
         isSupportedClassType(type);
@@ -161,20 +161,20 @@ public class XPathExpressionImpl extends XPathImplUtil implements XPathExpressio
         }
     }
 
-    @Override
+    // @Override
     public XPathEvaluationResult<?> evaluateExpression(Object item)
         throws XPathExpressionException {
         return evaluateExpression(item, XPathEvaluationResult.class);
     }
 
-    @Override
+    // @Override
     public <T>T  evaluateExpression(InputSource source, Class<T> type)
             throws XPathExpressionException {
         Document document = getDocument(source);
         return evaluateExpression(document, type);
     }
 
-    @Override
+    // @Override
     public XPathEvaluationResult<?> evaluateExpression(InputSource source)
         throws XPathExpressionException {
         return evaluateExpression(source, XPathEvaluationResult.class);

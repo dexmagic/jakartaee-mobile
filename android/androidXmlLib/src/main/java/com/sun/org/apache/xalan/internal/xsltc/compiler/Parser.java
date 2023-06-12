@@ -473,8 +473,8 @@ public class Parser implements Constants, ContentHandler {
             final XMLReader reader = JdkXmlUtils.getXMLReader(_overrideDefaultParser,
                     _xsltc.isSecureProcessing());
 
-            JdkXmlUtils.setXMLReaderPropertyIfSupport(reader, XMLConstants.ACCESS_EXTERNAL_DTD,
-                    _xsltc.getProperty(XMLConstants.ACCESS_EXTERNAL_DTD), true);
+            JdkXmlUtils.setXMLReaderPropertyIfSupport(reader, android.xml.XMLConstants.ACCESS_EXTERNAL_DTD,
+                    _xsltc.getProperty(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD), true);
 
 
             boolean supportCatalog = true;
@@ -592,7 +592,7 @@ public class Parser implements Constants, ContentHandler {
                 }
                 path = SystemIDResolver.getAbsoluteURI(path);
                 String accessError = SecuritySupport.checkAccess(path,
-                        (String)_xsltc.getProperty(XMLConstants.ACCESS_EXTERNAL_STYLESHEET),
+                        (String)_xsltc.getProperty(android.xml.XMLConstants.ACCESS_EXTERNAL_STYLESHEET),
                         JdkConstants.ACCESS_EXTERNAL_ALL);
                 if (accessError != null) {
                     ErrorMsg msg = new ErrorMsg(ErrorMsg.ACCESSING_XSLT_TARGET_ERR,

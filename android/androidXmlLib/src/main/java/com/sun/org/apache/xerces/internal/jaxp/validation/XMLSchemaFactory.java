@@ -47,7 +47,7 @@ import android.xml.stream.XMLEventReader;
 import javax.xml.transform.Source;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.sax.SAXSource;
-import javax.xml.transform.stax.StAXSource;
+import android.xml.transform.stax.StAXSource;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
@@ -161,7 +161,7 @@ public final class XMLSchemaFactory extends SchemaFactory {
                 fSecurityPropertyMgr);
 
         // use catalog
-        fXMLSchemaLoader.setFeature(XMLConstants.USE_CATALOG, JdkXmlUtils.USE_CATALOG_DEFAULT);
+        fXMLSchemaLoader.setFeature(android.xml.XMLConstants.USE_CATALOG, JdkXmlUtils.USE_CATALOG_DEFAULT);
         for (Feature f : Feature.values()) {
             fXMLSchemaLoader.setProperty(f.getPropertyName(), null);
         }

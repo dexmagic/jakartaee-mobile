@@ -37,13 +37,16 @@ import com.sun.org.apache.xerces.internal.util.XMLSymbols;
 import com.sun.org.apache.xerces.internal.utils.XMLSecurityManager;
 import com.sun.org.apache.xerces.internal.xni.QName;
 import com.sun.org.apache.xerces.internal.xs.XSConstants;
+
+import org.w3c.dom.Attr;
+import org.w3c.dom.Element;
+
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
-import org.w3c.dom.Attr;
-import org.w3c.dom.Element;
 
 /**
  * Class <code>XSAttributeCheck</code> is used to check the validity of attributes
@@ -1816,7 +1819,7 @@ class SmallContainer extends Container {
 class LargeContainer extends Container {
     Map<String, OneAttr> items;
     LargeContainer(int size) {
-        items = HashMap.newHashMap(size);
+        items = new LinkedHashMap(size);
         values = new OneAttr[size];
     }
     void put(String key, OneAttr value) {

@@ -327,7 +327,7 @@ public class DOMConfigurationImpl extends ParserConfigurationSettings
             PARSER_SETTINGS,
             NAMESPACE_GROWTH,
             TOLERATE_DUPLICATES,
-            XMLConstants.USE_CATALOG,
+            android.xml.XMLConstants.USE_CATALOG,
             JdkConstants.OVERRIDE_PARSER
         };
         addRecognizedFeatures(recognizedFeatures);
@@ -351,7 +351,7 @@ public class DOMConfigurationImpl extends ParserConfigurationSettings
         setFeature(PARSER_SETTINGS, true);
         setFeature(NAMESPACE_GROWTH, false);
         setFeature(TOLERATE_DUPLICATES, false);
-        setFeature(XMLConstants.USE_CATALOG, JdkXmlUtils.USE_CATALOG_DEFAULT);
+        setFeature(android.xml.XMLConstants.USE_CATALOG, JdkXmlUtils.USE_CATALOG_DEFAULT);
         setFeature(JdkConstants.OVERRIDE_PARSER, JdkConstants.OVERRIDE_PARSER_DEFAULT);
 
         // add default recognized properties

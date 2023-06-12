@@ -38,7 +38,7 @@ public class CollatorFactoryBase implements CollatorFactory {
     }
 
     public Collator getCollator(String lang, String country) {
-        return Collator.getInstance(Locale.of(lang, country));
+        return Collator.getInstance(Locale.forLanguageTag(lang));
     }
 
     public Collator getCollator(Locale locale) {

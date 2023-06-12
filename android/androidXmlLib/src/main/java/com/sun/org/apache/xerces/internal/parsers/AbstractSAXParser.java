@@ -321,7 +321,15 @@ public abstract class AbstractSAXParser
         fStandalone = "yes".equals(standalone);
         if (fContentHandler != null) {
             try {
-                fContentHandler.declaration(version, encoding, standalone);
+                // fContentHandler.declaration(version, encoding, standalone);
+                fContentHandler.skippedEntity(new StringBuilder()
+                        .append("DECLARATION, version=")
+                        .append(version)
+                        .append(", encoding=")
+                        .append(encoding)
+                        .append("sandalone=")
+                        .append(standalone)
+                        .toString());
             } catch (SAXException e) {
                 throw new XNIException(e);
             }

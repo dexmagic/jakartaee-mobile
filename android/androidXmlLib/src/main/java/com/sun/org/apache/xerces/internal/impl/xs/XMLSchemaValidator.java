@@ -268,7 +268,7 @@ public class XMLSchemaValidator
 
     protected static final String OVERRIDE_PARSER = JdkConstants.OVERRIDE_PARSER;
 
-    protected static final String USE_CATALOG = XMLConstants.USE_CATALOG;
+    protected static final String USE_CATALOG = android.xml.XMLConstants.USE_CATALOG;
 
     // recognized features and properties
 

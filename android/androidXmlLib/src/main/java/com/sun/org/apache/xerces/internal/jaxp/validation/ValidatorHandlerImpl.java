@@ -694,11 +694,11 @@ final class ValidatorHandlerImpl extends ValidatorHandler implements
                            try {
                                XMLSecurityPropertyManager spm = (XMLSecurityPropertyManager)
                                        fComponentManager.getProperty(XML_SECURITY_PROPERTY_MANAGER);
-                               reader.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD,
+                               reader.setProperty(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD,
                                        spm.getValue(XMLSecurityPropertyManager.Property.ACCESS_EXTERNAL_DTD));
                            } catch (SAXException exc) {
                                XMLSecurityManager.printWarning(reader.getClass().getName(),
-                                       XMLConstants.ACCESS_EXTERNAL_DTD, exc);
+                                       android.xml.XMLConstants.ACCESS_EXTERNAL_DTD, exc);
                            }
                         }
 

@@ -31,22 +31,25 @@ import com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet;
 import com.sun.org.apache.xalan.internal.xsltc.runtime.BasisLibrary;
 import com.sun.org.apache.xalan.internal.xsltc.runtime.Constants;
 import com.sun.org.apache.xml.internal.utils.SystemIDResolver;
+
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
+
 import java.io.File;
 import java.io.PrintWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.file.Paths;
 import java.util.Date;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.sax.SAXSource;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-import org.xml.sax.XMLReader;
 
 /**
  * @author Morten Jorgensen
@@ -169,7 +172,7 @@ public final class DocumentCache implements DOMCache {
         _count = 0;
         _current = 0;
         _size  = size;
-        _references = HashMap.newHashMap(_size);
+        _references = new LinkedHashMap(_size);
         _URIs = new String[_size];
 
         try {

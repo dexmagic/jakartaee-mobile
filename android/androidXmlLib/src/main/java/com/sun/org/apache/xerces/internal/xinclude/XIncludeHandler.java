@@ -565,7 +565,7 @@ public class XIncludeHandler
                 componentManager.getProperty(JdkConstants.XML_SECURITY_PROPERTY_MANAGER);
 
         //Use Catalog
-        fUseCatalog = componentManager.getFeature(XMLConstants.USE_CATALOG);
+        fUseCatalog = componentManager.getFeature(android.xml.XMLConstants.USE_CATALOG);
         fCatalogFile = (String)componentManager.getProperty(CatalogFeatures.Feature.FILES.getPropertyName());
         fDefer = (String)componentManager.getProperty(CatalogFeatures.Feature.DEFER.getPropertyName());
         fPrefer = (String)componentManager.getProperty(CatalogFeatures.Feature.PREFER.getPropertyName());
@@ -1671,7 +1671,7 @@ public class XIncludeHandler
                             source = fCatalogResolver.resolve(href, fCurrentBaseURI.getExpandedSystemId());
                         } catch (CatalogException e) {}
 
-                        if (source != null && !source.isEmpty()) {
+                        if (source != null /*&& !source.isEmpty()*/) {
                             includedSource = new XMLInputSource(null, source.getSystemId(),
                                     fCurrentBaseURI.getExpandedSystemId(), true);
                         } else {
@@ -1679,7 +1679,7 @@ public class XIncludeHandler
                                 fCatalogResolver = CatalogManager.catalogResolver(fCatalogFeatures);
                             }
                             InputSource is = fCatalogResolver.resolveEntity(href, href);
-                            if (is != null && !is.isEmpty()) {
+                            if (is != null /*&& !is.isEmpty()*/) {
                                 includedSource = new XMLInputSource(is, true);
                             }
                         }

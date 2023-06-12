@@ -49,9 +49,9 @@ public final class XMLSecurityPropertyManager {
      * Limits managed by the security manager
      */
     public static enum Property {
-        ACCESS_EXTERNAL_DTD(XMLConstants.ACCESS_EXTERNAL_DTD,
+        ACCESS_EXTERNAL_DTD(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD,
                 JdkConstants.EXTERNAL_ACCESS_DEFAULT),
-        ACCESS_EXTERNAL_SCHEMA(XMLConstants.ACCESS_EXTERNAL_SCHEMA,
+        ACCESS_EXTERNAL_SCHEMA(android.xml.XMLConstants.ACCESS_EXTERNAL_SCHEMA,
                 JdkConstants.EXTERNAL_ACCESS_DEFAULT);
 
         final String name;

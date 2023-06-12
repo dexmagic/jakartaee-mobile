@@ -33,7 +33,7 @@ import javax.xml.transform.Source;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.sax.SAXSource;
-import javax.xml.transform.stax.StAXSource;
+import android.xml.transform.stax.StAXSource;
 import javax.xml.transform.stream.StreamSource;
 import jdk.xml.internal.JdkConstants;
 import jdk.xml.internal.JdkXmlFeatures;
@@ -101,8 +101,8 @@ public final class Util {
                             (JdkXmlUtils.NAMESPACE_PREFIXES_FEATURE,false);
                     }
 
-                    JdkXmlUtils.setXMLReaderPropertyIfSupport(reader, XMLConstants.ACCESS_EXTERNAL_DTD,
-                            xsltc.getProperty(XMLConstants.ACCESS_EXTERNAL_DTD), true);
+                    JdkXmlUtils.setXMLReaderPropertyIfSupport(reader, android.xml.XMLConstants.ACCESS_EXTERNAL_DTD,
+                            xsltc.getProperty(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD), true);
 
                     JdkXmlUtils.setXMLReaderPropertyIfSupport(reader, JdkConstants.CDATA_CHUNK_SIZE,
                             xsltc.getProperty(JdkConstants.CDATA_CHUNK_SIZE), false);

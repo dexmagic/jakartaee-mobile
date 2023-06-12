@@ -84,7 +84,7 @@ final class Import extends TopLevelElement {
             if (input == null) {
                 docToLoad = SystemIDResolver.getAbsoluteURI(docToLoad, currLoadedDoc);
                 String accessError = SecuritySupport.checkAccess(docToLoad,
-                        (String)xsltc.getProperty(XMLConstants.ACCESS_EXTERNAL_STYLESHEET),
+                        (String)xsltc.getProperty(android.xml.XMLConstants.ACCESS_EXTERNAL_STYLESHEET),
                         JdkConstants.ACCESS_EXTERNAL_ALL);
 
                 if (accessError != null) {

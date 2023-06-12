@@ -311,7 +311,7 @@ public class DTDConfiguration
             //NOTIFY_BUILTIN_REFS,  // from XMLDocumentFragmentScannerImpl
             //NOTIFY_CHAR_REFS,         // from XMLDocumentFragmentScannerImpl
             //WARN_ON_DUPLICATE_ENTITYDEF,  // from XMLEntityManager
-            XMLConstants.USE_CATALOG,
+            android.xml.XMLConstants.USE_CATALOG,
             JdkConstants.OVERRIDE_PARSER
         };
         addRecognizedFeatures(recognizedFeatures);
@@ -325,7 +325,7 @@ public class DTDConfiguration
         //setFeature(NOTIFY_BUILTIN_REFS, false);   // from XMLDocumentFragmentScannerImpl
         //setFeature(NOTIFY_CHAR_REFS, false);      // from XMLDocumentFragmentScannerImpl
         //setFeature(WARN_ON_DUPLICATE_ENTITYDEF, false);   // from XMLEntityManager
-        fFeatures.put(XMLConstants.USE_CATALOG, JdkXmlUtils.USE_CATALOG_DEFAULT);
+        fFeatures.put(android.xml.XMLConstants.USE_CATALOG, JdkXmlUtils.USE_CATALOG_DEFAULT);
         fFeatures.put(JdkConstants.OVERRIDE_PARSER, JdkConstants.OVERRIDE_PARSER_DEFAULT);
 
         // add default recognized properties

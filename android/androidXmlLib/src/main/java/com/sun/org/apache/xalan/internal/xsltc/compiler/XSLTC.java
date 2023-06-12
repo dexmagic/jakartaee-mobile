@@ -212,10 +212,10 @@ public final class XSLTC {
      * @return the value of the property
      */
     public Object getProperty(String name) {
-        if (name.equals(XMLConstants.ACCESS_EXTERNAL_STYLESHEET)) {
+        if (name.equals(android.xml.XMLConstants.ACCESS_EXTERNAL_STYLESHEET)) {
             return _accessExternalStylesheet;
         }
-        else if (name.equals(XMLConstants.ACCESS_EXTERNAL_DTD)) {
+        else if (name.equals(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD)) {
             return _accessExternalDTD;
         } else if (name.equals(JdkConstants.SECURITY_MANAGER)) {
             return _xmlSecurityManager;
@@ -235,10 +235,10 @@ public final class XSLTC {
      * @param value the value of the property
      */
     public void setProperty(String name, Object value) {
-        if (name.equals(XMLConstants.ACCESS_EXTERNAL_STYLESHEET)) {
+        if (name.equals(android.xml.XMLConstants.ACCESS_EXTERNAL_STYLESHEET)) {
             _accessExternalStylesheet = (String)value;
         }
-        else if (name.equals(XMLConstants.ACCESS_EXTERNAL_DTD)) {
+        else if (name.equals(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD)) {
             _accessExternalDTD = (String)value;
         } else if (name.equals(JdkConstants.SECURITY_MANAGER)) {
             _xmlSecurityManager = (XMLSecurityManager)value;

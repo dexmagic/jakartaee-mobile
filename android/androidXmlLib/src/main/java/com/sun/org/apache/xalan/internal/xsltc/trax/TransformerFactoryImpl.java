@@ -68,7 +68,7 @@ import javax.xml.transform.sax.SAXSource;
 import javax.xml.transform.sax.SAXTransformerFactory;
 import javax.xml.transform.sax.TemplatesHandler;
 import javax.xml.transform.sax.TransformerHandler;
-import javax.xml.transform.stax.*;
+import android.xml.transform.stax.*;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 import jdk.xml.internal.JdkProperty;
@@ -971,8 +971,8 @@ public class TransformerFactoryImpl
                 xsltc.setTemplateInlining(false);
 
         if (!_isNotSecureProcessing) xsltc.setSecureProcessing(true);
-        xsltc.setProperty(XMLConstants.ACCESS_EXTERNAL_STYLESHEET, _accessExternalStylesheet);
-        xsltc.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, _accessExternalDTD);
+        xsltc.setProperty(android.xml.XMLConstants.ACCESS_EXTERNAL_STYLESHEET, _accessExternalStylesheet);
+        xsltc.setProperty(android.xml.XMLConstants.ACCESS_EXTERNAL_DTD, _accessExternalDTD);
         xsltc.setProperty(JdkConstants.SECURITY_MANAGER, _xmlSecurityManager);
         xsltc.setProperty(JdkConstants.JDK_EXT_CLASSLOADER,
                 (_extensionClassLoader == null) ? null : _extensionClassLoader.getValue());

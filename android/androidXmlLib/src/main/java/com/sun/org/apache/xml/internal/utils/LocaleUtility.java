@@ -78,7 +78,8 @@ public class LocaleUtility {
             variant = EMPTY_STRING;
         }
 
-        return Locale.of(language, country, variant);
+        throw new UnsupportedOperationException("not supported on Android");
+        return Locale.forLanguageTag(language); /*Locale.of(language, country, variant);*/
     }
 
 

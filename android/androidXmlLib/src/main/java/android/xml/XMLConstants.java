@@ -392,7 +392,7 @@ public final class XMLConstants {
      * The following code enables Catalog on SAX parser:
      * <pre>{@code
      *      SAXParserFactory spf = SAXParserFactory.newInstance();
-     *      spf.setFeature(XMLConstants.USE_CATALOG, true);
+     *      spf.setFeature(android.xml.XMLConstants.USE_CATALOG, true);
      *      SAXParser parser = spf.newSAXParser();
      *      parser.setProperty(CatalogFeatures.Feature.FILES.getPropertyName(), "catalog.xml");
      * }</pre>

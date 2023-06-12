@@ -2417,8 +2417,9 @@ public class XMLGregorianCalendarImpl
      * @return default locale
      */
     private Locale getDefaultLocale() {
+        return Locale.getDefault();
 
-        String lang = SecuritySupport.getSystemProperty("user.language.format");
+        /*String lang = SecuritySupport.getSystemProperty("user.language.format");
         String country = SecuritySupport.getSystemProperty("user.country.format");
         String variant = SecuritySupport.getSystemProperty("user.variant.format");
         Locale locale = null;
@@ -2436,7 +2437,7 @@ public class XMLGregorianCalendarImpl
         if (locale == null) {
             locale = Locale.getDefault();
         }
-        return locale;
+        return locale;*/
     }
 
     /**
