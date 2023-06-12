@@ -29,7 +29,7 @@ import com.sun.org.apache.xerces.internal.utils.XMLSecurityPropertyManager;
 import com.sun.xml.internal.stream.StaxEntityResolverWrapper;
 import java.util.HashMap;
 import javax.xml.XMLConstants;
-import javax.xml.catalog.CatalogFeatures;
+import android.xml.catalog.CatalogFeatures;
 import android.xml.stream.XMLInputFactory;
 import android.xml.stream.XMLOutputFactory;
 import android.xml.stream.XMLResolver;

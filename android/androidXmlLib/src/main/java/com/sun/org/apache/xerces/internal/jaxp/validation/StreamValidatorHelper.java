@@ -31,7 +31,7 @@ import com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration;
 import java.io.IOException;
 import java.lang.ref.SoftReference;
 import javax.xml.XMLConstants;
-import javax.xml.catalog.CatalogFeatures;
+import android.xml.catalog.CatalogFeatures;
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import javax.xml.transform.TransformerConfigurationException;

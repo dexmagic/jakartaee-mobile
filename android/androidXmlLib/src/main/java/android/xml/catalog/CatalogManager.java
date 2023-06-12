@@ -42,12 +42,12 @@ public final class CatalogManager {
      * Creates a {@code Catalog} object using the specified feature settings and
      * uri(s) to one or more catalog files.
      * <p>
-     * If {@code uris} is empty, system property {@code javax.xml.catalog.files},
+     * If {@code uris} is empty, system property {@code android.xml.catalog.files},
      * as defined in {@link CatalogFeatures}, will be read to locate the initial
      * list of catalog files.
      * <p>
      * If multiple catalog files are specified through the {@code uris} argument or
-     * {@code javax.xml.catalog.files} property, the first entry is considered
+     * {@code android.xml.catalog.files} property, the first entry is considered
      * the main catalog, while others are treated as alternative catalogs after
      * those referenced by the {@code nextCatalog} elements in the main catalog.
      * <p>
@@ -89,12 +89,12 @@ public final class CatalogManager {
      * Creates an instance of a {@code CatalogResolver} using the specified feature
      * settings and uri(s) to one or more catalog files.
      * <p>
-     * If {@code uris} is empty, system property {@code javax.xml.catalog.files},
+     * If {@code uris} is empty, system property {@code android.xml.catalog.files},
      * as defined in {@link CatalogFeatures}, will be read to locate the initial
      * list of catalog files.
      * <p>
      * If multiple catalog files are specified through the {@code uris} argument or
-     * {@code javax.xml.catalog.files} property, the first entry is considered
+     * {@code android.xml.catalog.files} property, the first entry is considered
      * the main catalog, while others are treated as alternative catalogs after
      * those referenced by the {@code nextCatalog} elements in the main catalog.
      * <p>

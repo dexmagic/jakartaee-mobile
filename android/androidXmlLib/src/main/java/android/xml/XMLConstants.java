@@ -387,7 +387,7 @@ public final class XMLConstants {
      * <p>
      * Instructs XML processors to use XML Catalogs to resolve entity references.
      * Catalogs may be set through JAXP factories, system properties, or
-     * jaxp.properties by using the {@code javax.xml.catalog.files} property
+     * jaxp.properties by using the {@code android.xml.catalog.files} property
      * defined in {@link CatalogFeatures}.
      * The following code enables Catalog on SAX parser:
      * <pre>{@code

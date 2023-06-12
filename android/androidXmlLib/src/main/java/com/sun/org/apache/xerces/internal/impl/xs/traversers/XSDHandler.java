@@ -102,7 +102,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Stack;
 import javax.xml.XMLConstants;
-import javax.xml.catalog.CatalogFeatures;
+import android.xml.catalog.CatalogFeatures;
 import android.xml.stream.XMLEventReader;
 import android.xml.stream.XMLStreamException;
 import android.xml.stream.XMLStreamReader;

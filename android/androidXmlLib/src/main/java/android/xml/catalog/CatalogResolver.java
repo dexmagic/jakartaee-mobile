@@ -95,7 +95,7 @@ import org.xml.sax.InputSource;
  * </ul>
  * <p>
  * The CatalogResolver however, will throw {@link CatalogException}
- * only when {@code javax.xml.catalog.resolve} is specified as {@code strict}.
+ * only when {@code android.xml.catalog.resolve} is specified as {@code strict}.
  * For applications that expect to handle the checked Exceptions, it may be
  * necessary to use a custom resolver to wrap the CatalogResolver or implement it
  * with a {@link Catalog} object.
@@ -121,12 +121,12 @@ public interface CatalogResolver extends EntityResolver, XMLResolver,
      * @return a {@link org.xml.sax.InputSource} object if a mapping is found.
      * If no mapping is found, returns a {@link org.xml.sax.InputSource} object
      * containing an empty {@link java.io.Reader} if the
-     * {@code javax.xml.catalog.resolve} property is set to {@code ignore};
+     * {@code android.xml.catalog.resolve} property is set to {@code ignore};
      * returns null if the
-     * {@code javax.xml.catalog.resolve} property is set to {@code continue}.
+     * {@code android.xml.catalog.resolve} property is set to {@code continue}.
      *
      * @throws CatalogException if no mapping is found and
-     * {@code javax.xml.catalog.resolve} is specified as {@code strict}
+     * {@code android.xml.catalog.resolve} is specified as {@code strict}
      */
     @Override
     public InputSource resolveEntity(String publicId, String systemId);
@@ -151,14 +151,14 @@ public interface CatalogResolver extends EntityResolver, XMLResolver,
      *
      * @return a {@link javax.xml.transform.Source} object if a mapping is found.
      * If no mapping is found, returns an empty {@link javax.xml.transform.Source}
-     * object if the {@code javax.xml.catalog.resolve} property is set to
+     * object if the {@code android.xml.catalog.resolve} property is set to
      * {@code ignore};
      * returns a {@link javax.xml.transform.Source} object with the original URI
      * (href, or href resolved with base if base is not null) if the
-     * {@code javax.xml.catalog.resolve} property is set to {@code continue}.
+     * {@code android.xml.catalog.resolve} property is set to {@code continue}.
      *
      * @throws CatalogException if no mapping is found and
-     * {@code javax.xml.catalog.resolve} is specified as {@code strict}
+     * {@code android.xml.catalog.resolve} is specified as {@code strict}
      */
     @Override
     public Source resolve(String href, String base);
@@ -188,13 +188,13 @@ public interface CatalogResolver extends EntityResolver, XMLResolver,
      * CatalogResolver.
      *
      * @return an {@link java.io.InputStream} object if a mapping is found; null
-     * if no mapping is found and the {@code javax.xml.catalog.resolve} property
+     * if no mapping is found and the {@code android.xml.catalog.resolve} property
      * is set to {@code continue} or {@code ignore}. Note that for XMLResolver,
      * it is not possible to ignore a reference, {@code ignore} is therefore
      * treated the same as {@code continue}.
      *
      * @throws CatalogException if no mapping is found and
-     * {@code javax.xml.catalog.resolve} is specified as {@code strict}
+     * {@code android.xml.catalog.resolve} is specified as {@code strict}
      */
     @Override
     public InputStream resolveEntity(String publicId, String systemId,
@@ -225,13 +225,13 @@ public interface CatalogResolver extends EntityResolver, XMLResolver,
      * @param baseUri  the absolute base URI, not used by the CatalogResolver
      *
      * @return a {@link org.w3c.dom.ls.LSInput} object if a mapping is found; null
-     * if no mapping is found and the {@code javax.xml.catalog.resolve} property
+     * if no mapping is found and the {@code android.xml.catalog.resolve} property
      * is set to {@code continue} or {@code ignore}. Note that for
      * {@link org.w3c.dom.ls.LSResourceResolver}, it is not possible to ignore a
      * reference, {@code ignore} is therefore treated the same as {@code continue}.
      *
      * @throws CatalogException if no mapping is found and
-     * {@code javax.xml.catalog.resolve} is specified as {@code strict}
+     * {@code android.xml.catalog.resolve} is specified as {@code strict}
      */
     @Override
     public LSInput resolveResource(String type, String namespaceUri,

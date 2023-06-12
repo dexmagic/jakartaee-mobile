@@ -39,7 +39,7 @@ import java.util.Properties;
 import java.util.Stack;
 import java.util.StringTokenizer;
 import javax.xml.XMLConstants;
-import javax.xml.catalog.CatalogFeatures;
+import android.xml.catalog.CatalogFeatures;
 import jdk.xml.internal.ErrorHandlerProxy;
 import jdk.xml.internal.JdkConstants;
 import jdk.xml.internal.JdkXmlFeatures;

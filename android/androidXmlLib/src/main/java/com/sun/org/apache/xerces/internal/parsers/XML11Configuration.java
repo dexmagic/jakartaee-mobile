@@ -67,7 +67,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import javax.xml.XMLConstants;
-import javax.xml.catalog.CatalogFeatures;
+import android.xml.catalog.CatalogFeatures;
 import jdk.xml.internal.JdkConstants;
 import jdk.xml.internal.JdkXmlUtils;
 

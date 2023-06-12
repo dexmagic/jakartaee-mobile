@@ -33,7 +33,7 @@ import android.xml.stream.XMLStreamReader;
 import com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier;
 import com.sun.org.apache.xerces.internal.xni.XNIException;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
-import javax.xml.catalog.CatalogException;
+import android.xml.catalog.CatalogException;
 
 /**
  *

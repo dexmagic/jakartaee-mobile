@@ -46,8 +46,8 @@
  *     </li>
  *     <li>{@link CatalogFeatures} -- The {@link CatalogFeatures} class holds all
  *         of the features and properties the Catalog API supports, including
- *         {@code javax.xml.catalog.files}, {@code javax.xml.catalog.defer},
- *         {@code javax.xml.catalog.prefer}, and {@code javax.xml.catalog.resolve}.
+ *         {@code android.xml.catalog.files}, {@code android.xml.catalog.defer},
+ *         {@code android.xml.catalog.prefer}, and {@code android.xml.catalog.resolve}.
  *     </li>
  *     <li>{@link CatalogManager} -- The {@link CatalogManager} class manages the
  *         creation of XML catalogs and catalog resolvers.

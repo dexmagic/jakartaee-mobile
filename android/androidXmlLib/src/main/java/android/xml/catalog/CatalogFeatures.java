@@ -56,9 +56,9 @@ import java.util.Map;
  * <td>A semicolon-delimited list of URIs to locate the catalog files.
  * The URIs must be absolute and have a URL protocol handler for the URI scheme.
  * </td>
- * <td>javax.xml.catalog.files</td>
- * <td>javax.xml.catalog.files</td>
- * <td>javax.xml.catalog.files</td>
+ * <td>android.xml.catalog.files</td>
+ * <td>android.xml.catalog.files</td>
+ * <td>android.xml.catalog.files</td>
  * <td>String</td>
  * <th id="URIs" scope="row" style="font-weight:normal">URIs</th>
  * <td>
@@ -71,7 +71,7 @@ import java.util.Map;
  * <th rowspan="2" scope="row" style="font-weight:normal" id="PREFER">PREFER</th>
  * <td rowspan="2">Indicates the preference between the public and system
  * identifiers. The default value is public [3].</td>
- * <td rowspan="2">javax.xml.catalog.prefer</td>
+ * <td rowspan="2">android.xml.catalog.prefer</td>
  * <td rowspan="2">N/A</td>
  * <td rowspan="2">N/A</td>
  * <td rowspan="2">String</td>
@@ -92,9 +92,9 @@ import java.util.Map;
  * <td rowspan="2">Indicates that the alternative catalogs including those
  * specified in delegate entries or nextCatalog are not read until they are
  * needed. The default value is true.</td>
- * <td rowspan="2">javax.xml.catalog.defer [4]</td>
- * <td rowspan="2">javax.xml.catalog.defer</td>
- * <td rowspan="2">javax.xml.catalog.defer</td>
+ * <td rowspan="2">android.xml.catalog.defer [4]</td>
+ * <td rowspan="2">android.xml.catalog.defer</td>
+ * <td rowspan="2">android.xml.catalog.defer</td>
  * <td rowspan="2">String</td>
  * <th scope="row" id="true" style="font-weight:normal">{@code true}</th>
  * <td>
@@ -111,9 +111,9 @@ import java.util.Map;
  * <th rowspan="3" scope="row" style="font-weight:normal" id="RESOLVE">RESOLVE</th>
  * <td rowspan="3">Determines the action if there is no matching entry found after
  * all of the specified catalogs are exhausted. The default is strict.</td>
- * <td rowspan="3">javax.xml.catalog.resolve [4]</td>
- * <td rowspan="3">javax.xml.catalog.resolve</td>
- * <td rowspan="3">javax.xml.catalog.resolve</td>
+ * <td rowspan="3">android.xml.catalog.resolve [4]</td>
+ * <td rowspan="3">android.xml.catalog.resolve</td>
+ * <td rowspan="3">android.xml.catalog.resolve</td>
  * <td rowspan="3">String</td>
  * <th scope="row" id="strict" style="font-weight:normal">{@code strict}</th>
  * <td>
@@ -158,7 +158,7 @@ import java.util.Map;
  * of the main Catalog file will be used.
   * <p>
  * <b>[5]</b> If the intention is to share an entire catalog store, it may be desirable to
- * set the property {@code javax.xml.catalog.defer} to false to allow the entire
+ * set the property {@code android.xml.catalog.defer} to false to allow the entire
  * catalog to be pre-loaded.
  *
  * <h2>Scope and Order</h2>
@@ -206,7 +206,7 @@ import java.util.Map;
  * ({@link javax.xml.transform}). The features described above can be set through JAXP
  * factories or processors that define a setProperty or setAttribute interface.
  * For example, the following code snippet sets a URI to a catalog file on a SAX
- * parser through the {@code javax.xml.catalog.files} property:
+ * parser through the {@code android.xml.catalog.files} property:
  *
  * <pre>{@code
  *      SAXParserFactory spf = SAXParserFactory.newInstance();
@@ -220,7 +220,7 @@ import java.util.Map;
  * The JAXP processors will observe the default settings of the
  * {@link CatalogFeatures}. The processors, for example, will
  * report an Exception by default when no matching entry is found since the
- * default value of the {@code javax.xml.catalog.resolve} property is strict.
+ * default value of the {@code android.xml.catalog.resolve} property is strict.
  *
  * <p>
  * The JAXP processors give preference to user-specified custom resolvers. If such
@@ -345,28 +345,28 @@ import java.util.Map;
 public class CatalogFeatures {
 
     /**
-     * The constant name of the javax.xml.catalog.files property as described
+     * The constant name of the android.xml.catalog.files property as described
      * in the property table above.
      */
-    static final String CATALOG_FILES = "javax.xml.catalog.files";
+    static final String CATALOG_FILES = "android.xml.catalog.files";
 
     /**
-     * The javax.xml.catalog.prefer property as described
+     * The android.xml.catalog.prefer property as described
      * in the property table above.
      */
-    static final String CATALOG_PREFER = "javax.xml.catalog.prefer";
+    static final String CATALOG_PREFER = "android.xml.catalog.prefer";
 
     /**
-     * The javax.xml.catalog.defer property as described
+     * The android.xml.catalog.defer property as described
      * in the property table above.
      */
-    static final String CATALOG_DEFER = "javax.xml.catalog.defer";
+    static final String CATALOG_DEFER = "android.xml.catalog.defer";
 
     /**
-     * The javax.xml.catalog.resolve property as described
+     * The android.xml.catalog.resolve property as described
      * in the property table above.
      */
-    static final String CATALOG_RESOLVE = "javax.xml.catalog.resolve";
+    static final String CATALOG_RESOLVE = "android.xml.catalog.resolve";
 
     //values for the prefer property
     static final String PREFER_SYSTEM = "system";
@@ -387,25 +387,25 @@ public class CatalogFeatures {
      */
     public static enum Feature {
         /**
-         * The {@code javax.xml.catalog.files} property as described in
+         * The {@code android.xml.catalog.files} property as described in
          * item <a href="CatalogFeatures.html#FILES">FILES</a> of the
          * Catalog Features table.
          */
         FILES(CATALOG_FILES, null, true),
         /**
-         * The {@code javax.xml.catalog.prefer} property as described in
+         * The {@code android.xml.catalog.prefer} property as described in
          * item <a href="CatalogFeatures.html#PREFER">PREFER</a> of the
          * Catalog Features table.
          */
         PREFER(CATALOG_PREFER, PREFER_PUBLIC, false),
         /**
-         * The {@code javax.xml.catalog.defer} property as described in
+         * The {@code android.xml.catalog.defer} property as described in
          * item <a href="CatalogFeatures.html#DEFER">DEFER</a> of the
          * Catalog Features table.
          */
         DEFER(CATALOG_DEFER, DEFER_TRUE, true),
         /**
-         * The {@code javax.xml.catalog.resolve} property as described in
+         * The {@code android.xml.catalog.resolve} property as described in
          * item <a href="CatalogFeatures.html#RESOLVE">RESOLVE</a> of the
          * Catalog Features table.
          */
@@ -632,7 +632,7 @@ public class CatalogFeatures {
          * @param value the value to be set for the Feature
          * @return this Builder instance
          * @throws IllegalArgumentException if the value is not valid for the
-         * Feature or has the wrong syntax for the {@code javax.xml.catalog.files}
+         * Feature or has the wrong syntax for the {@code android.xml.catalog.files}
          * property
          */
         public Builder with(Feature feature, String value) {
