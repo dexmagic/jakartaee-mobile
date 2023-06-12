@@ -27,7 +27,6 @@ package android.xml.catalog;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
-import jdk.xml.internal.SecuritySupport;
 
 /**
  * Catalog Error messages
@@ -171,7 +170,7 @@ final class CatalogMessages {
      * cannot be found
      */
     static String formatMessage(String key, Object[] arguments, Locale locale) {
-        return SecuritySupport.getErrorMessage(locale, bundleName, key, arguments);
+        throw new UnsupportedOperationException("not supported on Android");
     }
 
     /**

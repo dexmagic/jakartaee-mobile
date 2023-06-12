@@ -24,6 +24,7 @@
  */
 
 package android.xml.stream;
+
 import android.xml.stream.events.Attribute;
 import android.xml.stream.events.Characters;
 import android.xml.stream.events.Comment;
@@ -38,10 +39,11 @@ import android.xml.stream.events.StartDocument;
 import android.xml.stream.events.StartElement;
 
 import com.sun.xml.internal.stream.events.XMLEventFactoryImpl;
+
 import java.util.Iterator;
+
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.namespace.QName;
-import javax.xml.stream.events.*;
 /**
  * This interface defines a utility class for creating instances of
  * XMLEvents

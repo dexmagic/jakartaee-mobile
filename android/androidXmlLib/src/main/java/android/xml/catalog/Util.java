@@ -32,8 +32,6 @@ import java.util.Iterator;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
-import jdk.xml.internal.SecuritySupport;
-
 /**
  *
  * @since 9

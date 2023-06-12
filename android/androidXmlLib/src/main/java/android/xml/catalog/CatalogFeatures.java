@@ -26,7 +26,6 @@ package android.xml.catalog;
 
 import java.util.HashMap;
 import java.util.Map;
-import jdk.xml.internal.SecuritySupport;
 
 /**
  * The CatalogFeatures holds a collection of features and properties.
@@ -215,18 +214,7 @@ import jdk.xml.internal.SecuritySupport;
  *      SAXParser parser = spf.newSAXParser();
  *      parser.setProperty(CatalogFeatures.Feature.FILES.getPropertyName(), "file:///etc/xml/catalog");
  * }</pre>
- * <p>
- * [1] Note that this statement is not required since the default value of
- * {@link javax.xml.XMLConstants#USE_CATALOG USE_CATALOG} is true.
  *
- * <p>
- * The JAXP Processors' support for Catalog depends on both the
- * {@link javax.xml.XMLConstants#USE_CATALOG USE_CATALOG} feature and the
- * existence of valid Catalog file(s). A JAXP processor will use the Catalog
- * only when the feature is true and valid Catalog file(s) are specified through
- * the {@code javax.xml.catalog.files} property. It will make no attempt to use
- * the Catalog if either {@link javax.xml.XMLConstants#USE_CATALOG USE_CATALOG}
- * is set to false, or there is no Catalog file specified.
  *
  * <p>
  * The JAXP processors will observe the default settings of the
@@ -579,7 +567,6 @@ public class CatalogFeatures {
     /**
      * Sets the value of a property, updates only if it shall override.
      *
-     * @param index the index of the property
      * @param state the state of the property
      * @param value the value of the property
      * @throws IllegalArgumentException if the value is invalid
@@ -613,20 +600,7 @@ public class CatalogFeatures {
      * @param sysPropertyName the name of system property
      */
     private boolean getSystemProperty(Feature cf, String sysPropertyName) {
-        if (cf.hasSystemProperty()) {
-            String value = SecuritySupport.getSystemProperty(sysPropertyName);
-            if (value != null && !value.isEmpty()) {
-                setProperty(cf, State.SYSTEMPROPERTY, value);
-                return true;
-            }
-
-            value = SecuritySupport.readJAXPProperty(sysPropertyName);
-            if (value != null && !value.isEmpty()) {
-                setProperty(cf, State.JAXPDOTPROPERTIES, value);
-                return true;
-            }
-        }
-        return false;
+        throw new UnsupportedOperationException("not supported on Android");
     }
 
     /**
