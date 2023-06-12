@@ -20,9 +20,6 @@
 
 package android.com.sun.org.apache.xalan.internal.res;
 
-import android.com.sun.org.apache.xpath.internal.res.XPATHMessages;
-import java.util.ResourceBundle;
-import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * Sets things up for issuing error messages. This class is misnamed, and should
@@ -31,17 +28,7 @@ import android.jdk.xml.internal.SecuritySupport;
  * @xsl.usage internal
  * @LastModified: Sep 2017
  */
-public class XSLMessages extends XPATHMessages {
-
-    /**
-     * The language specific resource object for Xalan messages.
-     */
-    private static ResourceBundle XSLTBundle = null;
-    /**
-     * The class name of the Xalan error message string table.
-     */
-    private static final String XSLT_ERROR_RESOURCES =
-            "com.sun.org.apache.xalan.internal.res.XSLTErrorResources";
+public class XSLMessages  {
 
     /**
      * Creates a message from the specified key and replacement arguments,
@@ -55,15 +42,7 @@ public class XSLMessages extends XPATHMessages {
      */
     public static String createMessage(String msgKey, Object args[]) //throws Exception
     {
-        if (XSLTBundle == null) {
-            XSLTBundle = SecuritySupport.getResourceBundle(XSLT_ERROR_RESOURCES);
-        }
-
-        if (XSLTBundle != null) {
-            return createMsg(XSLTBundle, msgKey, args);
-        } else {
-            return "Could not load any resource bundles.";
-        }
+        return msgKey;
     }
 
     /**
@@ -78,14 +57,6 @@ public class XSLMessages extends XPATHMessages {
      */
     public static String createWarning(String msgKey, Object args[]) //throws Exception
     {
-        if (XSLTBundle == null) {
-            XSLTBundle = SecuritySupport.getResourceBundle(XSLT_ERROR_RESOURCES);
-        }
-
-        if (XSLTBundle != null) {
-            return createMsg(XSLTBundle, msgKey, args);
-        } else {
-            return "Could not load any resource bundles.";
-        }
+       return msgKey;
     }
 }

@@ -24,27 +24,26 @@
  */
 package android.jdk.xml.internal;
 
-import android.com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl;
 import android.com.sun.org.apache.xerces.internal.impl.Constants;
 import android.com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl;
 import android.com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl;
 import android.com.sun.org.apache.xerces.internal.util.ParserConfigurationSettings;
 import android.com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager;
 import android.com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
-import javax.xml.XMLConstants;
 import android.xml.catalog.CatalogFeatures;
 import android.xml.catalog.CatalogFeatures.Feature;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParserFactory;
-import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.sax.SAXTransformerFactory;
 
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXNotRecognizedException;
 import org.xml.sax.SAXNotSupportedException;
 import org.xml.sax.XMLReader;
+
+import javax.xml.XMLConstants;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParserFactory;
+import javax.xml.transform.sax.SAXTransformerFactory;
 
 /**
  * Constants for use across JAXP processors.
@@ -354,15 +353,7 @@ public class JdkXmlUtils {
     }
 
     public static SAXTransformerFactory getSAXTransformFactory(boolean overrideDefaultParser) {
-        SAXTransformerFactory tf = overrideDefaultParser
-                ? (SAXTransformerFactory) SAXTransformerFactory.newInstance()
-                : (SAXTransformerFactory) new TransformerFactoryImpl();
-        try {
-            tf.setFeature(JdkConstants.OVERRIDE_PARSER, overrideDefaultParser);
-        } catch (TransformerConfigurationException ex) {
-            // ignore since it'd never happen with the JDK impl.
-        }
-        return tf;
+        return (SAXTransformerFactory)SAXTransformerFactory.newInstance();
     }
 
     /**

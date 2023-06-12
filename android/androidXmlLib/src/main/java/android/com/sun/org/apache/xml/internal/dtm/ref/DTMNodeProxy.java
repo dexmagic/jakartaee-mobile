@@ -26,10 +26,6 @@ package android.com.sun.org.apache.xml.internal.dtm.ref;
 import android.com.sun.org.apache.xml.internal.dtm.DTM;
 import android.com.sun.org.apache.xml.internal.dtm.DTMDOMException;
 
-import android.com.sun.org.apache.xpath.internal.NodeSet;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 import org.w3c.dom.Attr;
 import org.w3c.dom.CDATASection;
 import org.w3c.dom.Comment;
@@ -48,6 +44,10 @@ import org.w3c.dom.ProcessingInstruction;
 import org.w3c.dom.Text;
 import org.w3c.dom.TypeInfo;
 import org.w3c.dom.UserDataHandler;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 /**
  * <code>DTMNodeProxy</code> presents a DOM Node API front-end to the DTM model.
@@ -800,12 +800,26 @@ public class DTMNodeProxy
          }
        }
        int size = listVector.size();
-       NodeSet nodeSet = new NodeSet(size);
+
+       DTMNodeList result = new DTMNodeList();
        for (int i = 0; i < size; i++)
        {
-         nodeSet.addNode(listVector.get(i));
+         result.add(listVector.get(i));
        }
-       return (NodeList) nodeSet;
+       return result;
+  }
+
+  private class DTMNodeList extends ArrayList<Node> implements NodeList{
+
+    @Override
+    public Node item(int index) {
+      return this.get(index);
+    }
+
+    @Override
+    public int getLength() {
+      return this.size();
+    }
   }
 
   /**
@@ -928,12 +942,13 @@ public class DTMNodeProxy
       }
     }
     int size = listVector.size();
-    NodeSet nodeSet = new NodeSet(size);
+
+    DTMNodeList result = new DTMNodeList();
     for (int i = 0; i < size; i++)
     {
-      nodeSet.addNode(listVector.get(i));
+      result.add(listVector.get(i));
     }
-    return (NodeList) nodeSet;
+    return result;
   }
   /**
    *
@@ -1691,9 +1706,6 @@ public class DTMNodeProxy
      * <code>Text</code> nodes, as well as any user data or event listeners
      * registered on the nodes.
      * @param arg The node to compare equality with.
-     * @param deep If <code>true</code>, recursively compare the subtrees; if
-     *   <code>false</code>, compare only the nodes themselves (and its
-     *   attributes, if it is an <code>Element</code>).
      * @return If the nodes, and possibly subtrees are equal,
      *   <code>true</code> otherwise <code>false</code>.
      * @since DOM Level 3
@@ -1771,7 +1783,6 @@ public class DTMNodeProxy
      * Look up the namespace URI associated to the given prefix, starting from this node.
      * Use lookupNamespaceURI(null) to lookup the default namespace
      *
-     * @param namespaceURI
      * @return th URI for the namespace
      * @since DOM Level 3
      */

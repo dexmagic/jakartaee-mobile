@@ -20,14 +20,16 @@
 
 package android.com.sun.org.apache.xml.internal.serializer;
 
-import android.com.sun.org.apache.xalan.internal.utils.ObjectFactory;
+import android.com.sun.org.apache.xerces.internal.utils.ObjectFactory;
 import android.com.sun.org.apache.xml.internal.serializer.utils.MsgKey;
 import android.com.sun.org.apache.xml.internal.serializer.utils.Utils;
 import android.com.sun.org.apache.xml.internal.serializer.utils.WrappedRuntimeException;
 
-import java.util.Properties;
-import javax.xml.transform.OutputKeys;
 import org.xml.sax.ContentHandler;
+
+import java.util.Properties;
+
+import javax.xml.transform.OutputKeys;
 
 /**
  * This class is a public API, it is a factory for creating serializers.

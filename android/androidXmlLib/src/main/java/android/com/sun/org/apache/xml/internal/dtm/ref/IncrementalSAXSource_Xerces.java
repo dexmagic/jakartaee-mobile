@@ -20,19 +20,21 @@
 
 package android.com.sun.org.apache.xml.internal.dtm.ref;
 
-import android.com.sun.org.apache.xalan.internal.utils.ObjectFactory;
+
 import android.com.sun.org.apache.xerces.internal.parsers.SAXParser;
+import android.com.sun.org.apache.xerces.internal.utils.ObjectFactory;
 import android.com.sun.org.apache.xml.internal.res.XMLErrorResources;
 import android.com.sun.org.apache.xml.internal.res.XMLMessages;
 import android.com.sun.org.apache.xml.internal.serialize.XMLSerializer;
 import android.com.sun.org.apache.xml.internal.utils.WrappedRuntimeException;
 
-import java.io.IOException;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
+
+import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 
 
 /** <p>IncrementalSAXSource_Xerces takes advantage of the fact that Xerces1
@@ -112,7 +114,7 @@ public class IncrementalSAXSource_Xerces
                         // Build the parser configuration object. StandardParserConfiguration
                         // happens to implement XMLPullParserConfiguration, which is the API
                         // we're going to want to use.
-                        Class<?> xniStdConfigClass=ObjectFactory.findProviderClass(
+                        Class<?> xniStdConfigClass= ObjectFactory.findProviderClass(
                             "com.sun.org.apache.xerces.internal.parsers.StandardParserConfiguration",
                             true);
                         fPullParserConfig=xniStdConfigClass.getConstructor().newInstance();

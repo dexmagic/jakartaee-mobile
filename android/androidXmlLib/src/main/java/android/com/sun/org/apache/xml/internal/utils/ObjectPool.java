@@ -20,9 +20,10 @@
 
 package android.com.sun.org.apache.xml.internal.utils;
 
-import android.com.sun.org.apache.xalan.internal.utils.ObjectFactory;
+
 import android.com.sun.org.apache.xml.internal.res.XMLErrorResources;
 import android.com.sun.org.apache.xml.internal.res.XMLMessages;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,24 +55,6 @@ public class ObjectPool implements java.io.Serializable
   public ObjectPool(Class<?> type)
   {
     objectType = type;
-    freeStack = new ArrayList<>();
-  }
-
-  /**
-   * Constructor ObjectPool
-   *
-   * @param className Fully qualified name of the type of objects for this pool.
-   */
-  public ObjectPool(String className)
-  {
-    try
-    {
-      objectType = ObjectFactory.findProviderClass(className, true);
-    }
-    catch(ClassNotFoundException cnfe)
-    {
-      throw new WrappedRuntimeException(cnfe);
-    }
     freeStack = new ArrayList<>();
   }
 
