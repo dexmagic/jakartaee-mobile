@@ -23,8 +23,8 @@ package android.com.sun.org.apache.xpath.internal.functions;
 
 import android.com.sun.org.apache.xml.internal.dtm.DTM;
 import android.com.sun.org.apache.xml.internal.utils.QName;
-import com.sun.org.apache.xpath.internal.NodeSetDTM;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.NodeSetDTM;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.objects.XNodeSet;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
 import android.com.sun.org.apache.xpath.internal.res.XPATHErrorResources;

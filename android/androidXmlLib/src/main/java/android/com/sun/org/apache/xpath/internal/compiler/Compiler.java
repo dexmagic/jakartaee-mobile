@@ -38,7 +38,7 @@ import android.com.sun.org.apache.xml.internal.dtm.DTMIterator;
 import android.com.sun.org.apache.xml.internal.utils.PrefixResolver;
 import android.com.sun.org.apache.xml.internal.utils.QName;
 import android.com.sun.org.apache.xml.internal.utils.SAXSourceLocator;
-import com.sun.org.apache.xpath.internal.Expression;
+import android.com.sun.org.apache.xpath.internal.Expression;
 import android.com.sun.org.apache.xpath.internal.axes.UnionPathIterator;
 import android.com.sun.org.apache.xpath.internal.axes.WalkerFactory;
 import android.com.sun.org.apache.xpath.internal.functions.FuncExtFunction;

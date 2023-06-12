@@ -25,10 +25,10 @@ import android.com.sun.org.apache.xml.internal.utils.PrefixResolver;
 import android.com.sun.org.apache.xml.internal.utils.QName;
 import android.com.sun.org.apache.xml.internal.utils.WrappedRuntimeException;
 
-import com.sun.org.apache.xpath.internal.Expression;
-import com.sun.org.apache.xpath.internal.ExpressionOwner;
-import com.sun.org.apache.xpath.internal.XPathContext;
-import com.sun.org.apache.xpath.internal.XPathVisitor;
+import android.com.sun.org.apache.xpath.internal.Expression;
+import android.com.sun.org.apache.xpath.internal.ExpressionOwner;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathVisitor;
 import android.com.sun.org.apache.xpath.internal.axes.PathComponent;
 import android.com.sun.org.apache.xpath.internal.axes.WalkerFactory;
 import android.com.sun.org.apache.xpath.internal.objects.XNodeSet;

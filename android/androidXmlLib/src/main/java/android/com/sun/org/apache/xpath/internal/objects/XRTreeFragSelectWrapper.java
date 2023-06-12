@@ -24,8 +24,8 @@ import android.com.sun.org.apache.xalan.internal.res.XSLMessages;
 import android.com.sun.org.apache.xml.internal.dtm.DTMIterator;
 import android.com.sun.org.apache.xml.internal.utils.QName;
 import android.com.sun.org.apache.xml.internal.utils.XMLString;
-import com.sun.org.apache.xpath.internal.Expression;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.Expression;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.res.XPATHErrorResources;
 import java.util.List;
 

@@ -20,7 +20,7 @@
 
 package android.com.sun.org.apache.xpath.internal.functions;
 
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
 import android.com.sun.org.apache.xpath.internal.objects.XString;
 import android.com.sun.org.apache.xpath.internal.res.XPATHErrorResources;

@@ -22,8 +22,8 @@
 package android.com.sun.org.apache.xpath.internal.objects;
 
 import android.com.sun.org.apache.xml.internal.dtm.DTMManager;
-import com.sun.org.apache.xpath.internal.NodeSetDTM;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.NodeSetDTM;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

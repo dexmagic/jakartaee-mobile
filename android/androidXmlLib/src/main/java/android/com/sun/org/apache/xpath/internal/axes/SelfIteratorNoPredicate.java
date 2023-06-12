@@ -22,7 +22,7 @@
 package android.com.sun.org.apache.xpath.internal.axes;
 
 import android.com.sun.org.apache.xml.internal.dtm.DTM;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.compiler.Compiler;
 
 /**

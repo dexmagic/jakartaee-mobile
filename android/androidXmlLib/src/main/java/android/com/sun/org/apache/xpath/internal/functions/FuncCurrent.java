@@ -24,7 +24,7 @@ import android.com.sun.org.apache.xalan.internal.res.XSLMessages;
 import android.com.sun.org.apache.xalan.internal.res.XSLTErrorResources;
 import android.com.sun.org.apache.xml.internal.dtm.DTM;
 import android.com.sun.org.apache.xml.internal.utils.QName;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.axes.LocPathIterator;
 import android.com.sun.org.apache.xpath.internal.axes.PredicatedNodeTest;
 import android.com.sun.org.apache.xpath.internal.axes.SubContextList;

@@ -21,7 +21,7 @@
 package android.com.sun.org.apache.xpath.internal.jaxp;
 
 import android.com.sun.org.apache.xml.internal.utils.WrappedRuntimeException;
-import com.sun.org.apache.xpath.internal.*;
+import android.com.sun.org.apache.xpath.internal.*;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.namespace.QName;

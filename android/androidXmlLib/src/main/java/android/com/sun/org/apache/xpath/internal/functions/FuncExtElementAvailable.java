@@ -26,8 +26,8 @@ import android.com.sun.org.apache.xalan.internal.templates.Constants;
 /*
 import com.sun.org.apache.xalan.internal.transformer.TransformerImpl;
 */
-import com.sun.org.apache.xpath.internal.ExtensionsProvider;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.ExtensionsProvider;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.objects.XBoolean;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
 

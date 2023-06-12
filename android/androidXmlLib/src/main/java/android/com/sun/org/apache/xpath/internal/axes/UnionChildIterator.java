@@ -21,7 +21,7 @@
 package android.com.sun.org.apache.xpath.internal.axes;
 
 import android.com.sun.org.apache.xml.internal.utils.QName;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
 
 import java.util.List;

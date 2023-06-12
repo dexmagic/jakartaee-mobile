@@ -23,7 +23,7 @@ package android.com.sun.org.apache.xalan.internal.lib;
 import java.util.StringTokenizer;
 
 import android.com.sun.org.apache.xalan.internal.extensions.ExpressionContext;
-import com.sun.org.apache.xpath.internal.NodeSet;
+import android.com.sun.org.apache.xpath.internal.NodeSet;
 import android.com.sun.org.apache.xpath.internal.objects.XBoolean;
 import android.com.sun.org.apache.xpath.internal.objects.XNumber;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;

@@ -21,7 +21,7 @@
 package android.com.sun.org.apache.xpath.internal.jaxp;
 
 import android.com.sun.org.apache.xalan.internal.res.XSLMessages;
-import com.sun.org.apache.xpath.internal.ExtensionsProvider;
+import android.com.sun.org.apache.xpath.internal.ExtensionsProvider;
 import android.com.sun.org.apache.xpath.internal.functions.FuncExtFunction;
 import android.com.sun.org.apache.xpath.internal.objects.XNodeSet;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;

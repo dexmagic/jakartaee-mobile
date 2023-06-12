@@ -22,7 +22,7 @@
 package android.com.sun.org.apache.xpath.internal.objects;
 
 import android.com.sun.org.apache.xml.internal.dtm.DTM;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 
 /**
  * This class represents an XPath null object, and is capable of

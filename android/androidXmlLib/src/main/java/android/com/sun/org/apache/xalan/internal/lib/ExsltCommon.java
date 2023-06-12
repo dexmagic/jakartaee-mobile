@@ -27,7 +27,7 @@ import android.com.sun.org.apache.xml.internal.dtm.DTMIterator;
 import android.com.sun.org.apache.xml.internal.dtm.ref.DTMNodeIterator;
 import android.com.sun.org.apache.xpath.internal.axes.RTFIterator;
 
-import com.sun.org.apache.xpath.internal.NodeSet;
+import android.com.sun.org.apache.xpath.internal.NodeSet;
 
 /**
  * This class contains EXSLT common extension functions.

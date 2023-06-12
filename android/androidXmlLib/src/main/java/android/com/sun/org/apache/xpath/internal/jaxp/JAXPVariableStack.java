@@ -24,8 +24,8 @@ import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathVariableResolver;
 
 import android.com.sun.org.apache.xml.internal.utils.QName;
-import com.sun.org.apache.xpath.internal.VariableStack;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.VariableStack;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
 
 import android.com.sun.org.apache.xpath.internal.res.XPATHErrorResources;

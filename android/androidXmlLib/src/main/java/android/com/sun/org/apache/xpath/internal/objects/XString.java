@@ -28,9 +28,9 @@ import android.com.sun.org.apache.xml.internal.utils.WrappedRuntimeException;
 import android.com.sun.org.apache.xml.internal.utils.XMLCharacterRecognizer;
 import android.com.sun.org.apache.xml.internal.utils.XMLString;
 import android.com.sun.org.apache.xml.internal.utils.XMLStringFactory;
-import com.sun.org.apache.xpath.internal.ExpressionOwner;
-import com.sun.org.apache.xpath.internal.XPathContext;
-import com.sun.org.apache.xpath.internal.XPathVisitor;
+import android.com.sun.org.apache.xpath.internal.ExpressionOwner;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathVisitor;
 
 /**
  * This class represents an XPath string object, and is capable of

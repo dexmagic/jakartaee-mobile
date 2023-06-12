@@ -22,9 +22,9 @@ package android.com.sun.org.apache.xpath.internal.functions;
 
 import android.com.sun.org.apache.xalan.internal.res.XSLMessages;
 import android.com.sun.org.apache.xml.internal.utils.QName;
-import com.sun.org.apache.xpath.internal.Expression;
-import com.sun.org.apache.xpath.internal.ExpressionOwner;
-import com.sun.org.apache.xpath.internal.XPathVisitor;
+import android.com.sun.org.apache.xpath.internal.Expression;
+import android.com.sun.org.apache.xpath.internal.ExpressionOwner;
+import android.com.sun.org.apache.xpath.internal.XPathVisitor;
 import java.util.List;
 
 /**

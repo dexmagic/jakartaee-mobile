@@ -21,7 +21,7 @@
 
 package android.com.sun.org.apache.xpath.internal.operations;
 
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.objects.XNumber;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
 

@@ -24,7 +24,7 @@ import android.com.sun.org.apache.xml.internal.dtm.Axis;
 import android.com.sun.org.apache.xml.internal.dtm.DTM;
 import android.com.sun.org.apache.xml.internal.dtm.DTMAxisTraverser;
 import android.com.sun.org.apache.xml.internal.dtm.DTMIterator;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.compiler.Compiler;
 import android.com.sun.org.apache.xpath.internal.compiler.OpMap;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;

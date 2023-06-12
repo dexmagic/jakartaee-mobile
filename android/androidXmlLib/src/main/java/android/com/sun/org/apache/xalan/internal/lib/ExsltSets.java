@@ -23,7 +23,7 @@
 package android.com.sun.org.apache.xalan.internal.lib;
 
 import android.com.sun.org.apache.xml.internal.utils.DOM2Helper;
-import com.sun.org.apache.xpath.internal.NodeSet;
+import android.com.sun.org.apache.xpath.internal.NodeSet;
 import java.util.HashMap;
 import java.util.Map;
 import org.w3c.dom.Node;

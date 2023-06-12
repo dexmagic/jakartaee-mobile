@@ -22,8 +22,8 @@
 package android.com.sun.org.apache.xpath.internal.operations;
 
 import android.com.sun.org.apache.xml.internal.dtm.DTMManager;
-import com.sun.org.apache.xpath.internal.Expression;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.Expression;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.objects.XNodeSet;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
 

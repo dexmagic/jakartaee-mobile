@@ -21,7 +21,7 @@
 
 package android.com.sun.org.apache.xpath.internal.axes;
 
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 
 /**
  * A class that implements this interface is a sub context node list, meaning it

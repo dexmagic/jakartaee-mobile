@@ -25,7 +25,7 @@ import android.com.sun.org.apache.xml.internal.dtm.DTMIterator;
 import android.com.sun.org.apache.xml.internal.dtm.DTMManager;
 import android.com.sun.org.apache.xml.internal.utils.WrappedRuntimeException;
 import android.com.sun.org.apache.xml.internal.utils.XMLString;
-import com.sun.org.apache.xpath.internal.NodeSetDTM;
+import android.com.sun.org.apache.xpath.internal.NodeSetDTM;
 import android.com.sun.org.apache.xpath.internal.axes.NodeSequence;
 import java.util.ArrayList;
 import java.util.List;

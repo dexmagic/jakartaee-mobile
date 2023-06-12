@@ -26,7 +26,7 @@ package android.com.sun.org.apache.xml.internal.dtm.ref;
 import android.com.sun.org.apache.xml.internal.dtm.DTM;
 import android.com.sun.org.apache.xml.internal.dtm.DTMDOMException;
 
-import com.sun.org.apache.xpath.internal.NodeSet;
+import android.com.sun.org.apache.xpath.internal.NodeSet;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

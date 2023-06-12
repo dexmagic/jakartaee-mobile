@@ -22,7 +22,7 @@
 package android.com.sun.org.apache.xpath.internal.functions;
 
 import android.com.sun.org.apache.xml.internal.dtm.DTM;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
 import android.com.sun.org.apache.xpath.internal.objects.XString;
 

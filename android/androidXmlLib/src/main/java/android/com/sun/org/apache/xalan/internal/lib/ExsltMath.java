@@ -20,7 +20,7 @@
 
 package android.com.sun.org.apache.xalan.internal.lib;
 
-import com.sun.org.apache.xpath.internal.NodeSet;
+import android.com.sun.org.apache.xpath.internal.NodeSet;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;

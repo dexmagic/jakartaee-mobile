@@ -21,7 +21,7 @@
 package android.com.sun.org.apache.xalan.internal.lib;
 
 import java.util.StringTokenizer;
-import com.sun.org.apache.xpath.internal.NodeSet;
+import android.com.sun.org.apache.xpath.internal.NodeSet;
 import android.jdk.xml.internal.JdkXmlUtils;
 
 import org.w3c.dom.Document;

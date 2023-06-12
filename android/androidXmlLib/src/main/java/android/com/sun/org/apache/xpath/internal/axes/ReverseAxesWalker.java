@@ -23,7 +23,7 @@ package android.com.sun.org.apache.xpath.internal.axes;
 
 import android.com.sun.org.apache.xml.internal.dtm.DTM;
 import android.com.sun.org.apache.xml.internal.dtm.DTMAxisIterator;
-import com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathContext;
 
 /**
  * Walker for a reverse axes.
