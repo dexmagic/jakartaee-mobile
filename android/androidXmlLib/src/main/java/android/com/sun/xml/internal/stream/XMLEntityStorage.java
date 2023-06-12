@@ -25,15 +25,15 @@
 
 package android.com.sun.xml.internal.stream;
 
-import com.sun.org.apache.xerces.internal.impl.Constants;
-import com.sun.org.apache.xerces.internal.impl.PropertyManager;
-import com.sun.org.apache.xerces.internal.impl.XMLEntityManager;
-import com.sun.org.apache.xerces.internal.impl.XMLErrorReporter;
-import com.sun.org.apache.xerces.internal.impl.msg.XMLMessageFormatter;
-import com.sun.org.apache.xerces.internal.util.URI;
-import com.sun.org.apache.xerces.internal.util.XMLResourceIdentifierImpl;
-import com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager;
-import com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+import android.com.sun.org.apache.xerces.internal.impl.Constants;
+import android.com.sun.org.apache.xerces.internal.impl.PropertyManager;
+import android.com.sun.org.apache.xerces.internal.impl.XMLEntityManager;
+import android.com.sun.org.apache.xerces.internal.impl.XMLErrorReporter;
+import android.com.sun.org.apache.xerces.internal.impl.msg.XMLMessageFormatter;
+import android.com.sun.org.apache.xerces.internal.util.URI;
+import android.com.sun.org.apache.xerces.internal.util.XMLResourceIdentifierImpl;
+import android.com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager;
+import android.com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
 import java.util.HashMap;
 import java.util.Map;
 import android.jdk.xml.internal.SecuritySupport;

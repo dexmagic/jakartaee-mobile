@@ -20,23 +20,24 @@
  */
 
 package android.com.sun.xml.internal.stream.dtd;
+import android.com.sun.org.apache.xerces.internal.util.NamespaceSupport;
 import android.com.sun.xml.internal.stream.dtd.nonvalidating.DTDGrammar;
 import android.com.sun.xml.internal.stream.dtd.nonvalidating.XMLAttributeDecl;
 import android.com.sun.xml.internal.stream.dtd.nonvalidating.XMLElementDecl;
 import android.com.sun.xml.internal.stream.dtd.nonvalidating.XMLSimpleType;
 
-import com.sun.org.apache.xerces.internal.impl.Constants;
-import com.sun.org.apache.xerces.internal.util.SymbolTable;
-import com.sun.org.apache.xerces.internal.util.XMLChar;
-import com.sun.org.apache.xerces.internal.util.XMLSymbols;
-import com.sun.org.apache.xerces.internal.xni.Augmentations;
-import com.sun.org.apache.xerces.internal.xni.QName;
-import com.sun.org.apache.xerces.internal.xni.NamespaceContext;
-import com.sun.org.apache.xerces.internal.xni.XMLAttributes;
-import com.sun.org.apache.xerces.internal.xni.XMLString;
-import com.sun.org.apache.xerces.internal.xni.XNIException;
-import com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager;
-import com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+import android.com.sun.org.apache.xerces.internal.impl.Constants;
+import android.com.sun.org.apache.xerces.internal.util.SymbolTable;
+import android.com.sun.org.apache.xerces.internal.util.XMLChar;
+import android.com.sun.org.apache.xerces.internal.util.XMLSymbols;
+import android.com.sun.org.apache.xerces.internal.xni.Augmentations;
+import android.com.sun.org.apache.xerces.internal.xni.QName;
+import android.com.sun.org.apache.xerces.internal.xni.NamespaceContext;
+import android.com.sun.org.apache.xerces.internal.xni.XMLAttributes;
+import android.com.sun.org.apache.xerces.internal.xni.XMLString;
+import android.com.sun.org.apache.xerces.internal.xni.XNIException;
+import android.com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager;
+import android.com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
 import javax.xml.XMLConstants;
 
  /*
@@ -249,8 +250,7 @@ public class DTDGrammarUtil {
                         prefix = attRawName;
                     }
                     prefix = fSymbolTable.addSymbol(prefix);
-                    if (!((com.sun.org.apache.xerces.internal.util.
-                            NamespaceSupport) fNamespaceContext).
+                    if (!((NamespaceSupport) fNamespaceContext).
                             containsPrefixInCurrentContext(prefix)) {
                         fNamespaceContext.declarePrefix(prefix, attValue);
                     }

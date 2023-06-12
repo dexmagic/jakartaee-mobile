@@ -27,7 +27,7 @@ import java.io.IOException;
 
 import android.com.sun.xml.internal.stream.util.BufferAllocator;
 import android.com.sun.xml.internal.stream.util.ThreadLocalBufferAllocator;
-import com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier;
+import android.com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier;
 
 /**
  * Entity information.

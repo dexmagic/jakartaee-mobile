@@ -27,7 +27,7 @@ package android.com.sun.xml.internal.stream;
 
 import android.xml.stream.XMLEventReader;
 import android.xml.stream.XMLStreamReader;
-import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
+import android.com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
 
 /**
  *

@@ -32,11 +32,11 @@ import android.xml.stream.*;
 import android.xml.stream.util.XMLEventAllocator ;
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
-import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
-import com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl;
-import com.sun.org.apache.xerces.internal.impl.PropertyManager;
-import com.sun.org.apache.xerces.internal.impl.XMLStreamFilterImpl;
-import com.sun.org.apache.xerces.internal.impl.Constants;
+import android.com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
+import android.com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl;
+import android.com.sun.org.apache.xerces.internal.impl.PropertyManager;
+import android.com.sun.org.apache.xerces.internal.impl.XMLStreamFilterImpl;
+import android.com.sun.org.apache.xerces.internal.impl.Constants;
 
 /** Factory Implementation for XMLInputFactory.
  * @author Neeraj Bajaj Sun Microsystems

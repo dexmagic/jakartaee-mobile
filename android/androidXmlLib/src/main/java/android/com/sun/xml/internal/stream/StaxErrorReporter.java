@@ -31,13 +31,13 @@ import android.xml.stream.Location;
 import android.xml.stream.XMLInputFactory;
 import android.xml.stream.XMLReporter;
 import android.xml.stream.XMLStreamException;
-import com.sun.org.apache.xerces.internal.impl.msg.XMLMessageFormatter;
-import com.sun.org.apache.xerces.internal.util.MessageFormatter;
-import com.sun.org.apache.xerces.internal.xni.XMLLocator;
-import com.sun.org.apache.xerces.internal.xni.XNIException;
+import android.com.sun.org.apache.xerces.internal.impl.msg.XMLMessageFormatter;
+import android.com.sun.org.apache.xerces.internal.util.MessageFormatter;
+import android.com.sun.org.apache.xerces.internal.xni.XMLLocator;
+import android.com.sun.org.apache.xerces.internal.xni.XNIException;
 
-import com.sun.org.apache.xerces.internal.impl.PropertyManager;
-import com.sun.org.apache.xerces.internal.impl.XMLErrorReporter;
+import android.com.sun.org.apache.xerces.internal.impl.PropertyManager;
+import android.com.sun.org.apache.xerces.internal.impl.XMLErrorReporter;
 
 /**
  *

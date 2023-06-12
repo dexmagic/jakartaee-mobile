@@ -24,15 +24,15 @@
  */
 package android.com.sun.xml.internal.stream.events;
 
-import com.sun.org.apache.xerces.internal.impl.PropertyManager;
+import android.com.sun.org.apache.xerces.internal.impl.PropertyManager;
 import java.util.List;
 import android.xml.stream.util.XMLEventAllocator;
 import android.xml.stream.*;
 import android.xml.stream.events.*;
 import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
-import com.sun.org.apache.xerces.internal.util.NamespaceContextWrapper;
-import com.sun.org.apache.xerces.internal.util.NamespaceSupport;
+import android.com.sun.org.apache.xerces.internal.util.NamespaceContextWrapper;
+import android.com.sun.org.apache.xerces.internal.util.NamespaceSupport;
 import android.xml.stream.util.XMLEventConsumer;
 
 /**

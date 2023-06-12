@@ -29,7 +29,7 @@ import android.xml.stream.events.Characters;
 import java.io.Writer;
 import java.io.IOException;
 import android.xml.stream.events.XMLEvent;
-import com.sun.org.apache.xerces.internal.util.XMLChar;
+import android.com.sun.org.apache.xerces.internal.util.XMLChar;
 
 /** Implementation of Character event.
  *

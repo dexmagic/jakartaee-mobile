@@ -25,11 +25,11 @@
 
 package android.com.sun.xml.internal.stream.writers;
 
-import com.sun.org.apache.xerces.internal.impl.Constants;
-import com.sun.org.apache.xerces.internal.impl.PropertyManager;
-import com.sun.org.apache.xerces.internal.util.NamespaceSupport;
-import com.sun.org.apache.xerces.internal.util.SymbolTable;
-import com.sun.org.apache.xerces.internal.xni.QName;
+import android.com.sun.org.apache.xerces.internal.impl.Constants;
+import android.com.sun.org.apache.xerces.internal.impl.PropertyManager;
+import android.com.sun.org.apache.xerces.internal.util.NamespaceSupport;
+import android.com.sun.org.apache.xerces.internal.util.SymbolTable;
+import android.com.sun.org.apache.xerces.internal.xni.QName;
 import android.com.sun.xml.internal.stream.util.ReadOnlyIterator;
 import java.io.FileOutputStream;
 import java.io.IOException;

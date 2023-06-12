@@ -21,9 +21,17 @@
 
 package android.com.sun.xml.internal.stream;
 
+import android.com.sun.org.apache.xerces.internal.util.EncodingMap;
+import android.com.sun.org.apache.xerces.internal.util.SymbolTable;
+
 import java.io.IOException;
 
-import com.sun.org.apache.xerces.internal.util.XMLStringBuffer;
+import android.com.sun.org.apache.xerces.internal.util.XMLChar;
+import android.com.sun.org.apache.xerces.internal.util.XMLStringBuffer;
+import android.com.sun.org.apache.xerces.internal.xni.QName;
+import android.com.sun.org.apache.xerces.internal.xni.XMLLocator;
+import android.com.sun.org.apache.xerces.internal.xni.XMLString;
+
 import com.sun.org.apache.xerces.internal.xni.*;
 
 /**
@@ -66,9 +74,9 @@ public abstract class XMLEntityReader implements XMLLocator {
      *
      * @throws IOException  Thrown if the new encoding is not supported.
      *
-     * @see com.sun.org.apache.xerces.internal.util.EncodingMap
-     * @see com.sun.org.apache.xerces.internal.util.XMLChar#isValidIANAEncoding
-     * @see com.sun.org.apache.xerces.internal.util.XMLChar#isValidJavaEncoding
+     * @see EncodingMap
+     * @see XMLChar#isValidIANAEncoding
+     * @see XMLChar#isValidJavaEncoding
      */
     public abstract void setEncoding(String encoding)
     throws IOException;
@@ -118,8 +126,8 @@ public abstract class XMLEntityReader implements XMLLocator {
      * @throws IOException  Thrown if i/o error occurs.
      * @throws EOFException Thrown on end of file.
      *
-     * @see com.sun.org.apache.xerces.internal.util.SymbolTable
-     * @see com.sun.org.apache.xerces.internal.util.XMLChar#isName
+     * @see SymbolTable
+     * @see XMLChar#isName
      */
     public abstract String scanNmtoken() throws IOException;
 
@@ -135,9 +143,9 @@ public abstract class XMLEntityReader implements XMLLocator {
      * @throws IOException  Thrown if i/o error occurs.
      * @throws EOFException Thrown on end of file.
      *
-     * @see com.sun.org.apache.xerces.internal.util.SymbolTable
-     * @see com.sun.org.apache.xerces.internal.util.XMLChar#isName
-     * @see com.sun.org.apache.xerces.internal.util.XMLChar#isNameStart
+     * @see SymbolTable
+     * @see XMLChar#isName
+     * @see XMLChar#isNameStart
      */
     public abstract String scanName() throws IOException;
 
@@ -159,9 +167,9 @@ public abstract class XMLEntityReader implements XMLLocator {
      * @throws IOException  Thrown if i/o error occurs.
      * @throws EOFException Thrown on end of file.
      *
-     * @see com.sun.org.apache.xerces.internal.util.SymbolTable
-     * @see com.sun.org.apache.xerces.internal.util.XMLChar#isName
-     * @see com.sun.org.apache.xerces.internal.util.XMLChar#isNameStart
+     * @see SymbolTable
+     * @see XMLChar#isName
+     * @see XMLChar#isNameStart
      */
     public abstract boolean scanQName(QName qname) throws IOException;
 
@@ -279,7 +287,7 @@ public abstract class XMLEntityReader implements XMLLocator {
      * @throws IOException  Thrown if i/o error occurs.
      * @throws EOFException Thrown on end of file.
      *
-     * @see com.sun.org.apache.xerces.internal.util.XMLChar#isSpace
+     * @see XMLChar#isSpace
      */
     public abstract boolean skipSpaces() throws IOException;
 

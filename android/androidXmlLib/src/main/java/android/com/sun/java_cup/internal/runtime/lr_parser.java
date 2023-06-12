@@ -26,7 +26,7 @@
 
 package android.com.sun.java_cup.internal.runtime;
 
-import com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
+import android.com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
 import java.util.Arrays;
 import java.util.Stack;
 

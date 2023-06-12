@@ -29,7 +29,7 @@ import java.io.Writer;
 import java.io.OutputStream;
 import java.io.IOException;
 
-import com.sun.org.apache.xerces.internal.util.XMLChar;
+import android.com.sun.org.apache.xerces.internal.util.XMLChar;
 
 /**
  * <p>This class is used to write a stream of chars as a stream of

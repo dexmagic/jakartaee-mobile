@@ -27,7 +27,7 @@ package android.com.sun.xml.internal.stream.writers;
 
 import java.io.IOException;
 import java.io.Writer;
-import com.sun.org.apache.xerces.internal.util.XMLStringBuffer;
+import android.com.sun.org.apache.xerces.internal.util.XMLStringBuffer;
 
 /**
  * XMLWriter

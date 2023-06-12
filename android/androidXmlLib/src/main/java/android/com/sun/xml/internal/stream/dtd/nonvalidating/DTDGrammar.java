@@ -21,16 +21,16 @@
 
 package android.com.sun.xml.internal.stream.dtd.nonvalidating;
 
-import com.sun.org.apache.xerces.internal.util.SymbolTable;
-import com.sun.org.apache.xerces.internal.util.XMLSymbols;
-import com.sun.org.apache.xerces.internal.xni.Augmentations;
-import com.sun.org.apache.xerces.internal.xni.QName;
-import com.sun.org.apache.xerces.internal.xni.XMLLocator;
-import com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier;
-import com.sun.org.apache.xerces.internal.xni.XMLString;
-import com.sun.org.apache.xerces.internal.xni.XNIException;
-import com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelSource;
-import com.sun.org.apache.xerces.internal.xni.parser.XMLDTDSource;
+import android.com.sun.org.apache.xerces.internal.util.SymbolTable;
+import android.com.sun.org.apache.xerces.internal.util.XMLSymbols;
+import android.com.sun.org.apache.xerces.internal.xni.Augmentations;
+import android.com.sun.org.apache.xerces.internal.xni.QName;
+import android.com.sun.org.apache.xerces.internal.xni.XMLLocator;
+import android.com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier;
+import android.com.sun.org.apache.xerces.internal.xni.XMLString;
+import android.com.sun.org.apache.xerces.internal.xni.XNIException;
+import android.com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelSource;
+import android.com.sun.org.apache.xerces.internal.xni.parser.XMLDTDSource;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

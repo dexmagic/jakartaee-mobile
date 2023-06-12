@@ -27,7 +27,7 @@ package android.com.sun.xml.internal.stream.events;
 
 import android.xml.stream.events.EntityDeclaration;
 import android.xml.stream.events.XMLEvent;
-import com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier;
+import android.com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier;
 import android.jdk.xml.internal.JdkXmlUtils;
 
 /**

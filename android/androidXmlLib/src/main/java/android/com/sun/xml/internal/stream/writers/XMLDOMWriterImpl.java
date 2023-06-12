@@ -25,7 +25,7 @@
 
 package android.com.sun.xml.internal.stream.writers;
 
-import com.sun.org.apache.xerces.internal.dom.DocumentImpl;
+import android.com.sun.org.apache.xerces.internal.dom.DocumentImpl;
 
 import javax.xml.XMLConstants;
 

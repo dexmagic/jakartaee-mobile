@@ -21,7 +21,7 @@
 
 package android.com.sun.xml.internal.stream.dtd.nonvalidating;
 
-import com.sun.org.apache.xerces.internal.xni.QName;
+import android.com.sun.org.apache.xerces.internal.xni.QName;
 
 /**
  */

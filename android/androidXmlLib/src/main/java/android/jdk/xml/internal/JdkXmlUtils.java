@@ -24,13 +24,13 @@
  */
 package android.jdk.xml.internal;
 
-import com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl;
-import com.sun.org.apache.xerces.internal.impl.Constants;
-import com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl;
-import com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl;
-import com.sun.org.apache.xerces.internal.util.ParserConfigurationSettings;
-import com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager;
-import com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+import android.com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl;
+import android.com.sun.org.apache.xerces.internal.impl.Constants;
+import android.com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl;
+import android.com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl;
+import android.com.sun.org.apache.xerces.internal.util.ParserConfigurationSettings;
+import android.com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager;
+import android.com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
 import javax.xml.XMLConstants;
 import android.xml.catalog.CatalogFeatures;
 import android.xml.catalog.CatalogFeatures.Feature;

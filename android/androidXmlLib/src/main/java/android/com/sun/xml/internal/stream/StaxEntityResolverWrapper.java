@@ -30,9 +30,9 @@ import android.xml.stream.XMLEventReader;
 import android.xml.stream.XMLResolver;
 import android.xml.stream.XMLStreamException;
 import android.xml.stream.XMLStreamReader;
-import com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier;
-import com.sun.org.apache.xerces.internal.xni.XNIException;
-import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
+import android.com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier;
+import android.com.sun.org.apache.xerces.internal.xni.XNIException;
+import android.com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
 import android.xml.catalog.CatalogException;
 
 /**

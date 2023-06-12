@@ -25,7 +25,7 @@
 package android.jdk.xml.internal;
 
 
-import com.sun.org.apache.xerces.internal.util.SecurityManager;
+import android.com.sun.org.apache.xerces.internal.util.SecurityManager;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.xml.sax.SAXException;
