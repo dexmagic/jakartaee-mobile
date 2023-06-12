@@ -30,8 +30,7 @@ import java.util.Stack;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import com.sun.org.apache.xalan.internal.xsltc.runtime.Constants;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkXmlUtils;
 
 import org.w3c.dom.Comment;
 import org.w3c.dom.Document;

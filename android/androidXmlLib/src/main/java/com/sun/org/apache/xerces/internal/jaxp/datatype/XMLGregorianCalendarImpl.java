@@ -41,7 +41,6 @@ import javax.xml.datatype.DatatypeConstants;
 import javax.xml.datatype.Duration;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
-import jdk.xml.internal.SecuritySupport;
 
 /**
  * <p>Representation for W3C XML Schema 1.0 date/time datatypes.

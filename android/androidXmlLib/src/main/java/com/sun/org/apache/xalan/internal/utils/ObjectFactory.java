@@ -21,7 +21,7 @@
 package com.sun.org.apache.xalan.internal.utils;
 
 import java.util.function.Supplier;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * This class is duplicated for each JAXP subpackage so keep it in sync.

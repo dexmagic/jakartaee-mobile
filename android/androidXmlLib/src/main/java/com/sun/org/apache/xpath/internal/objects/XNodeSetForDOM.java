@@ -27,7 +27,7 @@ import com.sun.org.apache.xpath.internal.XPathContext;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.w3c.dom.traversal.NodeIterator;
+import android.org.w3c.dom.traversal.NodeIterator;
 
 /**
  * This class overrides the XNodeSet#object() method to provide the original

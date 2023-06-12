@@ -32,8 +32,8 @@ import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFunctionResolver;
 import javax.xml.xpath.XPathVariableResolver;
-import jdk.xml.internal.JdkXmlFeatures;
-import jdk.xml.internal.XMLSecurityManager;
+import android.jdk.xml.internal.JdkXmlFeatures;
+import android.jdk.xml.internal.XMLSecurityManager;
 import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 

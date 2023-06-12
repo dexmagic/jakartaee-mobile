@@ -49,9 +49,9 @@ import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLPullParserConfiguration;
 import java.io.IOException;
 import java.util.Locale;
-import javax.xml.XMLConstants;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkXmlUtils;
+
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkXmlUtils;
 
 /**
  * @xerces.internal

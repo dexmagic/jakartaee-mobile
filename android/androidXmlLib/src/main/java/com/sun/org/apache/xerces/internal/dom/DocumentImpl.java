@@ -41,17 +41,17 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.UserDataHandler;
-import org.w3c.dom.events.DocumentEvent;
-import org.w3c.dom.events.Event;
-import org.w3c.dom.events.EventException;
-import org.w3c.dom.events.EventListener;
-import org.w3c.dom.events.MutationEvent;
-import org.w3c.dom.ranges.DocumentRange;
-import org.w3c.dom.ranges.Range;
-import org.w3c.dom.traversal.DocumentTraversal;
-import org.w3c.dom.traversal.NodeFilter;
-import org.w3c.dom.traversal.NodeIterator;
-import org.w3c.dom.traversal.TreeWalker;
+import android.org.w3c.dom.events.DocumentEvent;
+import android.org.w3c.dom.events.Event;
+import android.org.w3c.dom.events.EventException;
+import android.org.w3c.dom.events.EventListener;
+import android.org.w3c.dom.events.MutationEvent;
+import android.org.w3c.dom.ranges.DocumentRange;
+import android.org.w3c.dom.ranges.Range;
+import android.org.w3c.dom.traversal.DocumentTraversal;
+import android.org.w3c.dom.traversal.NodeFilter;
+import android.org.w3c.dom.traversal.NodeIterator;
+import android.org.w3c.dom.traversal.TreeWalker;
 
 
 /**

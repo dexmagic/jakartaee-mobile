@@ -52,10 +52,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.StringTokenizer;
-import javax.xml.XMLConstants;
+
 import android.xml.catalog.CatalogFeatures;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkXmlUtils;
 import org.w3c.dom.DOMConfiguration;
 import org.w3c.dom.DOMErrorHandler;
 import org.w3c.dom.DOMException;

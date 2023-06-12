@@ -30,9 +30,9 @@ import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
 import com.sun.org.apache.xml.internal.utils.SystemIDResolver;
 import java.util.Iterator;
-import javax.xml.XMLConstants;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.SecuritySupport;
+
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.SecuritySupport;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 

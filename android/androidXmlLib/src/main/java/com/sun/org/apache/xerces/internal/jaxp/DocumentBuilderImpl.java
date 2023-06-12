@@ -21,7 +21,6 @@
 package com.sun.org.apache.xerces.internal.jaxp;
 
 import java.io.IOException;
-import java.util.Iterator;
 import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -45,8 +44,8 @@ import com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkProperty;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkProperty;
 import org.w3c.dom.DOMImplementation;
 import org.w3c.dom.Document;
 import org.xml.sax.EntityResolver;

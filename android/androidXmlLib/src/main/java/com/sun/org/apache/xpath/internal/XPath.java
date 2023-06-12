@@ -36,7 +36,7 @@ import java.util.List;
 import javax.xml.transform.ErrorListener;
 import javax.xml.transform.SourceLocator;
 import javax.xml.transform.TransformerException;
-import jdk.xml.internal.XMLSecurityManager;
+import android.jdk.xml.internal.XMLSecurityManager;
 
 /**
  * The XPath class wraps an expression object and provides general services

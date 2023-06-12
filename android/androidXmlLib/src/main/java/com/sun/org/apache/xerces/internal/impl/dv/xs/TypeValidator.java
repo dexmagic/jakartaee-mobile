@@ -23,7 +23,7 @@ package com.sun.org.apache.xerces.internal.impl.dv.xs;
 import com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
 import com.sun.org.apache.xerces.internal.impl.dv.ValidationContext;
 import com.sun.org.apache.xerces.internal.util.XMLChar;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * All primitive types plus ID/IDREF/ENTITY/INTEGER are derived from this abstract

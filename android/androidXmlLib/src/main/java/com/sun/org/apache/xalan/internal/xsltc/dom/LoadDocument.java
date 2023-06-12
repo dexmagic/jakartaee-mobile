@@ -34,8 +34,8 @@ import com.sun.org.apache.xml.internal.dtm.ref.EmptyIterator;
 import com.sun.org.apache.xml.internal.utils.SystemIDResolver;
 import java.io.FileNotFoundException;
 import javax.xml.transform.stream.StreamSource;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * @author Morten Jorgensen

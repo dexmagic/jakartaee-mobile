@@ -32,7 +32,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Properties;
-import jdk.xml.internal.SecuritySupport;
+
 import com.sun.org.apache.xml.internal.serializer.DOM3Serializer;
 import com.sun.org.apache.xml.internal.serializer.Encodings;
 import com.sun.org.apache.xml.internal.serializer.Serializer;
@@ -41,10 +41,10 @@ import com.sun.org.apache.xml.internal.serializer.OutputPropertiesFactory;
 import com.sun.org.apache.xml.internal.serializer.utils.MsgKey;
 import com.sun.org.apache.xml.internal.serializer.utils.Utils;
 import com.sun.org.apache.xml.internal.serializer.utils.SystemIDResolver;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkProperty;
-import jdk.xml.internal.JdkProperty.ImplPropMap;
-import jdk.xml.internal.JdkProperty.State;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkProperty;
+import android.jdk.xml.internal.JdkProperty.ImplPropMap;
+import android.jdk.xml.internal.JdkProperty.State;
 import org.w3c.dom.DOMConfiguration;
 import org.w3c.dom.DOMError;
 import org.w3c.dom.DOMErrorHandler;
@@ -55,7 +55,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.ls.LSException;
 import org.w3c.dom.ls.LSOutput;
 import org.w3c.dom.ls.LSSerializer;
-import org.w3c.dom.ls.LSSerializerFilter;
+import android.org.w3c.dom.ls.LSSerializerFilter;
 
 
 /**

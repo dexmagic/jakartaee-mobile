@@ -36,7 +36,7 @@ import java.io.Serializable;
 import java.util.List;
 import org.w3c.dom.DocumentFragment;
 import org.w3c.dom.NodeList;
-import org.w3c.dom.traversal.NodeIterator;
+import android.org.w3c.dom.traversal.NodeIterator;
 
 /**
  * This class represents an XPath object, and is capable of

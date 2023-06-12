@@ -20,7 +20,6 @@
 
 package com.sun.org.apache.xerces.internal.impl ;
 
-import com.sun.org.apache.xerces.internal.impl.io.ASCIIReader;
 import com.sun.org.apache.xerces.internal.impl.io.UCSReader;
 import com.sun.org.apache.xerces.internal.impl.io.UTF16Reader;
 import com.sun.org.apache.xerces.internal.impl.io.UTF8Reader;
@@ -50,7 +49,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Stack;
 import java.util.StringTokenizer;
-import javax.xml.XMLConstants;
+
 import android.xml.catalog.CatalogException;
 import android.xml.catalog.CatalogFeatures.Feature;
 import android.xml.catalog.CatalogFeatures;
@@ -58,9 +57,9 @@ import android.xml.catalog.CatalogManager;
 import android.xml.catalog.CatalogResolver;
 import android.xml.stream.XMLInputFactory;
 import javax.xml.transform.Source;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkXmlUtils;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.SecuritySupport;
 import org.xml.sax.InputSource;
 
 

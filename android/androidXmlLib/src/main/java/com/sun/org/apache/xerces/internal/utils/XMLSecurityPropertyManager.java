@@ -25,9 +25,8 @@
 
 package com.sun.org.apache.xerces.internal.utils;
 
-import javax.xml.XMLConstants;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * This class manages security related properties

@@ -57,7 +57,7 @@ import org.w3c.dom.ProcessingInstruction;
 import org.w3c.dom.ls.LSException;
 import org.w3c.dom.ls.LSOutput;
 import org.w3c.dom.ls.LSSerializer;
-import org.w3c.dom.ls.LSSerializerFilter;
+import android.org.w3c.dom.ls.LSSerializerFilter;
 
 /**
  * EXPERIMENTAL: Implemenatation of DOM Level 3 org.w3c.ls.LSSerializer by

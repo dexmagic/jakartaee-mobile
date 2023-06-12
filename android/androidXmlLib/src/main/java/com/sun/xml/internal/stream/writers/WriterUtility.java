@@ -31,7 +31,7 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetEncoder;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * Implements common xml writer functions.

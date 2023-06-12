@@ -27,10 +27,10 @@ package com.sun.org.apache.xerces.internal.utils;
 
 import com.sun.org.apache.xerces.internal.util.SecurityManager;
 import java.util.concurrent.CopyOnWriteArrayList;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkProperty.State;
-import jdk.xml.internal.JdkProperty.ImplPropMap;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkProperty.State;
+import android.jdk.xml.internal.JdkProperty.ImplPropMap;
+import android.jdk.xml.internal.SecuritySupport;
 import org.xml.sax.SAXException;
 
 /**

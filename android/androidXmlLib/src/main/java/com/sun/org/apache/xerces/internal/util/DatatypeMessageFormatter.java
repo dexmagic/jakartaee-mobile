@@ -23,7 +23,7 @@ package com.sun.org.apache.xerces.internal.util;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * <p>Used to format JAXP 1.3 Datatype API error messages using a specified locale.</p>

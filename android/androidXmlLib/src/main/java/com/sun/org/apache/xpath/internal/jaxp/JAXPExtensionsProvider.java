@@ -32,7 +32,7 @@ import javax.xml.namespace.QName;
 import javax.xml.xpath.XPathFunction;
 import javax.xml.xpath.XPathFunctionException;
 import javax.xml.xpath.XPathFunctionResolver;
-import jdk.xml.internal.JdkXmlFeatures;
+import android.jdk.xml.internal.JdkXmlFeatures;
 
 /**
  *

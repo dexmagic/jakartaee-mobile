@@ -49,13 +49,13 @@ import com.sun.xml.internal.stream.dtd.DTDGrammarUtil;
 import java.io.CharConversionException;
 import java.io.EOFException;
 import java.io.IOException;
-import javax.xml.XMLConstants;
+
 import android.xml.stream.XMLInputFactory;
 import android.xml.stream.XMLStreamConstants;
 import android.xml.stream.events.XMLEvent;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkXmlUtils;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  *

@@ -24,7 +24,7 @@ import com.sun.org.apache.bcel.internal.generic.Type;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.Constants;
 import com.sun.org.apache.xml.internal.utils.XML11Char;
 import java.util.StringTokenizer;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * @author Jacek Ambroziak

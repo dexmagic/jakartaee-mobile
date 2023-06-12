@@ -27,14 +27,14 @@ import com.sun.org.apache.xpath.internal.NodeSet;
 import com.sun.org.apache.xpath.internal.objects.XBoolean;
 import com.sun.org.apache.xpath.internal.objects.XNumber;
 import com.sun.org.apache.xpath.internal.objects.XObject;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkXmlUtils;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.DocumentFragment;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Text;
-import org.w3c.dom.traversal.NodeIterator;
+import android.org.w3c.dom.traversal.NodeIterator;
 
 import org.xml.sax.SAXNotSupportedException;
 

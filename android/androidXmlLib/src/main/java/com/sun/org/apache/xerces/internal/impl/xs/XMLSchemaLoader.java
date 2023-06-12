@@ -74,11 +74,10 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.WeakHashMap;
-import javax.xml.XMLConstants;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkXmlFeatures;
-import jdk.xml.internal.JdkXmlUtils;
-import jdk.xml.internal.SecuritySupport;
+
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.SecuritySupport;
 import org.w3c.dom.DOMConfiguration;
 import org.w3c.dom.DOMError;
 import org.w3c.dom.DOMErrorHandler;

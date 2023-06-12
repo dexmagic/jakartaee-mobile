@@ -23,8 +23,8 @@ package com.sun.org.apache.xerces.internal.dom;
 
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Node;
-import org.w3c.dom.traversal.NodeFilter;
-import org.w3c.dom.traversal.TreeWalker;
+import android.org.w3c.dom.traversal.NodeFilter;
+import android.org.w3c.dom.traversal.TreeWalker;
 
 /** This class implements the TreeWalker interface.
  *

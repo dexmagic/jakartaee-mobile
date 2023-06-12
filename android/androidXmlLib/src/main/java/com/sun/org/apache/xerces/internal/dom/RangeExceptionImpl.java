@@ -21,7 +21,7 @@
 
 package com.sun.org.apache.xerces.internal.dom;
 
-import org.w3c.dom.ranges.RangeException;
+import android.org.w3c.dom.ranges.RangeException;
 
 /**
  * @xerces.internal

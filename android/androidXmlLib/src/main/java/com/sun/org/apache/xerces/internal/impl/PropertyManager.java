@@ -28,14 +28,14 @@ import com.sun.org.apache.xerces.internal.utils.XMLSecurityManager;
 import com.sun.org.apache.xerces.internal.utils.XMLSecurityPropertyManager;
 import com.sun.xml.internal.stream.StaxEntityResolverWrapper;
 import java.util.HashMap;
-import javax.xml.XMLConstants;
+
 import android.xml.catalog.CatalogFeatures;
 import android.xml.stream.XMLInputFactory;
 import android.xml.stream.XMLOutputFactory;
 import android.xml.stream.XMLResolver;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkProperty;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkProperty;
+import android.jdk.xml.internal.JdkXmlUtils;
 
 /**
  * This class manages the properties for the Stax specification and its

@@ -25,7 +25,7 @@ import javax.xml.transform.ErrorListener;
 
 import com.sun.org.apache.xpath.internal.objects.XObject;
 import org.w3c.dom.Node;
-import org.w3c.dom.traversal.NodeIterator;
+import android.org.w3c.dom.traversal.NodeIterator;
 
 /**
  * An object that implements this interface can supply

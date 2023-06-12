@@ -42,7 +42,7 @@ import com.sun.org.apache.xml.internal.utils.PrefixResolver;
 import com.sun.org.apache.xml.internal.utils.SystemIDResolver;
 import com.sun.org.apache.xml.internal.utils.XMLReaderManager;
 import com.sun.org.apache.xml.internal.utils.XMLStringFactory;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkXmlUtils;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

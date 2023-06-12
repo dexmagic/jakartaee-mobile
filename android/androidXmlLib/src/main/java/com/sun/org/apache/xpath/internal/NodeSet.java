@@ -28,8 +28,8 @@ import com.sun.org.apache.xpath.internal.res.XPATHErrorResources;
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.w3c.dom.traversal.NodeFilter;
-import org.w3c.dom.traversal.NodeIterator;
+import android.org.w3c.dom.traversal.NodeFilter;
+import android.org.w3c.dom.traversal.NodeIterator;
 
 
 /**

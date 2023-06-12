@@ -22,7 +22,7 @@ package com.sun.org.apache.xml.internal.serializer;
 
 import java.util.Properties;
 import javax.xml.transform.OutputKeys;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * This class is a factory to generate a set of default properties

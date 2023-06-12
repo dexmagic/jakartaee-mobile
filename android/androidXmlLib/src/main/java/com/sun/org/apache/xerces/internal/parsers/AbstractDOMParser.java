@@ -56,7 +56,7 @@ import com.sun.org.apache.xerces.internal.xs.ElementPSVI;
 import com.sun.org.apache.xerces.internal.xs.XSTypeDefinition;
 import java.util.Locale;
 import java.util.Stack;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkXmlUtils;
 import org.w3c.dom.Attr;
 import org.w3c.dom.CDATASection;
 import org.w3c.dom.Comment;
@@ -71,7 +71,7 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.ProcessingInstruction;
 import org.w3c.dom.Text;
 import org.w3c.dom.ls.LSParserFilter;
-import org.w3c.dom.traversal.NodeFilter;
+import android.org.w3c.dom.traversal.NodeFilter;
 import org.xml.sax.SAXException;
 
 /**

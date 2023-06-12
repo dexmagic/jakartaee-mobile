@@ -20,8 +20,8 @@
 
 package com.sun.org.apache.xalan.internal.xsltc.trax;
 
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.XMLSecurityManager;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.XMLSecurityManager;
 import com.sun.org.apache.xalan.internal.utils.FeaturePropertyBase;
 import com.sun.org.apache.xalan.internal.utils.ObjectFactory;
 import com.sun.org.apache.xalan.internal.utils.XMLSecurityPropertyManager.Property;
@@ -71,13 +71,13 @@ import javax.xml.transform.sax.TransformerHandler;
 import android.xml.transform.stax.*;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-import jdk.xml.internal.JdkProperty;
-import jdk.xml.internal.JdkXmlFeatures;
-import jdk.xml.internal.JdkXmlUtils;
-import jdk.xml.internal.JdkProperty.ImplPropMap;
-import jdk.xml.internal.JdkProperty.State;
-import jdk.xml.internal.SecuritySupport;
-import jdk.xml.internal.TransformErrorListener;
+import android.jdk.xml.internal.JdkProperty;
+import android.jdk.xml.internal.JdkXmlFeatures;
+import android.jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkProperty.ImplPropMap;
+import android.jdk.xml.internal.JdkProperty.State;
+import android.jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.TransformErrorListener;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLFilter;

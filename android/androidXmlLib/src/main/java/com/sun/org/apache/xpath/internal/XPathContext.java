@@ -20,6 +20,8 @@
 
 package com.sun.org.apache.xpath.internal;
 
+import android.org.w3c.dom.traversal.NodeIterator;
+
 import com.sun.org.apache.xalan.internal.extensions.ExpressionContext;
 import com.sun.org.apache.xalan.internal.res.XSLMessages;
 import com.sun.org.apache.xml.internal.dtm.Axis;
@@ -1039,7 +1041,7 @@ public class XPathContext extends DTMManager // implements ExpressionContext
      * @return An iterator for the current context list, as
      * defined in XSLT.
      */
-    public org.w3c.dom.traversal.NodeIterator getContextNodes()
+    public NodeIterator getContextNodes()
     {
       return new com.sun.org.apache.xml.internal.dtm.ref.DTMNodeIterator(getContextNodeList());
     }

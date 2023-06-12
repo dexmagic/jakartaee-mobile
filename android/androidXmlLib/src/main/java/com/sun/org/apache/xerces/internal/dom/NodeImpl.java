@@ -32,9 +32,9 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.UserDataHandler;
-import org.w3c.dom.events.Event;
-import org.w3c.dom.events.EventListener;
-import org.w3c.dom.events.EventTarget;
+import android.org.w3c.dom.events.Event;
+import android.org.w3c.dom.events.EventListener;
+import android.org.w3c.dom.events.EventTarget;
 
 /**
  * NodeImpl provides the basic structure of a DOM tree. It is never used

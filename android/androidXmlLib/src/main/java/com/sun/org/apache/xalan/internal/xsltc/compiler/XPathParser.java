@@ -34,10 +34,10 @@ import com.sun.org.apache.xml.internal.dtm.DTM;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.XMLLimitAnalyzer;
-import jdk.xml.internal.XMLSecurityManager;
-import jdk.xml.internal.XMLSecurityManager.Limit;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.XMLLimitAnalyzer;
+import android.jdk.xml.internal.XMLSecurityManager;
+import android.jdk.xml.internal.XMLSecurityManager.Limit;
 
 /**
  * CUP v0.11b generated parser.

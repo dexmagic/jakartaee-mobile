@@ -25,7 +25,7 @@ import java.io.IOException;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.DOMErrorHandler;
-import org.w3c.dom.ls.LSSerializerFilter;
+import android.org.w3c.dom.ls.LSSerializerFilter;
 
 /**
  * Interface for a DOM serializer capable of serializing DOMs as specified in

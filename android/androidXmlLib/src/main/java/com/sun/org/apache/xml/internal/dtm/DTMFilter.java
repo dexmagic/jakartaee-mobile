@@ -21,6 +21,8 @@
 
 package com.sun.org.apache.xml.internal.dtm;
 
+import android.org.w3c.dom.traversal.NodeFilter;
+
 /**
  * Simple filter for doing node tests.  Note the semantics of this are
  * somewhat different that the DOM's NodeFilter.
@@ -122,7 +124,7 @@ public interface DTMFilter
 
    * This bit instructs the iterator to show namespace nodes, which
    * are modeled by DTM but not by the DOM.  Make sure this does not
-   * conflict with {@link org.w3c.dom.traversal.NodeFilter}.
+   * conflict with {@link NodeFilter}.
    * <p>
    * %REVIEW% Might be safer to start from higher bits and work down,
    * to leave room for the DOM to expand its set of constants... Or,
@@ -133,7 +135,7 @@ public interface DTMFilter
   /**
    * Special bit for filters implementing match patterns starting with
    * a function.  Make sure this does not conflict with
-   * {@link org.w3c.dom.traversal.NodeFilter}.
+   * {@link NodeFilter}.
    * <p>
    * %REVIEW% Might be safer to start from higher bits and work down,
    * to leave room for the DOM to expand its set of constants... Or,

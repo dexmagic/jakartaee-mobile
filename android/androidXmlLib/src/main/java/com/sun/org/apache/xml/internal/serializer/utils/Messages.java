@@ -22,7 +22,7 @@ package com.sun.org.apache.xml.internal.serializer.utils;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * A utility class for issuing error messages.

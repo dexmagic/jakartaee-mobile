@@ -68,8 +68,8 @@ import java.util.List;
 import java.util.Locale;
 import javax.xml.XMLConstants;
 import android.xml.catalog.CatalogFeatures;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkXmlUtils;
 
 /**
  * This class is the configuration used to parse XML 1.0 and XML 1.1 documents.

@@ -23,11 +23,8 @@
 
 package com.sun.org.apache.xalan.internal.xsltc.trax;
 
-import com.sun.org.apache.bcel.internal.classfile.Module;
-import com.sun.org.apache.xalan.internal.utils.ObjectFactory;
 import com.sun.org.apache.xalan.internal.xsltc.DOM;
 import com.sun.org.apache.xalan.internal.xsltc.Translet;
-import com.sun.org.apache.xalan.internal.xsltc.compiler.Constants;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMsg;
 import com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet;
 
@@ -37,24 +34,15 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.ObjectStreamField;
 import java.io.Serializable;
-import java.lang.module.Configuration;
+/*import java.lang.module.Configuration;
 import java.lang.module.ModuleDescriptor;
 import java.lang.module.ModuleFinder;
 import java.lang.module.ModuleReader;
-import java.lang.module.ModuleReference;
+import java.lang.module.ModuleReference;*/
 import java.lang.reflect.InvocationTargetException;
-import java.security.AccessController;
-import java.security.CodeSigner;
-import java.security.CodeSource;
-import java.security.PermissionCollection;
-import java.security.PrivilegedAction;
 import java.security.ProtectionDomain;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 import java.util.Properties;
-import java.util.Set;
 
 import javax.xml.XMLConstants;
 import javax.xml.transform.Templates;
@@ -62,8 +50,8 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.URIResolver;
 
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.SecuritySupport;
 
 
 /**
@@ -411,56 +399,14 @@ public final class TemplatesImpl implements Templates, Serializable {
 
 
     /**
-     * Creates a module layer with one module that is defined to the given class
-     * loader.
-     */
-    private Module createModule(ModuleDescriptor descriptor, ClassLoader loader) {
-        String mn = descriptor.name();
-
-        ModuleReference mref = new ModuleReference(descriptor, null) {
-            @Override
-            public ModuleReader open() {
-                throw new UnsupportedOperationException();
-            }
-        };
-
-        ModuleFinder finder = new ModuleFinder() {
-            @Override
-            public Optional<ModuleReference> find(String name) {
-                if (name.equals(mn)) {
-                    return Optional.of(mref);
-                } else {
-                    return Optional.empty();
-                }
-            }
-            @Override
-            public Set<ModuleReference> findAll() {
-                return Set.of(mref);
-            }
-        };
-
-        ModuleLayer bootLayer = ModuleLayer.boot();
-
-        Configuration cf = bootLayer.configuration()
-                .resolve(finder, ModuleFinder.of(), Set.of(mn));
-
-        PrivilegedAction<ModuleLayer> pa = () -> bootLayer.defineModules(cf, name -> loader);
-        @SuppressWarnings("removal")
-        ModuleLayer layer = AccessController.doPrivileged(pa);
-
-        Module m = layer.findModule(mn).get();
-        assert m.getLayer() == layer;
-
-        return m;
-    }
-
-    /**
      * Defines the translet class and auxiliary classes.
      * Returns a reference to the Class object that defines the main class
      */
     private void defineTransletClasses()
         throws TransformerConfigurationException {
 
+        throw new TransformerConfigurationException("not supported on Android");
+        /*
         if (_bytecodes == null) {
             ErrorMsg err = new ErrorMsg(ErrorMsg.NO_TRANSLET_CLASS_ERR);
             throw new TransformerConfigurationException(err.toString());
@@ -541,7 +487,7 @@ public final class TemplatesImpl implements Templates, Serializable {
         catch (LinkageError e) {
             ErrorMsg err = new ErrorMsg(ErrorMsg.TRANSLET_OBJECT_ERR, _name);
             throw new TransformerConfigurationException(err.toString(), e);
-        }
+        }*/
     }
 
     /**

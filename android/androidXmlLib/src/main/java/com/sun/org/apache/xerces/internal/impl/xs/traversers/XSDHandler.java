@@ -101,14 +101,14 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Stack;
-import javax.xml.XMLConstants;
+
 import android.xml.catalog.CatalogFeatures;
 import android.xml.stream.XMLEventReader;
 import android.xml.stream.XMLStreamException;
 import android.xml.stream.XMLStreamReader;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkXmlUtils;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.SecuritySupport;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

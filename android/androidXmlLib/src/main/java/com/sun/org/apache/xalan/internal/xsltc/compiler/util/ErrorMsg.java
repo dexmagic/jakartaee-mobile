@@ -25,7 +25,7 @@ import com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode;
 import java.text.MessageFormat;
 import java.util.Locale;
 import java.util.ResourceBundle;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * @author Jacek Ambroziak

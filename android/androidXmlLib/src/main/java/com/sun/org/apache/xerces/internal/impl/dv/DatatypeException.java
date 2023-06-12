@@ -21,9 +21,8 @@
 package com.sun.org.apache.xerces.internal.impl.dv;
 
 import java.util.MissingResourceException;
-import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * Base class for datatype exceptions. For DTD types, the exception can be

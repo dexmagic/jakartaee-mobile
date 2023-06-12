@@ -29,7 +29,7 @@ import com.sun.org.apache.xerces.internal.utils.XMLSecurityManager.Limit;
 import java.util.Formatter;
 import java.util.HashMap;
 import java.util.Map;
-import jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkConstants;
 
 /**
  * A helper for analyzing entity expansion limits

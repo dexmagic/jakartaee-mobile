@@ -72,14 +72,14 @@ import java.util.Locale;
 import java.util.Objects;
 import java.util.Stack;
 import java.util.StringTokenizer;
-import javax.xml.XMLConstants;
+
 import android.xml.catalog.CatalogException;
 import android.xml.catalog.CatalogFeatures;
 import android.xml.catalog.CatalogManager;
 import android.xml.catalog.CatalogResolver;
 import javax.xml.transform.Source;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkXmlUtils;
 import org.xml.sax.InputSource;
 
 /**

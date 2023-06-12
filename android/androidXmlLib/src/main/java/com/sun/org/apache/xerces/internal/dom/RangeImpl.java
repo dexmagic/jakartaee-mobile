@@ -26,8 +26,8 @@ import org.w3c.dom.CharacterData;
 import org.w3c.dom.DOMException;
 import org.w3c.dom.DocumentFragment;
 import org.w3c.dom.Node;
-import org.w3c.dom.ranges.Range;
-import org.w3c.dom.ranges.RangeException;
+import android.org.w3c.dom.ranges.Range;
+import android.org.w3c.dom.ranges.RangeException;
 
 
 /** The RangeImpl class implements the org.w3c.dom.range.Range interface.

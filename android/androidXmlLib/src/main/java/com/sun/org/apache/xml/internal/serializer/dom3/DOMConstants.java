@@ -21,7 +21,7 @@
 
 package com.sun.org.apache.xml.internal.serializer.dom3;
 
-import static jdk.xml.internal.JdkConstants.S_IS_STANDALONE;
+import static android.jdk.xml.internal.JdkConstants.S_IS_STANDALONE;
 
 /**
  * DOM Constants used by the DOM Level 3 LSSerializer implementation.

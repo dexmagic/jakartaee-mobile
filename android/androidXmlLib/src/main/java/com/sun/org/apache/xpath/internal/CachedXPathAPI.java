@@ -25,12 +25,12 @@ import javax.xml.transform.TransformerException;
 import com.sun.org.apache.xml.internal.utils.PrefixResolver;
 import com.sun.org.apache.xml.internal.utils.PrefixResolverDefault;
 import com.sun.org.apache.xpath.internal.objects.XObject;
-import jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkConstants;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.w3c.dom.traversal.NodeIterator;
+import android.org.w3c.dom.traversal.NodeIterator;
 
 /**
  * The methods in this class are convenience methods into the

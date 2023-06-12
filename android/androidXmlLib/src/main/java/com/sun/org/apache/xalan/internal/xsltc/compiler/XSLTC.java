@@ -42,12 +42,12 @@ import java.util.jar.Attributes;
 import java.util.jar.JarEntry;
 import java.util.jar.JarOutputStream;
 import java.util.jar.Manifest;
-import javax.xml.XMLConstants;
+
 import android.xml.catalog.CatalogFeatures;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkXmlFeatures;
-import jdk.xml.internal.SecuritySupport;
-import jdk.xml.internal.XMLSecurityManager;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkXmlFeatures;
+import android.jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.XMLSecurityManager;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 

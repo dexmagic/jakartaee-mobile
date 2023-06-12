@@ -25,8 +25,7 @@
 
 package com.sun.org.apache.xalan.internal.utils;
 
-import javax.xml.XMLConstants;
-import jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkConstants;
 
 /**
  * This class manages security related properties

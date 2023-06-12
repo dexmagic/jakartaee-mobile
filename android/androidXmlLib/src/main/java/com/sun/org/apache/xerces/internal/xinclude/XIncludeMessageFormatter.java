@@ -24,7 +24,7 @@ import com.sun.org.apache.xerces.internal.util.MessageFormatter;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 // TODO: fix error messages in XIncludeMessages.properties
 /**

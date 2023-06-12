@@ -20,7 +20,7 @@
 
 package com.sun.org.apache.xerces.internal.util;
 
-import jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkConstants;
 
 /**
  * This class is a container for parser settings that relate to security, or

@@ -30,10 +30,10 @@ import java.util.Objects;
 import javax.xml.transform.TransformerException;
 import android.xml.xpath.XPathNodes;
 import android.xml.xpath.XPathEvaluationResult;
-import android.xml.xpath.XPathEvaluationResult.XPathResultType;
+
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.w3c.dom.traversal.NodeIterator;
+import android.org.w3c.dom.traversal.NodeIterator;
 
 
 /**

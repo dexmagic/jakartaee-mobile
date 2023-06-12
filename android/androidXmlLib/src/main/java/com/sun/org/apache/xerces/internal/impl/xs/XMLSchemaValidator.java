@@ -87,8 +87,8 @@ import java.util.Map;
 import java.util.Stack;
 import java.util.Vector;
 import javax.xml.XMLConstants;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkXmlUtils;
 
 /**
  * The XML Schema validator. The validator implements a document

@@ -22,7 +22,7 @@
 package com.sun.org.apache.xpath.internal.axes;
 
 import org.w3c.dom.Node;
-import org.w3c.dom.traversal.NodeIterator;
+import android.org.w3c.dom.traversal.NodeIterator;
 
 /**
  * Classes who implement this interface can be a

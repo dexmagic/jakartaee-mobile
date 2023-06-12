@@ -27,10 +27,10 @@ import javax.xml.xpath.XPathFactory;
 import javax.xml.xpath.XPathFactoryConfigurationException;
 import javax.xml.xpath.XPathFunctionResolver;
 import javax.xml.xpath.XPathVariableResolver;
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkProperty;
-import jdk.xml.internal.JdkXmlFeatures;
-import jdk.xml.internal.XMLSecurityManager;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.JdkProperty;
+import android.jdk.xml.internal.JdkXmlFeatures;
+import android.jdk.xml.internal.XMLSecurityManager;
 
 /**
  * The XPathFactory builds XPaths.

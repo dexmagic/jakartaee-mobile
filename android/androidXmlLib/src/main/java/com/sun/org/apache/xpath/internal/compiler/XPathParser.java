@@ -29,7 +29,7 @@ import com.sun.org.apache.xpath.internal.res.XPATHErrorResources;
 import javax.xml.transform.ErrorListener;
 import javax.xml.transform.SourceLocator;
 import javax.xml.transform.TransformerException;
-import jdk.xml.internal.XMLSecurityManager;
+import android.jdk.xml.internal.XMLSecurityManager;
 
 /**
  * Tokenizes and parses XPath expressions. This should really be named

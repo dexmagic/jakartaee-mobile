@@ -29,7 +29,7 @@ import com.sun.org.apache.xpath.internal.axes.NodeSequence;
 import java.util.ArrayList;
 import java.util.List;
 import org.w3c.dom.NodeList;
-import org.w3c.dom.traversal.NodeIterator;
+import android.org.w3c.dom.traversal.NodeIterator;
 
 /**
  * This class represents an XPath nodeset object, and is capable of

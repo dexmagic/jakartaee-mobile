@@ -25,8 +25,8 @@ import com.sun.org.apache.xml.internal.utils.PrefixResolver;
 import com.sun.org.apache.xpath.internal.res.XPATHErrorResources;
 import java.util.List;
 import javax.xml.transform.TransformerException;
-import jdk.xml.internal.XMLSecurityManager;
-import jdk.xml.internal.XMLSecurityManager.Limit;
+import android.jdk.xml.internal.XMLSecurityManager;
+import android.jdk.xml.internal.XMLSecurityManager.Limit;
 
 /**
  * This class is in charge of lexical processing of the XPath

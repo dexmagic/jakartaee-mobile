@@ -20,6 +20,8 @@
 
 package com.sun.org.apache.xpath.internal.patterns;
 
+import android.org.w3c.dom.traversal.NodeFilter;
+
 import com.sun.org.apache.xml.internal.dtm.DTM;
 import com.sun.org.apache.xml.internal.dtm.DTMFilter;
 import com.sun.org.apache.xml.internal.utils.QName;
@@ -64,16 +66,16 @@ public class NodeTest extends Expression
 
   /**
    * Special bitmap for match patterns starting with a function.
-   * Make sure this does not conflict with {@link org.w3c.dom.traversal.NodeFilter}.
+   * Make sure this does not conflict with {@link NodeFilter}.
    */
   public static final int SHOW_BYFUNCTION = 0x00010000;
 
   /**
    * This attribute determines which node types are accepted.
-   * These constants are defined in the {@link org.w3c.dom.traversal.NodeFilter}
+   * These constants are defined in the {@link NodeFilter}
    * interface.
    *
-   * @return bitset mainly defined in {@link org.w3c.dom.traversal.NodeFilter}.
+   * @return bitset mainly defined in {@link NodeFilter}.
    */
   public int getWhatToShow()
   {
@@ -82,10 +84,10 @@ public class NodeTest extends Expression
 
   /**
    * This attribute determines which node types are accepted.
-   * These constants are defined in the {@link org.w3c.dom.traversal.NodeFilter}
+   * These constants are defined in the {@link NodeFilter}
    * interface.
    *
-   * @param what bitset mainly defined in {@link org.w3c.dom.traversal.NodeFilter}.
+   * @param what bitset mainly defined in {@link NodeFilter}.
    */
   public void setWhatToShow(int what)
   {
@@ -196,7 +198,7 @@ public class NodeTest extends Expression
    * Construct an NodeTest that tests for namespaces and node names.
    *
    *
-   * @param whatToShow Bit set defined mainly by {@link org.w3c.dom.traversal.NodeFilter}.
+   * @param whatToShow Bit set defined mainly by {@link NodeFilter}.
    * @param namespace The namespace to be tested.
    * @param name The local name to be tested.
    */
@@ -209,7 +211,7 @@ public class NodeTest extends Expression
    * Construct an NodeTest that doesn't test for node names.
    *
    *
-   * @param whatToShow Bit set defined mainly by {@link org.w3c.dom.traversal.NodeFilter}.
+   * @param whatToShow Bit set defined mainly by {@link NodeFilter}.
    */
   public NodeTest(int whatToShow)
   {
@@ -265,7 +267,7 @@ public class NodeTest extends Expression
    * calculating the score that this test will return if a test succeeds.
    *
    *
-   * @param whatToShow Bit set defined mainly by {@link org.w3c.dom.traversal.NodeFilter}.
+   * @param whatToShow Bit set defined mainly by {@link NodeFilter}.
    */
   public void initNodeTest(int whatToShow)
   {
@@ -281,7 +283,7 @@ public class NodeTest extends Expression
    * calculating the score that this test will return if a test succeeds.
    *
    *
-   * @param whatToShow Bit set defined mainly by {@link org.w3c.dom.traversal.NodeFilter}.
+   * @param whatToShow Bit set defined mainly by {@link NodeFilter}.
    * @param namespace The namespace to be tested.
    * @param name The local name to be tested.
    */

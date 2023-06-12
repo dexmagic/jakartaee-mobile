@@ -20,6 +20,8 @@
 
 package com.sun.org.apache.xpath.internal.axes;
 
+import android.org.w3c.dom.traversal.NodeIterator;
+
 import com.sun.org.apache.xalan.internal.res.XSLMessages;
 import com.sun.org.apache.xml.internal.dtm.DTM;
 import com.sun.org.apache.xml.internal.dtm.DTMFilter;
@@ -593,7 +595,7 @@ public abstract class LocPathIterator extends PredicatedNodeTest
    * interface.</p>
    *
    * @return For now, always NodeFilter.SHOW_ALL & ~NodeFilter.SHOW_ENTITY_REFERENCE.
-   * @see org.w3c.dom.traversal.NodeIterator
+   * @see NodeIterator
    */
   public int getWhatToShow()
   {
@@ -608,7 +610,7 @@ public abstract class LocPathIterator extends PredicatedNodeTest
    * interface.
    *
    * @return Always null.
-   * @see org.w3c.dom.traversal.NodeIterator
+   * @see NodeIterator
    */
   public DTMFilter getFilter()
   {

@@ -22,7 +22,7 @@ package com.sun.org.apache.xalan.internal.lib;
 
 import java.util.StringTokenizer;
 import com.sun.org.apache.xpath.internal.NodeSet;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkXmlUtils;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

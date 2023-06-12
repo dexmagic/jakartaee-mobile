@@ -23,7 +23,6 @@ package com.sun.org.apache.xalan.internal.xsltc.runtime.output;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.Writer;
-import jdk.xml.internal.SecuritySupport;
 
 /**
  * @author Santiago Pericas-Geertsen

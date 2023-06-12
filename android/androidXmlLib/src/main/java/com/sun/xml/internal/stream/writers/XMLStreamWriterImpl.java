@@ -53,7 +53,7 @@ import android.xml.stream.XMLOutputFactory;
 import android.xml.stream.XMLStreamConstants;
 import android.xml.stream.XMLStreamException;
 import javax.xml.transform.stream.StreamResult;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * This class implements a StAX XMLStreamWriter. It extends

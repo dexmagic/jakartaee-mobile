@@ -45,7 +45,7 @@ import java.io.EOFException;
 import java.io.IOException;
 import android.xml.stream.XMLInputFactory;
 import android.xml.stream.events.XMLEvent;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 
 /**

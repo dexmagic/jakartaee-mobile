@@ -39,7 +39,7 @@ import java.util.Map.Entry;
 import java.util.Map;
 import java.util.Properties;
 import java.util.StringTokenizer;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * Provides information about encodings. Depends on the Java runtime

@@ -20,6 +20,8 @@
 
 package com.sun.org.apache.xpath.internal.compiler;
 
+import android.org.w3c.dom.traversal.NodeFilter;
+
 import javax.xml.transform.ErrorListener;
 import javax.xml.transform.SourceLocator;
 import javax.xml.transform.TransformerException;
@@ -760,12 +762,12 @@ public class Compiler extends OpMap
   }
 
   /**
-   * Get a {@link org.w3c.dom.traversal.NodeFilter} bit set that tells what
+   * Get a {@link NodeFilter} bit set that tells what
    * to show for a given node test.
    *
    * @param opPos the op map position for the location step.
    *
-   * @return {@link org.w3c.dom.traversal.NodeFilter} bit set that tells what
+   * @return {@link NodeFilter} bit set that tells what
    *         to show for a given node test.
    */
   public int getWhatToShow(int opPos)

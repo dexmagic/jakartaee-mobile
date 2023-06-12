@@ -20,6 +20,8 @@
 
 package com.sun.org.apache.xpath.internal.patterns;
 
+import android.org.w3c.dom.traversal.NodeFilter;
+
 import com.sun.org.apache.xml.internal.dtm.Axis;
 import com.sun.org.apache.xml.internal.dtm.DTM;
 import com.sun.org.apache.xml.internal.dtm.DTMAxisTraverser;
@@ -50,7 +52,7 @@ public class StepPattern extends NodeTest implements SubContextList, ExpressionO
    * Construct a StepPattern that tests for namespaces and node names.
    *
    *
-   * @param whatToShow Bit set defined mainly by {@link org.w3c.dom.traversal.NodeFilter}.
+   * @param whatToShow Bit set defined mainly by {@link NodeFilter}.
    * @param namespace The namespace to be tested.
    * @param name The local name to be tested.
    * @param axis The Axis for this test, one of of Axes.ANCESTORORSELF, etc.
@@ -69,7 +71,7 @@ public class StepPattern extends NodeTest implements SubContextList, ExpressionO
    * Construct a StepPattern that doesn't test for node names.
    *
    *
-   * @param whatToShow Bit set defined mainly by {@link org.w3c.dom.traversal.NodeFilter}.
+   * @param whatToShow Bit set defined mainly by {@link NodeFilter}.
    * @param axis The Axis for this test, one of of Axes.ANCESTORORSELF, etc.
    * @param axisForPredicate No longer used.
    */

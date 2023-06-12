@@ -29,7 +29,7 @@ import com.sun.org.apache.xml.internal.serializer.SerializationHandler;
 import com.sun.org.apache.xml.internal.serializer.utils.WrappedRuntimeException;
 import org.w3c.dom.DOMErrorHandler;
 import org.w3c.dom.Node;
-import org.w3c.dom.ls.LSSerializerFilter;
+import android.org.w3c.dom.ls.LSSerializerFilter;
 
 /**
  * This class implements the DOM3Serializer interface.

@@ -21,6 +21,8 @@
 
 package com.sun.org.apache.xpath.internal.objects;
 
+import android.org.w3c.dom.traversal.NodeIterator;
+
 import com.sun.org.apache.xml.internal.dtm.Axis;
 import com.sun.org.apache.xml.internal.dtm.DTM;
 import com.sun.org.apache.xml.internal.dtm.DTMAxisIterator;
@@ -148,9 +150,9 @@ public class XObjectFactory
     {
       result = new XNodeSetForDOM((org.w3c.dom.NodeList)val, xctxt);
     }
-    else if (val instanceof org.w3c.dom.traversal.NodeIterator)
+    else if (val instanceof NodeIterator)
     {
-      result = new XNodeSetForDOM((org.w3c.dom.traversal.NodeIterator)val, xctxt);
+      result = new XNodeSetForDOM((NodeIterator)val, xctxt);
     }
     else
     {

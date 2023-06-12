@@ -31,7 +31,7 @@ import org.xml.sax.SAXException;
 import com.sun.org.apache.xml.internal.serializer.utils.MsgKey;
 import com.sun.org.apache.xml.internal.serializer.utils.Utils;
 import javax.xml.transform.ErrorListener;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkXmlUtils;
 
 /**
  * This serializer takes a series of SAX or

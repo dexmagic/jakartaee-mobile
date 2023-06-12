@@ -33,7 +33,7 @@ import com.sun.org.apache.xalan.internal.xsltc.compiler.util.StringType;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Util;
-import jdk.xml.internal.JdkXmlFeatures;
+import android.jdk.xml.internal.JdkXmlFeatures;
 
 /**
  * @author Morten Jorgensen

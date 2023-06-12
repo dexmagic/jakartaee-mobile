@@ -25,8 +25,8 @@
 
 package com.sun.org.apache.xalan.internal.utils;
 
-import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.JdkConstants;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * This is the base class for features and properties

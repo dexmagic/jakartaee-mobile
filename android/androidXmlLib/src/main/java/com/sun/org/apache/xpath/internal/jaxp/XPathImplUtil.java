@@ -41,12 +41,12 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFunctionResolver;
 import android.xml.xpath.XPathNodes;
 import javax.xml.xpath.XPathVariableResolver;
-import jdk.xml.internal.JdkXmlFeatures;
-import jdk.xml.internal.JdkXmlUtils;
-import jdk.xml.internal.XMLSecurityManager;
+import android.jdk.xml.internal.JdkXmlFeatures;
+import android.jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.XMLSecurityManager;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
-import org.w3c.dom.traversal.NodeIterator;
+import android.org.w3c.dom.traversal.NodeIterator;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 

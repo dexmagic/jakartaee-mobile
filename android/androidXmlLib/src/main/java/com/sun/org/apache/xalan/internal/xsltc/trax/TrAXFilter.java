@@ -30,7 +30,7 @@ import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.sax.SAXResult;
 
 import com.sun.org.apache.xml.internal.utils.XMLReaderManager;
-import jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.JdkXmlUtils;
 
 import org.xml.sax.ContentHandler;
 import org.xml.sax.InputSource;

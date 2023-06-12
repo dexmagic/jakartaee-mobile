@@ -22,7 +22,7 @@ package com.sun.org.apache.xpath.internal.res;
 
 import com.sun.org.apache.xml.internal.res.XMLMessages;
 import java.util.ResourceBundle;
-import jdk.xml.internal.SecuritySupport;
+import android.jdk.xml.internal.SecuritySupport;
 
 /**
  * A utility class for issuing XPath error messages.
