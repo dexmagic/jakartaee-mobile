@@ -25,7 +25,6 @@
 
 package android.xml.stream;
 
-import java.io.File;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
 import java.util.Iterator;
@@ -33,7 +32,6 @@ import java.util.Properties;
 import java.util.ServiceConfigurationError;
 import java.util.ServiceLoader;
 import java.util.function.Supplier;
-import jdk.xml.internal.SecuritySupport;
 
 /**
  * <p>Implements pluggable streams.</p>
@@ -63,19 +61,6 @@ class FactoryFinder {
      */
     private static volatile boolean firstTime = true;
 
-    // Define system property "jaxp.debug" to get output
-    static {
-        // Use try/catch block to support applets, which throws
-        // SecurityException out of this code.
-        try {
-            String val = SecuritySupport.getSystemProperty("jaxp.debug");
-            // Allow simply setting the prop to turn on debug
-            debug = val != null && !"false".equals(val);
-        }
-        catch (SecurityException se) {
-            debug = false;
-        }
-    }
 
     private static void dPrint(Supplier<String> msgGen) {
         if (debug) {
@@ -102,13 +87,7 @@ class FactoryFinder {
                 if (useBSClsLoader) {
                     return Class.forName(className, false, FactoryFinder.class.getClassLoader());
                 } else {
-                    cl = SecuritySupport.getContextClassLoader();
-                    if (cl == null) {
-                        throw new ClassNotFoundException();
-                    }
-                    else {
-                        return Class.forName(className, false, cl);
-                    }
+                     return Class.forName(className, false, cl);
                 }
             }
             else {
@@ -246,64 +225,6 @@ class FactoryFinder {
         throws FactoryConfigurationError
     {
         dPrint(()->"find factoryId =" + factoryId);
-
-        // Use the system property first
-        try {
-
-            final String systemProp;
-            if (type.getName().equals(factoryId)) {
-                systemProp = SecuritySupport.getSystemProperty(factoryId);
-            } else {
-                systemProp = System.getProperty(factoryId);
-            }
-            if (systemProp != null) {
-                dPrint(()->"found system property, value=" + systemProp);
-                return newInstance(type, systemProp, cl, true);
-            }
-        }
-        catch (SecurityException se) {
-            throw new FactoryConfigurationError(
-                    "Failed to read factoryId '" + factoryId + "'", se);
-        }
-
-        // Try read $java.home/conf/stax.properties followed by
-        // $java.home/conf/jaxp.properties if former not present
-        String configFile = null;
-        try {
-            if (firstTime) {
-                synchronized (cacheProps) {
-                    if (firstTime) {
-                        configFile = SecuritySupport.getSystemProperty("java.home") + File.separator +
-                            "conf" + File.separator + "stax.properties";
-                        final File fStax = new File(configFile);
-                        firstTime = false;
-                        if (SecuritySupport.doesFileExist(fStax)) {
-                            dPrint(()->"Read properties file "+fStax);
-                            cacheProps.load(SecuritySupport.getFileInputStream(fStax));
-                        }
-                        else {
-                            configFile = SecuritySupport.getSystemProperty("java.home") + File.separator +
-                                "conf" + File.separator + "jaxp.properties";
-                            final File fJaxp = new File(configFile);
-                            if (SecuritySupport.doesFileExist(fJaxp)) {
-                                dPrint(()->"Read properties file "+fJaxp);
-                                cacheProps.load(SecuritySupport.getFileInputStream(fJaxp));
-                            }
-                        }
-                    }
-                }
-            }
-            final String factoryClassName = cacheProps.getProperty(factoryId);
-
-            if (factoryClassName != null) {
-                final String foundIn = configFile;
-                dPrint(()->"found in " + foundIn + " value=" + factoryClassName);
-                return newInstance(type, factoryClassName, cl, true);
-            }
-        }
-        catch (Exception ex) {
-            if (debug) ex.printStackTrace();
-        }
 
         if (type.getName().equals(factoryId)) {
             // Try Jar Service Provider Mechanism
