@@ -26,7 +26,7 @@ package com.sun.org.apache.xerces.internal.impl;
 
 import com.sun.org.apache.xerces.internal.utils.XMLSecurityManager;
 import com.sun.org.apache.xerces.internal.utils.XMLSecurityPropertyManager;
-import com.sun.xml.internal.stream.StaxEntityResolverWrapper;
+import android.com.sun.xml.internal.stream.StaxEntityResolverWrapper;
 import java.util.HashMap;
 
 import android.xml.catalog.CatalogFeatures;

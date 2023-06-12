@@ -38,7 +38,7 @@ import com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLDTDScanner;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
 import com.sun.org.apache.xerces.internal.xni.Augmentations;
-import com.sun.xml.internal.stream.dtd.nonvalidating.DTDGrammar;
+import android.com.sun.xml.internal.stream.dtd.nonvalidating.DTDGrammar;
 import java.io.EOFException;
 import java.io.IOException;
 

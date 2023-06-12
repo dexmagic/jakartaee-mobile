@@ -25,7 +25,7 @@
 
 package android.xml.stream;
 
-import com.sun.xml.internal.stream.XMLOutputFactoryImpl;
+import android.com.sun.xml.internal.stream.XMLOutputFactoryImpl;
 import javax.xml.transform.Result;
 
 /**

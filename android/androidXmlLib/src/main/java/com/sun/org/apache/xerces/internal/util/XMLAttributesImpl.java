@@ -20,7 +20,7 @@
 
 package com.sun.org.apache.xerces.internal.util;
 
-import com.sun.xml.internal.stream.XMLBufferListener;
+import android.com.sun.xml.internal.stream.XMLBufferListener;
 import com.sun.org.apache.xerces.internal.xni.Augmentations;
 import com.sun.org.apache.xerces.internal.xni.QName;
 import com.sun.org.apache.xerces.internal.xni.XMLAttributes;

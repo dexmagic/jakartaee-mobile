@@ -20,7 +20,7 @@
 
 package com.sun.org.apache.xalan.internal.xsltc.compiler;
 
-import com.sun.java_cup.internal.runtime.Symbol;
+import android.com.sun.java_cup.internal.runtime.Symbol;
 import com.sun.org.apache.xalan.internal.utils.ObjectFactory;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMsg;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType;

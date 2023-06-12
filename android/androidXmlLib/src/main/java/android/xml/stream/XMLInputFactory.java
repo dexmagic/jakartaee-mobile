@@ -27,7 +27,7 @@ package android.xml.stream;
 
 import android.xml.stream.util.XMLEventAllocator;
 
-import com.sun.xml.internal.stream.XMLInputFactoryImpl;
+import android.com.sun.xml.internal.stream.XMLInputFactoryImpl;
 
 import javax.xml.transform.Source;
 

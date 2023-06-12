@@ -34,6 +34,10 @@ import com.sun.org.apache.xml.internal.dtm.DTM;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
+
+import android.com.sun.java_cup.internal.runtime.Scanner;
+import android.com.sun.java_cup.internal.runtime.Symbol;
+import android.com.sun.java_cup.internal.runtime.lr_parser;
 import android.jdk.xml.internal.JdkConstants;
 import android.jdk.xml.internal.XMLLimitAnalyzer;
 import android.jdk.xml.internal.XMLSecurityManager;

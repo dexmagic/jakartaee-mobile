@@ -28,8 +28,8 @@ import java.util.Locale;
 import com.sun.org.apache.xerces.internal.util.MessageFormatter;
 import com.sun.org.apache.xerces.internal.impl.msg.XMLMessageFormatter;
 
-import com.sun.xml.internal.stream.util.BufferAllocator;
-import com.sun.xml.internal.stream.util.ThreadLocalBufferAllocator;
+import android.com.sun.xml.internal.stream.util.BufferAllocator;
+import android.com.sun.xml.internal.stream.util.ThreadLocalBufferAllocator;
 
 /**
  * A simple ASCII byte reader. This is an optimized reader for reading

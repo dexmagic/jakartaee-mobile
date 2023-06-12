@@ -21,7 +21,7 @@
 package com.sun.org.apache.xerces.internal.impl;
 
 import com.sun.org.apache.xerces.internal.util.Status;
-import com.sun.xml.internal.stream.XMLEntityStorage;
+import android.com.sun.xml.internal.stream.XMLEntityStorage;
 import java.io.IOException;
 import java.util.ArrayList;
 import android.xml.stream.events.XMLEvent;
@@ -40,7 +40,7 @@ import com.sun.org.apache.xerces.internal.xni.XNIException;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLComponent;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
-import com.sun.xml.internal.stream.Entity;
+import android.com.sun.xml.internal.stream.Entity;
 
 //import com.sun.xml.stream.XMLEntityManager;
 //import com.sun.org.apache.xerces.internal.impl.XMLErrorReporter;

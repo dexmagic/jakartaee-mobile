@@ -38,7 +38,7 @@ import android.xml.stream.events.ProcessingInstruction;
 import android.xml.stream.events.StartDocument;
 import android.xml.stream.events.StartElement;
 
-import com.sun.xml.internal.stream.events.XMLEventFactoryImpl;
+import android.com.sun.xml.internal.stream.events.XMLEventFactoryImpl;
 
 import java.util.Iterator;
 

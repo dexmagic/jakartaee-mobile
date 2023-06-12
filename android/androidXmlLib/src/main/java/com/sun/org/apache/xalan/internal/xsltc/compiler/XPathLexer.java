@@ -24,13 +24,14 @@
  *
  */
 package com.sun.org.apache.xalan.internal.xsltc.compiler;
-import com.sun.java_cup.internal.runtime.Symbol;
+import android.com.sun.java_cup.internal.runtime.Scanner;
+import android.com.sun.java_cup.internal.runtime.Symbol;
 
 
 /**
  * @LastModified: Oct 2017
  */
-class XPathLexer implements com.sun.java_cup.internal.runtime.Scanner {
+class XPathLexer implements Scanner {
         private final int YY_BUFFER_SIZE = 512;
         private final int YY_F = -1;
         private final int YY_NO_STATE = -1;
@@ -750,7 +751,7 @@ class XPathLexer implements com.sun.java_cup.internal.runtime.Scanner {
 "4,232,184:8,-1:2,184:10,-1:3,76,184,76:3");
 
         @SuppressWarnings("fallthrough") // at case 18 and -1
-        public com.sun.java_cup.internal.runtime.Symbol next_token ()
+        public Symbol next_token ()
                 throws java.io.IOException,
 Exception
 

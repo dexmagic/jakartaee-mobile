@@ -25,8 +25,8 @@ import java.io.InputStream;
 import java.io.IOException;
 import java.io.Reader;
 
-import com.sun.xml.internal.stream.util.BufferAllocator;
-import com.sun.xml.internal.stream.util.ThreadLocalBufferAllocator;
+import android.com.sun.xml.internal.stream.util.BufferAllocator;
+import android.com.sun.xml.internal.stream.util.ThreadLocalBufferAllocator;
 
 /**
  * Reader for UCS-2 and UCS-4 encodings.

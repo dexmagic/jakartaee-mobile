@@ -31,7 +31,7 @@ import com.sun.org.apache.xerces.internal.xni.XMLString;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
-import com.sun.xml.internal.stream.Entity.ScannedEntity;
+import android.com.sun.xml.internal.stream.Entity.ScannedEntity;
 
 /**
  * This class scans the version of the document to determine
