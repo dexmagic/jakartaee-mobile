@@ -32,7 +32,7 @@ import android.com.sun.org.apache.xml.internal.utils.SuballocatedIntVector;
 import android.com.sun.org.apache.xml.internal.utils.XMLString;
 import android.com.sun.org.apache.xml.internal.utils.XMLStringFactory;
 
-import com.sun.org.apache.xml.internal.dtm.*;
+import android.com.sun.org.apache.xml.internal.dtm.*;
 
 import java.io.*; // for dumpDTM
 import java.util.Vector;

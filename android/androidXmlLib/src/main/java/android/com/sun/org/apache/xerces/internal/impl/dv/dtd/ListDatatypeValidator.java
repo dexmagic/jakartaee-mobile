@@ -25,7 +25,6 @@ import android.com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator;
 import android.com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
 import android.com.sun.org.apache.xerces.internal.impl.dv.ValidationContext;
 
-import com.sun.org.apache.xerces.internal.impl.dv.*;
 import java.util.StringTokenizer;
 
 /**

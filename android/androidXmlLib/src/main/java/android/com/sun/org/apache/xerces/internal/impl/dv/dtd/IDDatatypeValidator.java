@@ -26,8 +26,6 @@ import android.com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueEx
 import android.com.sun.org.apache.xerces.internal.impl.dv.ValidationContext;
 import android.com.sun.org.apache.xerces.internal.util.XMLChar;
 
-import com.sun.org.apache.xerces.internal.impl.dv.*;
-
 /**
  * <P>IDDatatypeValidator - ID represents the ID attribute
  * type from XML 1.0 Recommendation. The value space

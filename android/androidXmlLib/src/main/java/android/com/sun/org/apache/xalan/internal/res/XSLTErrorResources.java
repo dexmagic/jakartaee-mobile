@@ -765,10 +765,10 @@ public class XSLTErrorResources extends ListResourceBundle
       "xsl:apply-imports not allowed in a xsl:for-each"},
 
     { ER_CANT_USE_DTM_FOR_OUTPUT,
-      "Cannot use a DTMLiaison for an output DOM node... pass a com.sun.org.apache.xpath.internal.DOM2Helper instead!"},
+      "Cannot use a DTMLiaison for an output DOM node... pass a android.com.sun.org.apache.xpath.internal.DOM2Helper instead!"},
 
     { ER_CANT_USE_DTM_FOR_INPUT,
-      "Cannot use a DTMLiaison for a input DOM node... pass a com.sun.org.apache.xpath.internal.DOM2Helper instead!"},
+      "Cannot use a DTMLiaison for a input DOM node... pass a android.com.sun.org.apache.xpath.internal.DOM2Helper instead!"},
 
     { ER_CALL_TO_EXT_FAILED,
       "Call to extension element failed: {0}"},

@@ -18,8 +18,8 @@ import java.util.TimeZone;
 
 import javax.xml.namespace.QName;
 import javax.xml.namespace.NamespaceContext;
-import android.xml.datatype.DatatypeFactory;
-import android.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.DatatypeConfigurationException;
 
 /**
  * This class is the Jakarta XML Binding CI's default implementation of the

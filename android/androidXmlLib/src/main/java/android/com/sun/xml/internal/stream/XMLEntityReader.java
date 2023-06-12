@@ -32,7 +32,7 @@ import android.com.sun.org.apache.xerces.internal.xni.QName;
 import android.com.sun.org.apache.xerces.internal.xni.XMLLocator;
 import android.com.sun.org.apache.xerces.internal.xni.XMLString;
 
-import com.sun.org.apache.xerces.internal.xni.*;
+import android.com.sun.org.apache.xerces.internal.xni.*;
 
 /**
  * This class allows various parser scanners to scan basic XML constructs

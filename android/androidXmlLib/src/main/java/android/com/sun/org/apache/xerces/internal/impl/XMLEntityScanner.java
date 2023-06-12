@@ -31,9 +31,6 @@ import android.com.sun.org.apache.xerces.internal.util.XMLChar;
 import android.com.sun.org.apache.xerces.internal.util.XMLStringBuffer;
 import android.com.sun.org.apache.xerces.internal.utils.XMLLimitAnalyzer;
 import android.com.sun.org.apache.xerces.internal.utils.XMLSecurityManager;
-
-import com.sun.org.apache.xerces.internal.xni.*;
-
 import android.com.sun.org.apache.xerces.internal.xni.QName;
 import android.com.sun.org.apache.xerces.internal.xni.XMLLocator;
 import android.com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier;
@@ -44,6 +41,9 @@ import android.com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationExc
 import android.com.sun.xml.internal.stream.Entity;
 import android.com.sun.xml.internal.stream.Entity.ScannedEntity;
 import android.com.sun.xml.internal.stream.XMLBufferListener;
+
+import org.xml.sax.SAXException;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;

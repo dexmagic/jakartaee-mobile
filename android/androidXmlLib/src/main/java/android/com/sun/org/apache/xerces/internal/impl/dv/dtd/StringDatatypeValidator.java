@@ -25,8 +25,6 @@ import android.com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator;
 import android.com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
 import android.com.sun.org.apache.xerces.internal.impl.dv.ValidationContext;
 
-import com.sun.org.apache.xerces.internal.impl.dv.*;
-
 /**
  * <P>StringValidator validates that XML content is a W3C string type.</P>
  * <P>The string datatype represents character strings in XML. The

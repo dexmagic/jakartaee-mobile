@@ -36,10 +36,11 @@ public class LocaleUtility {
     public final static String EMPTY_STRING = "";
 
 
- public static Locale langToLocale(String lang) {
+    public static Locale langToLocale(String lang) {
        if((lang == null) || lang.equals(EMPTY_STRING)){ // not specified => getDefault
             return Locale.getDefault();
        }
+
         String language = EMPTY_STRING;
         String country =  EMPTY_STRING;
         String variant =  EMPTY_STRING;
@@ -77,11 +78,8 @@ public class LocaleUtility {
         }else{
             variant = EMPTY_STRING;
         }
-
-        throw new UnsupportedOperationException("not supported on Android");
         return Locale.forLanguageTag(language); /*Locale.of(language, country, variant);*/
+
     }
-
-
 
  }

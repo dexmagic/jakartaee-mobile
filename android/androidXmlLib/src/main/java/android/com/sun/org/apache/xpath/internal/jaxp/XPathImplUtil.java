@@ -30,25 +30,28 @@ import android.com.sun.org.apache.xml.internal.dtm.DTM;
 import android.com.sun.org.apache.xpath.internal.axes.LocPathIterator;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
 import android.com.sun.org.apache.xpath.internal.res.XPATHErrorResources;
+import android.jdk.xml.internal.JdkXmlFeatures;
+import android.jdk.xml.internal.JdkXmlUtils;
+import android.jdk.xml.internal.XMLSecurityManager;
+import android.org.w3c.dom.traversal.NodeIterator;
+import android.xml.xpath.XPathEvaluationResult;
+import android.xml.xpath.XPathNodes;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+
 import java.io.IOException;
+
 import javax.xml.namespace.QName;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathConstants;
-import android.xml.xpath.XPathEvaluationResult;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFunctionResolver;
-import android.xml.xpath.XPathNodes;
 import javax.xml.xpath.XPathVariableResolver;
-import android.jdk.xml.internal.JdkXmlFeatures;
-import android.jdk.xml.internal.JdkXmlUtils;
-import android.jdk.xml.internal.XMLSecurityManager;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import android.org.w3c.dom.traversal.NodeIterator;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
 
 /**
  * This class contains several utility methods used by XPathImpl and
@@ -75,9 +78,9 @@ class XPathImplUtil {
      * @return an XObject
      * @throws javax.xml.transform.TransformerException If the expression cannot be evaluated.
      */
-    XObject eval(Object contextItem, com.sun.org.apache.xpath.internal.XPath xpath)
+    XObject eval(Object contextItem, android.com.sun.org.apache.xpath.internal.XPath xpath)
             throws javax.xml.transform.TransformerException {
-        com.sun.org.apache.xpath.internal.XPathContext xpathSupport;
+        android.com.sun.org.apache.xpath.internal.XPathContext xpathSupport;
         if (contextItem == null && xpath.getExpression() instanceof LocPathIterator) {
             // the operation must have no dependency on the context that is null
             throw new TransformerException(XSLMessages.createXPATHMessage(
@@ -87,9 +90,9 @@ class XPathImplUtil {
         if (functionResolver != null) {
             JAXPExtensionsProvider jep = new JAXPExtensionsProvider(
                     functionResolver, featureSecureProcessing, featureManager);
-            xpathSupport = new com.sun.org.apache.xpath.internal.XPathContext(jep);
+            xpathSupport = new android.com.sun.org.apache.xpath.internal.XPathContext(jep);
         } else {
-            xpathSupport = new com.sun.org.apache.xpath.internal.XPathContext();
+            xpathSupport = new android.com.sun.org.apache.xpath.internal.XPathContext();
         }
 
         xpathSupport.setVarStack(new JAXPVariableStack(variableResolver));

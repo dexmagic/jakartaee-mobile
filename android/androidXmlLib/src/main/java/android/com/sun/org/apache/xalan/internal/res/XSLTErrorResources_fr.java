@@ -764,10 +764,10 @@ public class XSLTErrorResources_fr extends ListResourceBundle
       "xsl:apply-imports non autoris\u00E9 dans un \u00E9l\u00E9ment xsl:for-each"},
 
     { ER_CANT_USE_DTM_FOR_OUTPUT,
-      "Impossible d'utiliser un \u00E9l\u00E9ment DTMLiaison pour un noeud DOM de sortie... Transmettez plut\u00F4t un \u00E9l\u00E9ment com.sun.org.apache.xpath.internal.DOM2Helper."},
+      "Impossible d'utiliser un \u00E9l\u00E9ment DTMLiaison pour un noeud DOM de sortie... Transmettez plut\u00F4t un \u00E9l\u00E9ment android.com.sun.org.apache.xpath.internal.DOM2Helper."},
 
     { ER_CANT_USE_DTM_FOR_INPUT,
-      "Impossible d'utiliser un \u00E9l\u00E9ment DTMLiaison pour un noeud DOM d'entr\u00E9e... Transmettez plut\u00F4t un \u00E9l\u00E9ment com.sun.org.apache.xpath.internal.DOM2Helper."},
+      "Impossible d'utiliser un \u00E9l\u00E9ment DTMLiaison pour un noeud DOM d'entr\u00E9e... Transmettez plut\u00F4t un \u00E9l\u00E9ment android.com.sun.org.apache.xpath.internal.DOM2Helper."},
 
     { ER_CALL_TO_EXT_FAILED,
       "Echec de l''appel de l''\u00E9l\u00E9ment d''extension : {0}"},

@@ -28,7 +28,7 @@ import android.com.sun.org.apache.xpath.internal.compiler.Compiler;
 /**
  * This class implements an optimized iterator for
  * attribute axes patterns.
- * @see com.sun.org.apache.xpath.internal.axes#ChildTestIterator
+ * @see android.com.sun.org.apache.xpath.internal.axes#ChildTestIterator
  * @xsl.usage advanced
  */
 public class AttributeIterator extends ChildTestIterator

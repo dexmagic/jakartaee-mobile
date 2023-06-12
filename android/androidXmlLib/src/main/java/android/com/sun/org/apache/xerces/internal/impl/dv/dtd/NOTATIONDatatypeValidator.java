@@ -25,8 +25,6 @@ import android.com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator;
 import android.com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
 import android.com.sun.org.apache.xerces.internal.impl.dv.ValidationContext;
 
-import com.sun.org.apache.xerces.internal.impl.dv.*;
-
 /**
  * NOTATIONValidator defines the interface that data type validators must obey.
  * These validators can be supplied by the application writer and may be useful as

@@ -24,10 +24,10 @@ package android.com.sun.org.apache.xpath.internal.objects;
 import android.com.sun.org.apache.xml.internal.dtm.DTMManager;
 import android.com.sun.org.apache.xpath.internal.NodeSetDTM;
 import android.com.sun.org.apache.xpath.internal.XPathContext;
+import android.org.w3c.dom.traversal.NodeIterator;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import android.org.w3c.dom.traversal.NodeIterator;
 
 /**
  * This class overrides the XNodeSet#object() method to provide the original
@@ -68,8 +68,8 @@ public class XNodeSetForDOM extends XNodeSet
     // JKESS 20020514: Longer-term solution is to force
     // folks to request length through an accessor, so we can defer this
     // retrieval... but that requires an API change.
-    // m_obj=new com.sun.org.apache.xpath.internal.NodeSetDTM(nodeList, xctxt);
-    com.sun.org.apache.xpath.internal.NodeSetDTM nsdtm=new com.sun.org.apache.xpath.internal.NodeSetDTM(nodeList, xctxt);
+    // m_obj=new android.com.sun.org.apache.xpath.internal.NodeSetDTM(nodeList, xctxt);
+    android.com.sun.org.apache.xpath.internal.NodeSetDTM nsdtm=new android.com.sun.org.apache.xpath.internal.NodeSetDTM(nodeList, xctxt);
     m_last=nsdtm.getLength();
     setObject(nsdtm);
   }
@@ -82,8 +82,8 @@ public class XNodeSetForDOM extends XNodeSet
     // JKESS 20020514: Longer-term solution is to force
     // folks to request length through an accessor, so we can defer this
     // retrieval... but that requires an API change.
-    // m_obj = new com.sun.org.apache.xpath.internal.NodeSetDTM(nodeIter, xctxt);
-    com.sun.org.apache.xpath.internal.NodeSetDTM nsdtm=new com.sun.org.apache.xpath.internal.NodeSetDTM(nodeIter, xctxt);
+    // m_obj = new android.com.sun.org.apache.xpath.internal.NodeSetDTM(nodeIter, xctxt);
+    android.com.sun.org.apache.xpath.internal.NodeSetDTM nsdtm=new android.com.sun.org.apache.xpath.internal.NodeSetDTM(nodeIter, xctxt);
     m_last=nsdtm.getLength();
     setObject(nsdtm);
   }

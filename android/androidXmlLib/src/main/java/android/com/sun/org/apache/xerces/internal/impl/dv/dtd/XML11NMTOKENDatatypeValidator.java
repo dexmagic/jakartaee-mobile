@@ -25,8 +25,6 @@ import android.com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueEx
 import android.com.sun.org.apache.xerces.internal.impl.dv.ValidationContext;
 import android.com.sun.org.apache.xerces.internal.util.XML11Char;
 
-import com.sun.org.apache.xerces.internal.impl.dv.*;
-
 /**
  * NMTOKEN datatype validator for NMTokens from XML 1.1.
  *

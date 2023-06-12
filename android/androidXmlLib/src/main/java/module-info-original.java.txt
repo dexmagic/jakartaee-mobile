@@ -907,13 +907,13 @@ module java.xml {
         java.xml.crypto;
     exports com.sun.org.apache.xpath.internal to
         java.xml.crypto;
-    exports com.sun.org.apache.xpath.internal.compiler to
+    exports android.com.sun.org.apache.xpath.internal.compiler to
         java.xml.crypto;
-    exports com.sun.org.apache.xpath.internal.functions to
+    exports android.com.sun.org.apache.xpath.internal.functions to
         java.xml.crypto;
-    exports com.sun.org.apache.xpath.internal.objects to
+    exports android.com.sun.org.apache.xpath.internal.objects to
         java.xml.crypto;
-    exports com.sun.org.apache.xpath.internal.res to
+    exports android.com.sun.org.apache.xpath.internal.res to
         java.xml.crypto;
 
     uses javax.xml.datatype.DatatypeFactory;

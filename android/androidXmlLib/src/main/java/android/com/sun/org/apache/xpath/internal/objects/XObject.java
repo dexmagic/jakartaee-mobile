@@ -30,6 +30,7 @@ import android.com.sun.org.apache.xpath.internal.Expression;
 import android.com.sun.org.apache.xpath.internal.ExpressionOwner;
 import android.com.sun.org.apache.xpath.internal.NodeSetDTM;
 import android.com.sun.org.apache.xpath.internal.XPathContext;
+import android.com.sun.org.apache.xpath.internal.XPathException;
 import android.com.sun.org.apache.xpath.internal.XPathVisitor;
 import android.com.sun.org.apache.xpath.internal.res.XPATHErrorResources;
 import android.org.w3c.dom.traversal.NodeIterator;
@@ -737,7 +738,7 @@ public class XObject extends Expression implements Serializable, Cloneable
   }
 
   /**
-   * @see com.sun.org.apache.xpath.internal.XPathVisitable#callVisitors(ExpressionOwner, XPathVisitor)
+   * @see android.com.sun.org.apache.xpath.internal.XPathVisitable#callVisitors(ExpressionOwner, XPathVisitor)
    */
   public void callVisitors(ExpressionOwner owner, XPathVisitor visitor)
   {

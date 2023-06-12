@@ -23,7 +23,7 @@ package android.com.sun.org.apache.xerces.internal.dom;
 import android.com.sun.org.apache.xerces.internal.impl.dv.ValidatedInfo;
 import android.com.sun.org.apache.xerces.internal.impl.xs.AttributePSVImpl;
 import android.com.sun.org.apache.xerces.internal.impl.xs.util.StringListImpl;
-import com.sun.org.apache.xerces.internal.xs.*;
+import android.com.sun.org.apache.xerces.internal.xs.*;
 import android.com.sun.org.apache.xerces.internal.xs.AttributePSVI;
 import android.com.sun.org.apache.xerces.internal.xs.ItemPSVI;
 import android.com.sun.org.apache.xerces.internal.xs.ShortList;

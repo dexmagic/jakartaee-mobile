@@ -301,7 +301,7 @@ public class WalkingIterator extends LocPathIterator implements ExpressionOwner
   }
 
   /**
-   * @see com.sun.org.apache.xpath.internal.XPathVisitable#callVisitors(ExpressionOwner, XPathVisitor)
+   * @see android.com.sun.org.apache.xpath.internal.XPathVisitable#callVisitors(ExpressionOwner, XPathVisitor)
    */
   public void callVisitors(ExpressionOwner owner, XPathVisitor visitor)
   {

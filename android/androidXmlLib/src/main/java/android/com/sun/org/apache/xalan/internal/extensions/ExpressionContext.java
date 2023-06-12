@@ -21,13 +21,13 @@
 
 package android.com.sun.org.apache.xalan.internal.extensions;
 
-import javax.xml.transform.ErrorListener;
-
+import android.com.sun.org.apache.xml.internal.utils.QName;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
+import android.org.w3c.dom.traversal.NodeIterator;
+
 import org.w3c.dom.Node;
 
-import android.com.sun.org.apache.xml.internal.utils.QName;
-import android.org.w3c.dom.traversal.NodeIterator;
+import javax.xml.transform.ErrorListener;
 
 /**
  * An object that implements this interface can supply
@@ -90,7 +90,7 @@ public interface ExpressionContext
    * @return The current XPathContext.
    * @throws javax.xml.transform.TransformerException
    */
-  public com.sun.org.apache.xpath.internal.XPathContext getXPathContext()
+  public android.com.sun.org.apache.xpath.internal.XPathContext getXPathContext()
             throws javax.xml.transform.TransformerException;
 
 }

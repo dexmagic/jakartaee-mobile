@@ -89,7 +89,7 @@ public class XRTreeFrag extends XObject implements Cloneable
   public Object object()
   {
     if (m_DTMXRTreeFrag.getXPathContext() != null)
-      return new DTMNodeIterator((DTMIterator)(new com.sun.org.apache.xpath.internal.NodeSetDTM(m_dtmRoot, m_DTMXRTreeFrag.getXPathContext().getDTMManager())));
+      return new DTMNodeIterator((DTMIterator)(new android.com.sun.org.apache.xpath.internal.NodeSetDTM(m_dtmRoot, m_DTMXRTreeFrag.getXPathContext().getDTMManager())));
     else
       return super.object();
   }

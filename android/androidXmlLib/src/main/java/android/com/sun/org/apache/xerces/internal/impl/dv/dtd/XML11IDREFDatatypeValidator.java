@@ -25,7 +25,7 @@ import android.com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueEx
 import android.com.sun.org.apache.xerces.internal.impl.dv.ValidationContext;
 import android.com.sun.org.apache.xerces.internal.util.XML11Char;
 
-import com.sun.org.apache.xerces.internal.impl.dv.*;
+import android.com.sun.org.apache.xerces.internal.impl.dv.*;
 
 /**
  * <P>IDREFDatatypeValidator - represents the IDREFS

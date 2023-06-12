@@ -764,10 +764,10 @@ public class XSLTErrorResources_zh_CN extends ListResourceBundle
       "xsl:for-each \u4E2D\u4E0D\u5141\u8BB8\u4F7F\u7528 xsl:apply-imports"},
 
     { ER_CANT_USE_DTM_FOR_OUTPUT,
-      "\u65E0\u6CD5\u5C06 DTMLiaison \u7528\u4E8E\u8F93\u51FA DOM \u8282\u70B9... \u8BF7\u6539\u4E3A\u4F20\u9012 com.sun.org.apache.xpath.internal.DOM2Helper!"},
+      "\u65E0\u6CD5\u5C06 DTMLiaison \u7528\u4E8E\u8F93\u51FA DOM \u8282\u70B9... \u8BF7\u6539\u4E3A\u4F20\u9012 android.com.sun.org.apache.xpath.internal.DOM2Helper!"},
 
     { ER_CANT_USE_DTM_FOR_INPUT,
-      "\u65E0\u6CD5\u5C06 DTMLiaison \u7528\u4E8E\u8F93\u5165 DOM \u8282\u70B9... \u8BF7\u6539\u4E3A\u4F20\u9012 com.sun.org.apache.xpath.internal.DOM2Helper!"},
+      "\u65E0\u6CD5\u5C06 DTMLiaison \u7528\u4E8E\u8F93\u5165 DOM \u8282\u70B9... \u8BF7\u6539\u4E3A\u4F20\u9012 android.com.sun.org.apache.xpath.internal.DOM2Helper!"},
 
     { ER_CALL_TO_EXT_FAILED,
       "\u672A\u80FD\u8C03\u7528\u6269\u5C55\u5143\u7D20: {0}"},

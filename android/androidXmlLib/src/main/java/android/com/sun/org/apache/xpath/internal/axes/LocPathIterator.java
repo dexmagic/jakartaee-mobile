@@ -911,7 +911,7 @@ public abstract class LocPathIterator extends PredicatedNodeTest
 //  }
 
   /**
-   * @see com.sun.org.apache.xpath.internal.XPathVisitable#callVisitors(ExpressionOwner, XPathVisitor)
+   * @see android.com.sun.org.apache.xpath.internal.XPathVisitable#callVisitors(ExpressionOwner, XPathVisitor)
    */
   public void callVisitors(ExpressionOwner owner, XPathVisitor visitor)
   {
@@ -1015,7 +1015,7 @@ public abstract class LocPathIterator extends PredicatedNodeTest
 //  /**
 //   * The analysis pattern built by the WalkerFactory.
 //   * TODO: Move to LocPathIterator.
-//   * @see com.sun.org.apache.xpath.internal.axes.WalkerFactory
+//   * @see android.com.sun.org.apache.xpath.internal.axes.WalkerFactory
 //   * @serial
 //   */
 //  protected int m_analysis = 0x00000000;

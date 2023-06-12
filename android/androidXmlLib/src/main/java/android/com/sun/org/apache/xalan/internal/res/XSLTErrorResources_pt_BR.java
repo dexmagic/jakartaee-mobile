@@ -764,10 +764,10 @@ public class XSLTErrorResources_pt_BR extends ListResourceBundle
       "xsl:apply-imports n\u00E3o permitido em um xsl:for-each"},
 
     { ER_CANT_USE_DTM_FOR_OUTPUT,
-      "N\u00E3o \u00E9 poss\u00EDvel usar um DTMLiaison para um n\u00F3 DOM de sa\u00EDda... em vez disso, especifique um com.sun.org.apache.xpath.internal.DOM2Helper!"},
+      "N\u00E3o \u00E9 poss\u00EDvel usar um DTMLiaison para um n\u00F3 DOM de sa\u00EDda... em vez disso, especifique um android.com.sun.org.apache.xpath.internal.DOM2Helper!"},
 
     { ER_CANT_USE_DTM_FOR_INPUT,
-      "N\u00E3o \u00E9 poss\u00EDvel usar um DTMLiaison para um n\u00F3 DOM de entrada... em vez disso, especifique um com.sun.org.apache.xpath.internal.DOM2Helper!"},
+      "N\u00E3o \u00E9 poss\u00EDvel usar um DTMLiaison para um n\u00F3 DOM de entrada... em vez disso, especifique um android.com.sun.org.apache.xpath.internal.DOM2Helper!"},
 
     { ER_CALL_TO_EXT_FAILED,
       "Falha ao chamar o elemento da extens\u00E3o: {0}"},

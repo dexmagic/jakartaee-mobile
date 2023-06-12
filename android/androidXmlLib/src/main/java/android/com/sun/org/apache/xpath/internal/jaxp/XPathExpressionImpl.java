@@ -22,18 +22,20 @@ package android.com.sun.org.apache.xpath.internal.jaxp;
 
 import android.com.sun.org.apache.xml.internal.utils.WrappedRuntimeException;
 import android.com.sun.org.apache.xpath.internal.objects.XObject;
+import android.jdk.xml.internal.JdkXmlFeatures;
+import android.xml.xpath.XPathEvaluationResult;
+
+import org.w3c.dom.Document;
+import org.xml.sax.InputSource;
+
 import javax.xml.namespace.QName;
 import javax.xml.transform.TransformerException;
 import javax.xml.xpath.XPathConstants;
-import android.xml.xpath.XPathEvaluationResult;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFunctionException;
 import javax.xml.xpath.XPathFunctionResolver;
 import javax.xml.xpath.XPathVariableResolver;
-import android.jdk.xml.internal.JdkXmlFeatures;
-import org.w3c.dom.Document;
-import org.xml.sax.InputSource;
 
 /**
  * The XPathExpression interface encapsulates a (compiled) XPath expression.
@@ -43,7 +45,7 @@ import org.xml.sax.InputSource;
  */
 public class XPathExpressionImpl extends XPathImplUtil implements XPathExpression {
 
-    private com.sun.org.apache.xpath.internal.XPath xpath;
+    private android.com.sun.org.apache.xpath.internal.XPath xpath;
 
     /** Protected constructor to prevent direct instantiation; use compile()
      * from the context.
@@ -52,7 +54,7 @@ public class XPathExpressionImpl extends XPathImplUtil implements XPathExpressio
         this(null, null, null, null, false, new JdkXmlFeatures(false));
     };
 
-    protected XPathExpressionImpl(com.sun.org.apache.xpath.internal.XPath xpath,
+    protected XPathExpressionImpl(android.com.sun.org.apache.xpath.internal.XPath xpath,
             JAXPPrefixResolver prefixResolver,
             XPathFunctionResolver functionResolver,
             XPathVariableResolver variableResolver) {
@@ -60,7 +62,7 @@ public class XPathExpressionImpl extends XPathImplUtil implements XPathExpressio
              false, new JdkXmlFeatures(false));
     };
 
-    protected XPathExpressionImpl(com.sun.org.apache.xpath.internal.XPath xpath,
+    protected XPathExpressionImpl(android.com.sun.org.apache.xpath.internal.XPath xpath,
             JAXPPrefixResolver prefixResolver,XPathFunctionResolver functionResolver,
             XPathVariableResolver variableResolver, boolean featureSecureProcessing,
             JdkXmlFeatures featureManager) {
@@ -74,7 +76,7 @@ public class XPathExpressionImpl extends XPathImplUtil implements XPathExpressio
         this.featureManager = featureManager;
     };
 
-    public void setXPath (com.sun.org.apache.xpath.internal.XPath xpath) {
+    public void setXPath (android.com.sun.org.apache.xpath.internal.XPath xpath) {
         this.xpath = xpath;
     }
 

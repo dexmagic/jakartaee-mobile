@@ -764,10 +764,10 @@ public class XSLTErrorResources_sv extends ListResourceBundle
       "xsl:apply-imports inte till\u00E5tet i xsl:for-each"},
 
     { ER_CANT_USE_DTM_FOR_OUTPUT,
-      "Kan inte anv\u00E4nda DTMLiaison till en DOM utdatanod... skicka en com.sun.org.apache.xpath.internal.DOM2Helper ist\u00E4llet!"},
+      "Kan inte anv\u00E4nda DTMLiaison till en DOM utdatanod... skicka en android.com.sun.org.apache.xpath.internal.DOM2Helper ist\u00E4llet!"},
 
     { ER_CANT_USE_DTM_FOR_INPUT,
-      "Kan inte anv\u00E4nda DTMLiaison till en DOM indatanod... skicka en com.sun.org.apache.xpath.internal.DOM2Helper ist\u00E4llet!"},
+      "Kan inte anv\u00E4nda DTMLiaison till en DOM indatanod... skicka en android.com.sun.org.apache.xpath.internal.DOM2Helper ist\u00E4llet!"},
 
     { ER_CALL_TO_EXT_FAILED,
       "Anrop till till\u00E4ggselement utf\u00F6rdes inte: {0}"},

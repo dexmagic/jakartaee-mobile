@@ -25,23 +25,22 @@
 
 package android.com.sun.org.apache.xalan.internal.xsltc.compiler;
 
-import com.sun.java_cup.internal.runtime.*;
+import android.com.sun.java_cup.internal.runtime.Scanner;
+import android.com.sun.java_cup.internal.runtime.Symbol;
+import android.com.sun.java_cup.internal.runtime.lr_parser;
 import android.com.sun.org.apache.xalan.internal.xsltc.DOM;
 import android.com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMsg;
 import android.com.sun.org.apache.xalan.internal.xsltc.runtime.Operators;
 import android.com.sun.org.apache.xml.internal.dtm.Axis;
 import android.com.sun.org.apache.xml.internal.dtm.DTM;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
-
-import android.com.sun.java_cup.internal.runtime.Scanner;
-import android.com.sun.java_cup.internal.runtime.Symbol;
-import android.com.sun.java_cup.internal.runtime.lr_parser;
 import android.jdk.xml.internal.JdkConstants;
 import android.jdk.xml.internal.XMLLimitAnalyzer;
 import android.jdk.xml.internal.XMLSecurityManager;
 import android.jdk.xml.internal.XMLSecurityManager.Limit;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 /**
  * CUP v0.11b generated parser.

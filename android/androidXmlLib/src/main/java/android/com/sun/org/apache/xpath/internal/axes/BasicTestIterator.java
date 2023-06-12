@@ -39,8 +39,6 @@ public abstract class BasicTestIterator extends LocPathIterator
   /**
    * Create a LocPathIterator object.
    *
-   * @param nscontext The namespace context for this iterator,
-   * should be OK if null.
    */
   protected BasicTestIterator()
   {
@@ -146,7 +144,7 @@ public abstract class BasicTestIterator extends LocPathIterator
 
     int next;
 
-    com.sun.org.apache.xpath.internal.VariableStack vars;
+    android.com.sun.org.apache.xpath.internal.VariableStack vars;
     int savedStart;
     if (-1 != m_stackFrame)
     {

@@ -764,10 +764,10 @@ public class XSLTErrorResources_zh_TW extends ListResourceBundle
       "xsl:for-each \u4E2D\u4E0D\u5141\u8A31 xsl:apply-imports"},
 
     { ER_CANT_USE_DTM_FOR_OUTPUT,
-      "DTMLiaison \u7121\u6CD5\u7528\u65BC\u8F38\u51FA DOM \u7BC0\u9EDE\u3002\u8ACB\u6539\u70BA\u50B3\u9001 com.sun.org.apache.xpath.internal.DOM2Helper\uFF01"},
+      "DTMLiaison \u7121\u6CD5\u7528\u65BC\u8F38\u51FA DOM \u7BC0\u9EDE\u3002\u8ACB\u6539\u70BA\u50B3\u9001 android.com.sun.org.apache.xpath.internal.DOM2Helper\uFF01"},
 
     { ER_CANT_USE_DTM_FOR_INPUT,
-      "DTMLiaison \u7121\u6CD5\u7528\u65BC\u8F38\u5165 DOM \u7BC0\u9EDE\u3002\u8ACB\u6539\u70BA\u50B3\u9001 com.sun.org.apache.xpath.internal.DOM2Helper\uFF01"},
+      "DTMLiaison \u7121\u6CD5\u7528\u65BC\u8F38\u5165 DOM \u7BC0\u9EDE\u3002\u8ACB\u6539\u70BA\u50B3\u9001 android.com.sun.org.apache.xpath.internal.DOM2Helper\uFF01"},
 
     { ER_CALL_TO_EXT_FAILED,
       "\u547C\u53EB\u64F4\u5145\u5957\u4EF6\u5143\u7D20\u5931\u6557: {0}"},

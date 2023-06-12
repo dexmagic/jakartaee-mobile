@@ -764,10 +764,10 @@ public class XSLTErrorResources_de extends ListResourceBundle
       "xsl:apply-imports nicht zul\u00E4ssig in xsl:for-each"},
 
     { ER_CANT_USE_DTM_FOR_OUTPUT,
-      "DTMLiaison kann nicht f\u00FCr einen Ausgabe-DOM-Knoten verwendet werden. \u00DCbergeben Sie stattdessen einen com.sun.org.apache.xpath.internal.DOM2Helper."},
+      "DTMLiaison kann nicht f\u00FCr einen Ausgabe-DOM-Knoten verwendet werden. \u00DCbergeben Sie stattdessen einen android.com.sun.org.apache.xpath.internal.DOM2Helper."},
 
     { ER_CANT_USE_DTM_FOR_INPUT,
-      "DTMLiaison kann nicht f\u00FCr einen Eingabe-DOM-Knoten verwendet werden. \u00DCbergeben Sie stattdessen einen com.sun.org.apache.xpath.internal.DOM2Helper."},
+      "DTMLiaison kann nicht f\u00FCr einen Eingabe-DOM-Knoten verwendet werden. \u00DCbergeben Sie stattdessen einen android.com.sun.org.apache.xpath.internal.DOM2Helper."},
 
     { ER_CALL_TO_EXT_FAILED,
       "Aufruf von Erweiterungselement nicht erfolgreich: {0}"},

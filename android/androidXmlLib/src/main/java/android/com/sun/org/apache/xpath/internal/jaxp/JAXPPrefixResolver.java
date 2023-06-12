@@ -68,7 +68,7 @@ public class JAXPPrefixResolver implements PrefixResolver
 
     /**
      * The URI for the XML namespace.
-     * (Duplicate of that found in com.sun.org.apache.xpath.internal.XPathContext).
+     * (Duplicate of that found in android.com.sun.org.apache.xpath.internal.XPathContext).
      */
 
     public static final String S_XMLNAMESPACEURI =

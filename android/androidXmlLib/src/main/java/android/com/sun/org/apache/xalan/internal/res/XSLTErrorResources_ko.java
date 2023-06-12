@@ -764,10 +764,10 @@ public class XSLTErrorResources_ko extends ListResourceBundle
       "xsl:for-each\uC5D0\uC11C\uB294 xsl:apply-imports\uAC00 \uD5C8\uC6A9\uB418\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4."},
 
     { ER_CANT_USE_DTM_FOR_OUTPUT,
-      "\uCD9C\uB825 DOM \uB178\uB4DC\uC5D0 DTMLiaison\uC744 \uC0AC\uC6A9\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4. \uB300\uC2E0 com.sun.org.apache.xpath.internal.DOM2Helper\uB97C \uC804\uB2EC\uD558\uC2ED\uC2DC\uC624!"},
+      "\uCD9C\uB825 DOM \uB178\uB4DC\uC5D0 DTMLiaison\uC744 \uC0AC\uC6A9\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4. \uB300\uC2E0 android.com.sun.org.apache.xpath.internal.DOM2Helper\uB97C \uC804\uB2EC\uD558\uC2ED\uC2DC\uC624!"},
 
     { ER_CANT_USE_DTM_FOR_INPUT,
-      "\uC785\uB825 DOM \uB178\uB4DC\uC5D0 DTMLiaison\uC744 \uC0AC\uC6A9\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4. \uB300\uC2E0 com.sun.org.apache.xpath.internal.DOM2Helper\uB97C \uC804\uB2EC\uD558\uC2ED\uC2DC\uC624!"},
+      "\uC785\uB825 DOM \uB178\uB4DC\uC5D0 DTMLiaison\uC744 \uC0AC\uC6A9\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4. \uB300\uC2E0 android.com.sun.org.apache.xpath.internal.DOM2Helper\uB97C \uC804\uB2EC\uD558\uC2ED\uC2DC\uC624!"},
 
     { ER_CALL_TO_EXT_FAILED,
       "\uD655\uC7A5 \uC694\uC18C\uC5D0 \uB300\uD55C \uD638\uCD9C \uC2E4\uD328: {0}"},

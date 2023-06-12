@@ -166,7 +166,7 @@ public class XPathParser
       }
 
     }
-    catch (com.sun.org.apache.xpath.internal.XPathProcessorException e)
+    catch (android.com.sun.org.apache.xpath.internal.XPathProcessorException e)
     {
           if(CONTINUE_AFTER_FATAL_ERROR.equals(e.getMessage()))
           {

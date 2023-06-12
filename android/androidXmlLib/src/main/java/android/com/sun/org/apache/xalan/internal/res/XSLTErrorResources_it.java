@@ -764,10 +764,10 @@ public class XSLTErrorResources_it extends ListResourceBundle
       "xsl:apply-imports non consentito in xsl:for-each"},
 
     { ER_CANT_USE_DTM_FOR_OUTPUT,
-      "Impossibile utilizzare DTMLiaison per un nodo DOM di output... Passare com.sun.org.apache.xpath.internal.DOM2Helper."},
+      "Impossibile utilizzare DTMLiaison per un nodo DOM di output... Passare android.com.sun.org.apache.xpath.internal.DOM2Helper."},
 
     { ER_CANT_USE_DTM_FOR_INPUT,
-      "Impossibile utilizzare DTMLiaison per un nodo DOM di input... Passare com.sun.org.apache.xpath.internal.DOM2Helper."},
+      "Impossibile utilizzare DTMLiaison per un nodo DOM di input... Passare android.com.sun.org.apache.xpath.internal.DOM2Helper."},
 
     { ER_CALL_TO_EXT_FAILED,
       "Chiamata all''elemento di estensione non riuscita: {0}"},

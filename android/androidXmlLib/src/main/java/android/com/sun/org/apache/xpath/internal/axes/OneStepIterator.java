@@ -33,7 +33,7 @@ import android.com.sun.org.apache.xpath.internal.compiler.OpMap;
 /**
  * This class implements a general iterator for
  * those LocationSteps with only one step, and perhaps a predicate.
- * @see com.sun.org.apache.xpath.internal.axes#LocPathIterator
+ * @see android.com.sun.org.apache.xpath.internal.axes#LocPathIterator
  * @xsl.usage advanced
  */
 public class OneStepIterator extends ChildTestIterator

@@ -20,17 +20,6 @@
 
 package android.com.sun.org.apache.xpath.internal.compiler;
 
-import android.com.sun.org.apache.xpath.internal.axes.AxesWalker;
-import android.com.sun.org.apache.xpath.internal.axes.LocPathIterator;
-import android.com.sun.org.apache.xpath.internal.operations.Bool;
-import android.com.sun.org.apache.xpath.internal.operations.Number;
-import android.com.sun.org.apache.xpath.internal.operations.String;
-import android.org.w3c.dom.traversal.NodeFilter;
-
-import javax.xml.transform.ErrorListener;
-import javax.xml.transform.SourceLocator;
-import javax.xml.transform.TransformerException;
-
 import android.com.sun.org.apache.xalan.internal.res.XSLMessages;
 import android.com.sun.org.apache.xml.internal.dtm.Axis;
 import android.com.sun.org.apache.xml.internal.dtm.DTMFilter;
@@ -39,6 +28,8 @@ import android.com.sun.org.apache.xml.internal.utils.PrefixResolver;
 import android.com.sun.org.apache.xml.internal.utils.QName;
 import android.com.sun.org.apache.xml.internal.utils.SAXSourceLocator;
 import android.com.sun.org.apache.xpath.internal.Expression;
+import android.com.sun.org.apache.xpath.internal.axes.AxesWalker;
+import android.com.sun.org.apache.xpath.internal.axes.LocPathIterator;
 import android.com.sun.org.apache.xpath.internal.axes.UnionPathIterator;
 import android.com.sun.org.apache.xpath.internal.axes.WalkerFactory;
 import android.com.sun.org.apache.xpath.internal.functions.FuncExtFunction;
@@ -48,6 +39,7 @@ import android.com.sun.org.apache.xpath.internal.functions.WrongNumberArgsExcept
 import android.com.sun.org.apache.xpath.internal.objects.XNumber;
 import android.com.sun.org.apache.xpath.internal.objects.XString;
 import android.com.sun.org.apache.xpath.internal.operations.And;
+import android.com.sun.org.apache.xpath.internal.operations.Bool;
 import android.com.sun.org.apache.xpath.internal.operations.Div;
 import android.com.sun.org.apache.xpath.internal.operations.Equals;
 import android.com.sun.org.apache.xpath.internal.operations.Gt;
@@ -59,6 +51,7 @@ import android.com.sun.org.apache.xpath.internal.operations.Mod;
 import android.com.sun.org.apache.xpath.internal.operations.Mult;
 import android.com.sun.org.apache.xpath.internal.operations.Neg;
 import android.com.sun.org.apache.xpath.internal.operations.NotEquals;
+import android.com.sun.org.apache.xpath.internal.operations.Number;
 import android.com.sun.org.apache.xpath.internal.operations.Operation;
 import android.com.sun.org.apache.xpath.internal.operations.Or;
 import android.com.sun.org.apache.xpath.internal.operations.Plus;
@@ -69,6 +62,11 @@ import android.com.sun.org.apache.xpath.internal.patterns.NodeTest;
 import android.com.sun.org.apache.xpath.internal.patterns.StepPattern;
 import android.com.sun.org.apache.xpath.internal.patterns.UnionPattern;
 import android.com.sun.org.apache.xpath.internal.res.XPATHErrorResources;
+import android.org.w3c.dom.traversal.NodeFilter;
+
+import javax.xml.transform.ErrorListener;
+import javax.xml.transform.SourceLocator;
+import javax.xml.transform.TransformerException;
 
 /**
  * An instance of this class compiles an XPath string expression into
@@ -462,7 +460,7 @@ public class Compiler extends OpMap
    *
    * @param opPos The current position in the m_opMap array.
    *
-   * @return reference to {@link com.sun.org.apache.xpath.internal.operations.Quo} instance.
+   * @return reference to {@link android.com.sun.org.apache.xpath.internal.operations.Quo} instance.
    *
    * @throws TransformerException if a error occurs creating the Expression.
    */
@@ -496,7 +494,7 @@ public class Compiler extends OpMap
    */
   protected Expression string(int opPos) throws TransformerException
   {
-    return compileUnary(new String(), opPos);
+    return compileUnary(new android.com.sun.org.apache.xpath.internal.operations.String(), opPos);
   }
 
   /**
@@ -976,7 +974,7 @@ private static final boolean DEBUG = false;
    *
    * @param opPos The position of the first predicate the m_opMap array.
    *
-   * @return reference to array of {@link com.sun.org.apache.xpath.internal.Expression} instances.
+   * @return reference to array of {@link android.com.sun.org.apache.xpath.internal.Expression} instances.
    *
    * @throws TransformerException if a error occurs creating the Expression.
    */
@@ -1027,7 +1025,7 @@ private static final boolean DEBUG = false;
    *
    * @param opPos The position of the first predicate the m_opMap array.
    * @param predicates An empty pre-determined array of
-   *            {@link com.sun.org.apache.xpath.internal.Expression}s, that will be filled in.
+   *            {@link android.com.sun.org.apache.xpath.internal.Expression}s, that will be filled in.
    *
    * @throws TransformerException
    */
@@ -1194,7 +1192,7 @@ private static final boolean DEBUG = false;
   public void warn(String msg, Object[] args) throws TransformerException
   {
 
-    java.lang.String fmsg = XSLMessages.createXPATHWarning(msg, args);
+    java.lang.String fmsg = XSLMessages.createXPATHWarning(java.lang.String.valueOf(msg), args);
 
     if (null != m_errorHandler)
     {

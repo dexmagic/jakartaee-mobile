@@ -31,8 +31,6 @@ import android.com.sun.org.apache.xml.internal.res.XMLErrorResources;
 import android.com.sun.org.apache.xml.internal.res.XMLMessages;
 import android.com.sun.org.apache.xml.internal.utils.XMLStringFactory;
 
-import com.sun.org.apache.xml.internal.dtm.*;
-
 import javax.xml.transform.Source;
 
 /**

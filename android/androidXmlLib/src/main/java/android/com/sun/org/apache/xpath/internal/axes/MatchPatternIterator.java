@@ -210,7 +210,7 @@ public class MatchPatternIterator extends LocPathIterator
 
     int next;
 
-    com.sun.org.apache.xpath.internal.VariableStack vars;
+    android.com.sun.org.apache.xpath.internal.VariableStack vars;
     int savedStart;
     if (-1 != m_stackFrame)
     {

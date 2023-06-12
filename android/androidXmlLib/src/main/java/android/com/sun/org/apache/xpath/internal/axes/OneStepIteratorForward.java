@@ -32,7 +32,7 @@ import android.com.sun.org.apache.xpath.internal.compiler.OpMap;
  * those LocationSteps with only one step, and perhaps a predicate,
  * that only go forward (i.e. it can not be used with ancestors,
  * preceding, etc.)
- * @see com.sun.org.apache.xpath.internal.axes#ChildTestIterator
+ * @see android.com.sun.org.apache.xpath.internal.axes#ChildTestIterator
  * @xsl.usage advanced
  */
 public class OneStepIteratorForward extends ChildTestIterator

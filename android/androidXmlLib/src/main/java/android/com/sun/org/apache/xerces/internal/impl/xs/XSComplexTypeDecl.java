@@ -21,11 +21,10 @@
 package android.com.sun.org.apache.xerces.internal.impl.xs;
 
 import android.com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType;
-import com.sun.org.apache.xerces.internal.xs.*;
-import android.com.sun.org.apache.xerces.internal.impl.xs.models.XSCMValidator;
-import android.com.sun.org.apache.xerces.internal.impl.xs.models.CMBuilder;
-import android.com.sun.org.apache.xerces.internal.impl.xs.util.XSObjectListImpl;
 import android.com.sun.org.apache.xerces.internal.impl.dv.xs.XSSimpleTypeDecl;
+import android.com.sun.org.apache.xerces.internal.impl.xs.models.CMBuilder;
+import android.com.sun.org.apache.xerces.internal.impl.xs.models.XSCMValidator;
+import android.com.sun.org.apache.xerces.internal.impl.xs.util.XSObjectListImpl;
 import android.com.sun.org.apache.xerces.internal.xs.XSAttributeUse;
 import android.com.sun.org.apache.xerces.internal.xs.XSComplexTypeDefinition;
 import android.com.sun.org.apache.xerces.internal.xs.XSConstants;

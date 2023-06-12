@@ -41,8 +41,8 @@ public interface XPathFactory
    *                purposes.
    * @param prefixResolver This will be called in order to resolve prefixes
    *        to namespace URIs.
-   * @param type One of {@link com.sun.org.apache.xpath.internal.XPath#SELECT} or
-   *             {@link com.sun.org.apache.xpath.internal.XPath#MATCH}.
+   * @param type One of {@link android.com.sun.org.apache.xpath.internal.XPath#SELECT} or
+   *             {@link android.com.sun.org.apache.xpath.internal.XPath#MATCH}.
    *
    * @return an XPath ready for execution.
    */
