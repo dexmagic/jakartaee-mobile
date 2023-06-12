@@ -24,19 +24,21 @@
  */
 package android.xml.catalog;
 
+import org.w3c.dom.ls.LSInput;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
 import java.io.StringReader;
 import java.net.URL;
+
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.Source;
 import javax.xml.transform.sax.SAXSource;
-import org.w3c.dom.ls.LSInput;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-import org.xml.sax.XMLReader;
 
 /**
  * Implements CatalogResolver.
@@ -215,7 +217,7 @@ final class CatalogResolverImpl implements CatalogResolver {
     public InputStream resolveEntity(String publicId, String systemId, String baseUri, String namespace) {
         InputSource is = resolveEntity(publicId, systemId);
 
-        if (is != null && !is.isEmpty()) {
+        if (is != null /*&& !is.isEmpty()*/) {
 
             try {
                 return new URL(is.getSystemId()).openStream();
@@ -242,7 +244,7 @@ final class CatalogResolverImpl implements CatalogResolver {
     public LSInput resolveResource(String type, String namespaceURI, String publicId, String systemId, String baseURI) {
         InputSource is = resolveEntity(publicId, systemId);
 
-        if (is != null && !is.isEmpty()) {
+        if (is != null /*&& !is.isEmpty()*/) {
             return new LSInputImpl(is.getSystemId());
         }
 

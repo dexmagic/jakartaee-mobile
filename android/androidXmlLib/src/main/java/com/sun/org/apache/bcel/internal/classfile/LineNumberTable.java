@@ -23,7 +23,6 @@ import com.sun.org.apache.bcel.internal.Const;
 import java.io.DataInput;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import jdk.xml.internal.SecuritySupport;
 
 /**
  * This class represents a table of line numbers for debugging
@@ -134,7 +133,7 @@ public final class LineNumberTable extends Attribute {
                 line.append(", ");
             }
             if ((line.length() > MAX_LINE_LENGTH) && (i < lineNumberTable.length - 1)) {
-                line.append(SecuritySupport.NEWLINE);
+                line.append("\n");
                 buf.append(line);
                 line.setLength(0);
             }
