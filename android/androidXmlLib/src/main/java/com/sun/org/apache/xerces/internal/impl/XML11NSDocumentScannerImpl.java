@@ -35,7 +35,7 @@ import com.sun.org.apache.xerces.internal.xni.XNIException;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.events.XMLEvent;
 
 
 /**

@@ -24,7 +24,7 @@ import com.sun.org.apache.xerces.internal.util.Status;
 import com.sun.xml.internal.stream.XMLEntityStorage;
 import java.io.IOException;
 import java.util.ArrayList;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.events.XMLEvent;
 import com.sun.org.apache.xerces.internal.impl.msg.XMLMessageFormatter;
 import com.sun.org.apache.xerces.internal.util.SymbolTable;
 import com.sun.org.apache.xerces.internal.util.XMLChar;

@@ -25,11 +25,12 @@
 
 package com.sun.org.apache.xerces.internal.impl;
 
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.StreamFilter;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
+import android.xml.stream.StreamFilter;
+import android.xml.stream.Location;
+import android.xml.stream.XMLStreamException;
 import javax.xml.namespace.QName;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.events.XMLEvent;
 
 
 /**
@@ -43,7 +44,7 @@ import javax.xml.stream.events.XMLEvent;
  * event, would have to wait until 1.1 of StAX in which the filtered stream reader would be defined more clearly.
  */
 
-public class XMLStreamFilterImpl implements javax.xml.stream.XMLStreamReader {
+public class XMLStreamFilterImpl implements XMLStreamReader {
 
     private StreamFilter fStreamFilter = null;
     private XMLStreamReader fStreamReader = null;
@@ -293,7 +294,7 @@ public class XMLStreamFilterImpl implements javax.xml.stream.XMLStreamReader {
      *
      * @return
      */
-    public javax.xml.stream.Location getLocation() {
+    public Location getLocation() {
         return fStreamReader.getLocation();
     }
 

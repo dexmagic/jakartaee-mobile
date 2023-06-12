@@ -34,7 +34,6 @@ import com.sun.org.apache.xerces.internal.impl.msg.XMLMessageFormatter;
 import com.sun.org.apache.xerces.internal.impl.validation.ValidationManager;
 import com.sun.org.apache.xerces.internal.util.FeatureState;
 import com.sun.org.apache.xerces.internal.util.PropertyState;
-import com.sun.org.apache.xerces.internal.util.Status;
 import com.sun.org.apache.xerces.internal.util.SymbolTable;
 import com.sun.org.apache.xerces.internal.utils.XMLSecurityPropertyManager;
 import com.sun.org.apache.xerces.internal.xni.XMLLocator;
@@ -48,7 +47,7 @@ import com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentScanner;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLPullParserConfiguration;
 import javax.xml.XMLConstants;
-import javax.xml.catalog.CatalogFeatures;
+import android.xml.catalog.CatalogFeatures;
 import jdk.xml.internal.JdkConstants;
 import jdk.xml.internal.JdkXmlUtils;
 

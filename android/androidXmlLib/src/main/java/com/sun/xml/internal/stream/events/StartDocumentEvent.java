@@ -25,9 +25,9 @@
 
 package com.sun.xml.internal.stream.events ;
 
-import javax.xml.stream.events.StartDocument;
-import javax.xml.stream.Location;
-import javax.xml.stream.XMLStreamConstants;
+import android.xml.stream.events.StartDocument;
+import android.xml.stream.Location;
+import android.xml.stream.XMLStreamConstants;
 
 /** Implementation of StartDocumentEvent.
  *

@@ -23,9 +23,9 @@ package com.sun.org.apache.xerces.internal.impl.dv.xs;
 
 import java.math.BigDecimal;
 
-import javax.xml.datatype.DatatypeFactory;
-import javax.xml.datatype.Duration;
-import javax.xml.datatype.XMLGregorianCalendar;
+import android.xml.datatype.DatatypeFactory;
+import android.xml.datatype.Duration;
+import android.xml.datatype.XMLGregorianCalendar;
 
 import com.sun.org.apache.xerces.internal.impl.Constants;
 import com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl;

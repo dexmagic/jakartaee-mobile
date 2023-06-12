@@ -29,7 +29,7 @@ import com.sun.org.apache.xalan.internal.xsltc.compiler.XSLTC;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMsg;
 import java.util.ArrayList;
 import javax.xml.XMLConstants;
-import javax.xml.catalog.CatalogFeatures;
+import android.xml.catalog.CatalogFeatures;
 import javax.xml.transform.Source;
 import javax.xml.transform.Templates;
 import javax.xml.transform.TransformerException;

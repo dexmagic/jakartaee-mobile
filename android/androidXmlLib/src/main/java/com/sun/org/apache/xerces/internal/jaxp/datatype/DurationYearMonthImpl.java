@@ -26,7 +26,7 @@
 package com.sun.org.apache.xerces.internal.jaxp.datatype;
 
 import java.math.BigInteger;
-import javax.xml.datatype.DatatypeConstants;
+import android.xml.datatype.DatatypeConstants;
 
 
 /**

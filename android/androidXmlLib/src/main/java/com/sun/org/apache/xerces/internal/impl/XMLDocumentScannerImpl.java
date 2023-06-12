@@ -43,8 +43,8 @@ import com.sun.xml.internal.stream.dtd.DTDGrammarUtil;
 import java.io.CharConversionException;
 import java.io.EOFException;
 import java.io.IOException;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.XMLInputFactory;
+import android.xml.stream.events.XMLEvent;
 import jdk.xml.internal.SecuritySupport;
 
 

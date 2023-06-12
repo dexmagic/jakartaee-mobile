@@ -25,10 +25,10 @@
 
 package com.sun.xml.internal.stream.events ;
 
-import javax.xml.stream.events.Characters;
+import android.xml.stream.events.Characters;
 import java.io.Writer;
 import java.io.IOException;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.events.XMLEvent;
 import com.sun.org.apache.xerces.internal.util.XMLChar;
 
 /** Implementation of Character event.

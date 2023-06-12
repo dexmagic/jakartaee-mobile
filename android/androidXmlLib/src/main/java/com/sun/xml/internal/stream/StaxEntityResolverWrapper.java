@@ -26,14 +26,14 @@
 package com.sun.xml.internal.stream;
 
 import java.io.InputStream;
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLResolver;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
+import android.xml.stream.XMLEventReader;
+import android.xml.stream.XMLResolver;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
 import com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier;
 import com.sun.org.apache.xerces.internal.xni.XNIException;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
-import javax.xml.catalog.CatalogException;
+import android.xml.catalog.CatalogException;
 
 /**
  *

@@ -21,8 +21,8 @@
 
 package com.sun.org.apache.xalan.internal.xsltc.dom;
 
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLStreamReader;
+import android.xml.stream.XMLEventReader;
+import android.xml.stream.XMLStreamReader;
 import javax.xml.transform.Source;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.sax.SAXSource;

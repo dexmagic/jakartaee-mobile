@@ -25,9 +25,8 @@
 
 package com.sun.xml.internal.stream.events ;
 
-import javax.xml.stream.events.EndDocument;
-import java.io.Writer;
-import javax.xml.stream.XMLStreamConstants;
+import android.xml.stream.events.EndDocument;
+import android.xml.stream.XMLStreamConstants;
 
 /**
  * This class contains information about EndDocument event.

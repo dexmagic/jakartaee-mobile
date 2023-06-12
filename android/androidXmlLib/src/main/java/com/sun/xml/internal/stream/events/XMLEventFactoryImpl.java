@@ -25,19 +25,24 @@
 
 package com.sun.xml.internal.stream.events;
 
+import android.xml.stream.events.Comment;
+
 import java.util.Iterator;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.namespace.QName;
-import javax.xml.stream.XMLEventFactory;
-import javax.xml.stream.Location;
-import javax.xml.stream.events.Attribute;
-import javax.xml.stream.events.Characters;
-import javax.xml.stream.events.ProcessingInstruction;
-import javax.xml.stream.events.Namespace;
-import javax.xml.stream.events.EntityDeclaration;
-import javax.xml.stream.events.EntityReference;
-import javax.xml.stream.events.StartDocument;
-import javax.xml.stream.events.StartElement;
+import android.xml.stream.XMLEventFactory;
+import android.xml.stream.Location;
+import android.xml.stream.events.Attribute;
+import android.xml.stream.events.Characters;
+import android.xml.stream.events.EndDocument;
+import android.xml.stream.events.ProcessingInstruction;
+import android.xml.stream.events.DTD;
+import android.xml.stream.events.Namespace;
+import android.xml.stream.events.EntityDeclaration;
+import android.xml.stream.events.EndElement;
+import android.xml.stream.events.EntityReference;
+import android.xml.stream.events.StartDocument;
+import android.xml.stream.events.StartElement;
 
 
 /**
@@ -87,34 +92,34 @@ public class XMLEventFactoryImpl extends XMLEventFactory {
     }
 
     @Override
-    public javax.xml.stream.events.Comment createComment(String text) {
+    public Comment createComment(String text) {
         CommentEvent charEvent =  new CommentEvent(text);
         if(location != null)charEvent.setLocation(location);
         return charEvent;
     }
 
     @Override
-    public javax.xml.stream.events.DTD createDTD(String dtd) {
+    public DTD createDTD(String dtd) {
         DTDEvent dtdEvent = new DTDEvent(dtd);
         if(location != null)dtdEvent.setLocation(location);
         return dtdEvent;
     }
 
     @Override
-    public javax.xml.stream.events.EndDocument createEndDocument() {
+    public EndDocument createEndDocument() {
         EndDocumentEvent event =new EndDocumentEvent();
         if(location != null)event.setLocation(location);
         return event;
     }
 
     @Override
-    public javax.xml.stream.events.EndElement createEndElement(QName name,
-            Iterator<? extends Namespace> namespaces) {
+    public EndElement createEndElement(QName name,
+                                       Iterator<? extends Namespace> namespaces) {
         return createEndElement(name.getPrefix(), name.getNamespaceURI(), name.getLocalPart());
     }
 
     @Override
-    public javax.xml.stream.events.EndElement createEndElement(
+    public EndElement createEndElement(
             String prefix, String namespaceUri, String localName) {
         EndElementEvent event =  new EndElementEvent(prefix, namespaceUri, localName);
         if(location != null)event.setLocation(location);
@@ -122,8 +127,8 @@ public class XMLEventFactoryImpl extends XMLEventFactory {
     }
 
     @Override
-    public javax.xml.stream.events.EndElement createEndElement(String prefix, String namespaceUri,
-            String localName, Iterator<? extends Namespace> namespaces) {
+    public EndElement createEndElement(String prefix, String namespaceUri,
+                                       String localName, Iterator<? extends Namespace> namespaces) {
 
         EndElementEvent event =  new EndElementEvent(prefix, namespaceUri, localName);
         if(namespaces!=null){
@@ -238,7 +243,7 @@ public class XMLEventFactoryImpl extends XMLEventFactory {
     }
 
     @Override
-    public void setLocation(javax.xml.stream.Location location) {
+    public void setLocation(Location location) {
         this.location = location;
     }
 

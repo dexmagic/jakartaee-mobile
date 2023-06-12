@@ -51,13 +51,14 @@ import java.util.Map;
 import javax.xml.XMLConstants;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.namespace.QName;
-import javax.xml.stream.Location;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.events.EntityDeclaration;
-import javax.xml.stream.events.NotationDeclaration;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.Location;
+import android.xml.stream.XMLInputFactory;
+import android.xml.stream.XMLStreamConstants;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
+import android.xml.stream.events.EntityDeclaration;
+import android.xml.stream.events.NotationDeclaration;
+import android.xml.stream.events.XMLEvent;
 
 /**
  * This class implements javax.xml.stream.XMLStreamReader. It makes use of
@@ -68,7 +69,7 @@ import javax.xml.stream.events.XMLEvent;
  * @author K.Venugopal Sun Microsystems,Inc.
  * @author Sunitha Reddy Sun Microsystems,Inc.
  */
-public class XMLStreamReaderImpl implements javax.xml.stream.XMLStreamReader {
+public class XMLStreamReaderImpl implements XMLStreamReader {
 
     /**
      * Property identifier: entity manager.

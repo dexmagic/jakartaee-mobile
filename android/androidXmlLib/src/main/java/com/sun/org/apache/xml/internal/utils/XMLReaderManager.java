@@ -22,7 +22,7 @@ package com.sun.org.apache.xml.internal.utils;
 
 import java.util.HashMap;
 import javax.xml.XMLConstants;
-import javax.xml.catalog.CatalogFeatures;
+import android.xml.catalog.CatalogFeatures;
 import jdk.xml.internal.JdkConstants;
 import jdk.xml.internal.JdkXmlFeatures;
 import jdk.xml.internal.JdkXmlUtils;

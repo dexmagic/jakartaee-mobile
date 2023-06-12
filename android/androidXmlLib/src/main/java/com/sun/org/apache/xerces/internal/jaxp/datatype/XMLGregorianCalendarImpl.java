@@ -37,9 +37,9 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.TimeZone;
-import javax.xml.datatype.DatatypeConstants;
-import javax.xml.datatype.Duration;
-import javax.xml.datatype.XMLGregorianCalendar;
+import android.xml.datatype.DatatypeConstants;
+import android.xml.datatype.Duration;
+import android.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
 import jdk.xml.internal.SecuritySupport;
 
@@ -179,7 +179,7 @@ import jdk.xml.internal.SecuritySupport;
  *   <li>conversion between this class and <code>java.util.GregorianCalendar</code></li>
  *   <li>partial order relation comparator method, {@link #compare(XMLGregorianCalendar)}</li>
  *   <li>{@link #equals(Object)} defined relative to {@link #compare(XMLGregorianCalendar)}.</li>
- *   <li> addition operation with {@link javax.xml.datatype.Duration}.
+ *   <li> addition operation with {@link Duration}.
  * instance as defined in <a href="http://www.w3.org/TR/xmlschema-2/#adding-durations-to-dateTimes">
  * W3C XML Schema 1.0 Part 2, Appendix E, <i>Adding durations to dateTimes</i></a>.</li>
  * </ul>
@@ -188,7 +188,7 @@ import jdk.xml.internal.SecuritySupport;
  * @author Kohsuke Kawaguchi
  * @author Joseph Fialli
  * @author Sunitha Reddy
- * @see javax.xml.datatype.Duration
+ * @see Duration
  * @since 1.5
  * @LastModified: Aug 2020
  */

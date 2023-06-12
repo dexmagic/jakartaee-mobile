@@ -26,11 +26,10 @@
 package com.sun.org.apache.xalan.internal.xsltc.trax;
 
 
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamWriter;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamWriter;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
-import org.xml.sax.ext.Locator2;
 
 /**
  * @author Sunitha Reddy

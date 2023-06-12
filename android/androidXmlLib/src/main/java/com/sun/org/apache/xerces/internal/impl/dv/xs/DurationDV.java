@@ -24,8 +24,8 @@ package com.sun.org.apache.xerces.internal.impl.dv.xs;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-import javax.xml.datatype.DatatypeConstants;
-import javax.xml.datatype.Duration;
+import android.xml.datatype.DatatypeConstants;
+import android.xml.datatype.Duration;
 
 import com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
 import com.sun.org.apache.xerces.internal.impl.dv.ValidationContext;

@@ -25,11 +25,9 @@
 
 package com.sun.xml.internal.stream.events ;
 
-import java.io.Writer;
-import javax.xml.stream.Location;
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.events.ProcessingInstruction;
+import android.xml.stream.Location;
+import android.xml.stream.XMLStreamConstants;
+import android.xml.stream.events.ProcessingInstruction;
 
 /** Implements Processing Instruction Event
  *

@@ -34,10 +34,10 @@ import java.util.List;
 import java.util.Map;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.namespace.QName;
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.events.Attribute;
-import javax.xml.stream.events.Namespace;
-import javax.xml.stream.events.StartElement;
+import android.xml.stream.XMLStreamConstants;
+import android.xml.stream.events.Attribute;
+import android.xml.stream.events.Namespace;
+import android.xml.stream.events.StartElement;
 
 /**
  * Implementation of StartElementEvent.

@@ -27,10 +27,10 @@ package com.sun.xml.internal.stream;
 
 
 
-import javax.xml.stream.Location;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLReporter;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.Location;
+import android.xml.stream.XMLInputFactory;
+import android.xml.stream.XMLReporter;
+import android.xml.stream.XMLStreamException;
 import com.sun.org.apache.xerces.internal.impl.msg.XMLMessageFormatter;
 import com.sun.org.apache.xerces.internal.util.MessageFormatter;
 import com.sun.org.apache.xerces.internal.xni.XMLLocator;

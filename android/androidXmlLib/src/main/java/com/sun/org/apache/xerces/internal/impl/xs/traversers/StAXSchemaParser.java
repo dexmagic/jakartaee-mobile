@@ -34,16 +34,16 @@ import com.sun.org.apache.xerces.internal.xni.XNIException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.events.Attribute;
-import javax.xml.stream.events.EndElement;
-import javax.xml.stream.events.Namespace;
-import javax.xml.stream.events.ProcessingInstruction;
-import javax.xml.stream.events.StartElement;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.XMLEventReader;
+import android.xml.stream.XMLStreamConstants;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
+import android.xml.stream.events.Attribute;
+import android.xml.stream.events.EndElement;
+import android.xml.stream.events.Namespace;
+import android.xml.stream.events.ProcessingInstruction;
+import android.xml.stream.events.StartElement;
+import android.xml.stream.events.XMLEvent;
 import org.w3c.dom.Document;
 
 /**

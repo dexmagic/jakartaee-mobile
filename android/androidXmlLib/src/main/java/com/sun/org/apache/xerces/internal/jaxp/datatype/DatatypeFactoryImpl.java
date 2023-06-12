@@ -25,10 +25,10 @@ import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.util.GregorianCalendar;
 
-import javax.xml.datatype.DatatypeConstants;
-import javax.xml.datatype.DatatypeFactory;
-import javax.xml.datatype.Duration;
-import javax.xml.datatype.XMLGregorianCalendar;
+import android.xml.datatype.DatatypeConstants;
+import android.xml.datatype.DatatypeFactory;
+import android.xml.datatype.Duration;
+import android.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Factory that creates new <code>javax.xml.datatype</code> <code>Object</code>s that map XML to/from Java <code>Object</code>s.</p>

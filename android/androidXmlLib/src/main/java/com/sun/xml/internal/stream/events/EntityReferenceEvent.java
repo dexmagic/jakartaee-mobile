@@ -25,10 +25,9 @@
 
 package com.sun.xml.internal.stream.events ;
 
-import javax.xml.stream.events.EntityReference;
-import java.io.Writer;
-import javax.xml.stream.events.EntityDeclaration;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.events.EntityReference;
+import android.xml.stream.events.EntityDeclaration;
+import android.xml.stream.events.XMLEvent;
 
 /** Implements EntityReference event.
  *

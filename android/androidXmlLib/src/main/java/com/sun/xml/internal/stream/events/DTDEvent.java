@@ -26,10 +26,10 @@
 package com.sun.xml.internal.stream.events;
 
 import java.util.List;
-import javax.xml.stream.events.DTD;
-import javax.xml.stream.events.EntityDeclaration;
-import javax.xml.stream.events.NotationDeclaration;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.events.DTD;
+import android.xml.stream.events.EntityDeclaration;
+import android.xml.stream.events.NotationDeclaration;
+import android.xml.stream.events.XMLEvent;
 
 /**
  *

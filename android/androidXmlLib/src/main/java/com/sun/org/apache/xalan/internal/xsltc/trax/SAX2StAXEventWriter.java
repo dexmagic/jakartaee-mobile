@@ -32,9 +32,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import javax.xml.stream.XMLEventFactory;
-import javax.xml.stream.XMLEventWriter;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLEventFactory;
+import android.xml.stream.XMLEventWriter;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.events.Attribute;
+import android.xml.stream.events.Namespace;
+
 import javax.xml.stream.events.*;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

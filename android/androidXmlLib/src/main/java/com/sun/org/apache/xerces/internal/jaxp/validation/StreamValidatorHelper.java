@@ -31,18 +31,15 @@ import com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration;
 import java.io.IOException;
 import java.lang.ref.SoftReference;
 import javax.xml.XMLConstants;
-import javax.xml.catalog.CatalogFeatures;
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.sax.SAXTransformerFactory;
 import javax.xml.transform.sax.TransformerHandler;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 import jdk.xml.internal.JdkConstants;
-import jdk.xml.internal.JdkXmlFeatures;
 import jdk.xml.internal.JdkXmlUtils;
 import org.xml.sax.SAXException;
 

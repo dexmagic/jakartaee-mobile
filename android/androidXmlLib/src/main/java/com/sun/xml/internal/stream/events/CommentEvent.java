@@ -25,8 +25,8 @@
 
 package com.sun.xml.internal.stream.events ;
 
-import javax.xml.stream.events.Comment;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.events.Comment;
+import android.xml.stream.events.XMLEvent;
 
 /**
  * This class contains information about Comment event.

@@ -21,7 +21,7 @@
 package com.sun.org.apache.xerces.internal.jaxp.datatype;
 
 import com.sun.org.apache.xerces.internal.util.DatatypeMessageFormatter;
-import java.io.IOException;
+
 import java.io.ObjectStreamException;
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -31,9 +31,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.TimeZone;
-import javax.xml.datatype.DatatypeConstants;
-import javax.xml.datatype.Duration;
-import javax.xml.datatype.XMLGregorianCalendar;
+import android.xml.datatype.DatatypeConstants;
+import android.xml.datatype.Duration;
+import android.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Immutable representation of a time span as defined in
