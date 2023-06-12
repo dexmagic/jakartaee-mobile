@@ -16,4 +16,21 @@ rootProject.name = "Jakarta EE"
 include ':app'
 include ':jafapi'
 include ':jaxbapi'
-include ':fauxLib'
+// include ':fauxLib'
+
+/*
+ * comment out this library to see what classes jaxbapi library needs to compile.
+ * This is necessary because the dependency chain behind the classes that jaxbapi needs is rather
+ * large. This confirms with complete accuracy that there are only a few classes that need to
+ * be addressed when porting jaxbapi to the Android platform.
+ */
+// include ':jaxbTemporaryLib'
+
+/*
+ * Keep fauxLib in the repository to use as a parking lot for classes that are found in the normal
+ * JDK library but not on Android. I put those classes here as a working library so I can identify
+ * the places where I need to modify the library I'm porting to Android.
+ */
+// include ':fauxLib'
+include ':androidXmlLib'
+include ':jaxbReferenceImplementationLib'

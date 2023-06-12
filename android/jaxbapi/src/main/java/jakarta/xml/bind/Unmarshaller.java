@@ -10,6 +10,9 @@
 
 package jakarta.xml.bind;
 
+import android.xml.stream.XMLEventReader;
+import android.xml.stream.XMLStreamReader;
+
 import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 import jakarta.xml.bind.attachment.AttachmentUnmarshaller;
 import javax.xml.validation.Schema;
@@ -141,8 +144,8 @@ import java.io.Reader;
  *       JAXBContext jc = JAXBContext.newInstance( "com.acme.foo" );
  *       Unmarshaller u = jc.createUnmarshaller();
  *
- *       javax.xml.stream.XMLStreamReader xmlStreamReader =
- *           javax.xml.stream.XMLInputFactory().newInstance().createXMLStreamReader( ... );
+ *       android.xml.stream.XMLStreamReader xmlStreamReader =
+ *           android.xml.stream.XMLInputFactory().newInstance().createXMLStreamReader( ... );
  *
  *       Object o = u.unmarshal( xmlStreamReader );
  *    </pre>
@@ -155,8 +158,8 @@ import java.io.Reader;
  *       JAXBContext jc = JAXBContext.newInstance( "com.acme.foo" );
  *       Unmarshaller u = jc.createUnmarshaller();
  *
- *       javax.xml.stream.XMLEventReader xmlEventReader =
- *           javax.xml.stream.XMLInputFactory().newInstance().createXMLEventReader( ... );
+ *       android.xml.stream.XMLEventReader xmlEventReader =
+ *           android.xml.stream.XMLInputFactory().newInstance().createXMLEventReader( ... );
  *
  *       Object o = u.unmarshal( xmlEventReader );
  *    </pre>
@@ -682,9 +685,9 @@ public interface Unmarshaller {
      *      If {@code reader} is not pointing to a START_DOCUMENT or
      *      START_ELEMENT  event.
      * @since 1.6, JAXB 2.0
-     * @see #unmarshal(javax.xml.stream.XMLStreamReader, Class)
+     * @see #unmarshal(XMLStreamReader, Class)
      */
-    Object unmarshal(javax.xml.stream.XMLStreamReader reader)
+    Object unmarshal(XMLStreamReader reader)
         throws JAXBException;
 
     /**
@@ -720,7 +723,7 @@ public interface Unmarshaller {
      *      If any parameter is null
      * @since 1.6, JAXB 2.0
      */
-    <T> JAXBElement<T> unmarshal(javax.xml.stream.XMLStreamReader reader, Class<T> declaredType) throws JAXBException;
+    <T> JAXBElement<T> unmarshal(XMLStreamReader reader, Class<T> declaredType) throws JAXBException;
 
     /**
      * Unmarshal XML data from the specified pull parser and return the
@@ -754,9 +757,9 @@ public interface Unmarshaller {
      *      If {@code reader} is not pointing to a START_DOCUMENT or
      *      START_ELEMENT event.
      * @since 1.6, JAXB 2.0
-     * @see #unmarshal(javax.xml.stream.XMLEventReader, Class)
+     * @see #unmarshal(XMLEventReader, Class)
      */
-    Object unmarshal(javax.xml.stream.XMLEventReader reader)
+    Object unmarshal(XMLEventReader reader)
         throws JAXBException;
 
     /**
@@ -793,7 +796,7 @@ public interface Unmarshaller {
      *      If any parameter is null
      * @since 1.6, JAXB 2.0
      */
-    <T> JAXBElement<T> unmarshal(javax.xml.stream.XMLEventReader reader, Class<T> declaredType) throws JAXBException;
+    <T> JAXBElement<T> unmarshal(XMLEventReader reader, Class<T> declaredType) throws JAXBException;
 
     /**
      * Get an unmarshaller handler object that can be used as a component in

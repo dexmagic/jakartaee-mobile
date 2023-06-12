@@ -10,6 +10,10 @@
 
 package jakarta.xml.bind;
 
+import android.xml.stream.XMLEventWriter;
+import android.xml.stream.XMLStreamWriter;
+import android.xml.stream.events.XMLEvent;
+
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 import jakarta.xml.bind.attachment.AttachmentMarshaller;
@@ -112,7 +116,7 @@ import java.io.File;
  * </blockquote>
  *
  * <p>
- * Marshalling to a javax.xml.stream.XMLStreamWriter:
+ * Marshalling to a android.xml.stream.XMLStreamWriter:
  * <blockquote>
  *    <pre>
  *       XMLStreamWriter xmlStreamWriter =
@@ -123,7 +127,7 @@ import java.io.File;
  * </blockquote>
  *
  * <p>
- * Marshalling to a javax.xml.stream.XMLEventWriter:
+ * Marshalling to a android.xml.stream.XMLEventWriter:
  * <blockquote>
  *    <pre>
  *       XMLEventWriter xmlEventWriter =
@@ -244,12 +248,12 @@ import java.io.File;
  *             generate an xml declaration.</li>
  *         <li>{@link #marshal(Object,javax.xml.transform.Result) marshal(Object,Result)} - depends on the kind of
  *             Result object, see semantics for Node, ContentHandler, and Stream APIs</li>
- *         <li>{@link #marshal(Object,javax.xml.stream.XMLEventWriter) marshal(Object,XMLEventWriter)} - the
- *             Marshaller will not generate {@link javax.xml.stream.events.XMLEvent#START_DOCUMENT} and
- *             {@link javax.xml.stream.events.XMLEvent#END_DOCUMENT} events.</li>
- *         <li>{@link #marshal(Object,javax.xml.stream.XMLStreamWriter) marshal(Object,XMLStreamWriter)} - the
- *             Marshaller will not generate {@link javax.xml.stream.events.XMLEvent#START_DOCUMENT} and
- *             {@link javax.xml.stream.events.XMLEvent#END_DOCUMENT} events.</li>
+ *         <li>{@link #marshal(Object, XMLEventWriter) marshal(Object,XMLEventWriter)} - the
+ *             Marshaller will not generate {@link XMLEvent#START_DOCUMENT} and
+ *             {@link XMLEvent#END_DOCUMENT} events.</li>
+ *         <li>{@link #marshal(Object, XMLStreamWriter) marshal(Object,XMLStreamWriter)} - the
+ *             Marshaller will not generate {@link XMLEvent#START_DOCUMENT} and
+ *             {@link XMLEvent#END_DOCUMENT} events.</li>
  *       </ul>
  *   </dd>
  * </dl>
@@ -482,7 +486,7 @@ public interface Marshaller {
 
     /**
      * Marshal the content tree rooted at {@code jaxbElement} into a
-     * {@link javax.xml.stream.XMLStreamWriter}.
+     * {@link XMLStreamWriter}.
      *
      * @param jaxbElement
      *      The content tree to be marshalled.
@@ -501,12 +505,12 @@ public interface Marshaller {
      *      If any of the method parameters are null
      * @since 1.6, JAXB 2.0
      */
-    void marshal(Object jaxbElement, javax.xml.stream.XMLStreamWriter writer)
+    void marshal(Object jaxbElement, XMLStreamWriter writer)
         throws JAXBException;
 
     /**
      * Marshal the content tree rooted at {@code jaxbElement} into a
-     * {@link javax.xml.stream.XMLEventWriter}.
+     * {@link XMLEventWriter}.
      *
      * @param jaxbElement
      *      The content tree rooted at jaxbElement to be marshalled.
@@ -525,7 +529,7 @@ public interface Marshaller {
      *      If any of the method parameters are null
      * @since 1.6, JAXB 2.0
      */
-    void marshal(Object jaxbElement, javax.xml.stream.XMLEventWriter writer)
+    void marshal(Object jaxbElement, XMLEventWriter writer)
         throws JAXBException;
 
     /**
