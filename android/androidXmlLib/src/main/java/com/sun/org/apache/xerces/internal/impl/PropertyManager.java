@@ -30,9 +30,9 @@ import com.sun.xml.internal.stream.StaxEntityResolverWrapper;
 import java.util.HashMap;
 import javax.xml.XMLConstants;
 import javax.xml.catalog.CatalogFeatures;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLOutputFactory;
-import javax.xml.stream.XMLResolver;
+import android.xml.stream.XMLInputFactory;
+import android.xml.stream.XMLOutputFactory;
+import android.xml.stream.XMLResolver;
 import jdk.xml.internal.JdkConstants;
 import jdk.xml.internal.JdkProperty;
 import jdk.xml.internal.JdkXmlUtils;
@@ -48,8 +48,8 @@ import jdk.xml.internal.JdkXmlUtils;
  */
 public class PropertyManager {
 
-    public static final String STAX_NOTATIONS = "javax.xml.stream.notations";
-    public static final String STAX_ENTITIES = "javax.xml.stream.entities";
+    public static final String STAX_NOTATIONS = "android.xml.stream.notations";
+    public static final String STAX_ENTITIES = "android.xml.stream.entities";
 
     private static final String STRING_INTERNING = "http://xml.org/sax/features/string-interning";
 

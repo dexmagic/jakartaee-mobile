@@ -36,7 +36,7 @@ import android.xml.stream.XMLStreamException;
  * a way to allocate events given an XMLStreamReader.  An implementation
  * is not required to use the XMLEventFactory implementation but this
  * is recommended.  The XMLEventAllocator can be set on an XMLInputFactory
- * using the property "javax.xml.stream.allocator"
+ * using the property "android.xml.stream.allocator"
  *
  * @version 1.0
  * @author Copyright (c) 2009 by Oracle Corporation. All Rights Reserved.

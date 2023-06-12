@@ -25,8 +25,8 @@
 
 package com.sun.xml.internal.stream.events;
 
-import javax.xml.stream.events.NotationDeclaration;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.events.NotationDeclaration;
+import android.xml.stream.events.XMLEvent;
 import com.sun.xml.internal.stream.dtd.nonvalidating.XMLNotationDecl;
 import jdk.xml.internal.JdkXmlUtils;
 

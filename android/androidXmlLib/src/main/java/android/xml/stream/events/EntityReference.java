@@ -29,15 +29,15 @@ package android.xml.stream.events;
  *
  * This event reports entities that have not been resolved
  * and reports their replacement text unprocessed (if
- * available).  This event will be reported if javax.xml.stream.isReplacingEntityReferences
- * is set to false.  If javax.xml.stream.isReplacingEntityReferences is set to true
+ * available).  This event will be reported if android.xml.stream.isReplacingEntityReferences
+ * is set to false.  If android.xml.stream.isReplacingEntityReferences is set to true
  * entity references will be resolved transparently.
  *
  * Entities are handled in two possible ways:
  *
- * (1) If javax.xml.stream.isReplacingEntityReferences is set to true
+ * (1) If android.xml.stream.isReplacingEntityReferences is set to true
  * all entity references are resolved and reported as markup transparently.
- * (2) If javax.xml.stream.isReplacingEntityReferences is set to false
+ * (2) If android.xml.stream.isReplacingEntityReferences is set to false
  * Entity references are reported as an EntityReference Event.
  *
  * @version 1.0

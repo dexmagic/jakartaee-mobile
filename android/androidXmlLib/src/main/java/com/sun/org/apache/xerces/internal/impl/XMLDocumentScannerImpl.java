@@ -43,8 +43,8 @@ import com.sun.xml.internal.stream.dtd.DTDGrammarUtil;
 import java.io.CharConversionException;
 import java.io.EOFException;
 import java.io.IOException;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.XMLInputFactory;
+import android.xml.stream.events.XMLEvent;
 import jdk.xml.internal.SecuritySupport;
 
 
@@ -64,7 +64,7 @@ import jdk.xml.internal.SecuritySupport;
  * @author Eric Ye, IBM
  * @author Sunitha Reddy, Sun Microsystems
  *
- * Refer to the table in unit-test javax.xml.stream.XMLStreamReaderTest.SupportDTD for changes
+ * Refer to the table in unit-test android.xml.stream.XMLStreamReaderTest.SupportDTD for changes
  * related to property SupportDTD.
  * @author Joe Wang, Sun Microsystems
  * @LastModified: Sep 2017

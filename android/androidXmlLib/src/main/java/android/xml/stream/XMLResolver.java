@@ -38,7 +38,7 @@ public interface XMLResolver {
 
   /**
    * Retrieves a resource.  This resource can be of the following three return types:
-   * (1) java.io.InputStream (2) javax.xml.stream.XMLStreamReader (3) java.xml.stream.XMLEventReader.
+   * (1) java.io.InputStream (2) android.xml.stream.XMLStreamReader (3) java.xml.stream.XMLEventReader.
    * If this method returns null the processor will attempt to resolve the entity using its
    * default mechanism.
    *

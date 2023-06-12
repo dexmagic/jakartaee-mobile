@@ -36,7 +36,7 @@ import com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource;
 import com.sun.org.apache.xerces.internal.utils.XMLSecurityManager;
 
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.events.XMLEvent;
 
 /**
  * This class adds the functionality of namespace processing.

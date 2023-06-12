@@ -25,9 +25,9 @@ import java.io.OutputStream;
 import java.io.Writer;
 
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.stream.XMLEventWriter;
-import javax.xml.stream.util.XMLEventConsumer;
-import javax.xml.stream.XMLStreamWriter;
+import android.xml.stream.XMLEventWriter;
+import android.xml.stream.util.XMLEventConsumer;
+import android.xml.stream.XMLStreamWriter;
 
 import com.sun.org.apache.xalan.internal.xsltc.trax.SAX2DOM;
 import com.sun.org.apache.xalan.internal.xsltc.trax.SAX2StAXEventWriter;

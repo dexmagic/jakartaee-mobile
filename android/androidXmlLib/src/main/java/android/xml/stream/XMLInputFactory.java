@@ -50,15 +50,15 @@ import javax.xml.transform.Source;
  *      </tr>
  *    </thead>
  *    <tbody>
- * <tr><th scope="row">javax.xml.stream.isValidating</th><td>Turns on/off implementation specific DTD validation</td><td>Boolean</td><td>False</td><td>No</td></tr>
- * <tr><th scope="row">javax.xml.stream.isNamespaceAware</th><td>Turns on/off namespace processing for XML 1.0 support</td><td>Boolean</td><td>True</td><td>True (required) / False (optional)</td></tr>
- * <tr><th scope="row">javax.xml.stream.isCoalescing</th><td>Requires the processor to coalesce adjacent character data</td><td>Boolean</td><td>False</td><td>Yes</td></tr>
- * <tr><th scope="row">javax.xml.stream.isReplacingEntityReferences</th><td>replace internal entity references with their replacement text and report them as characters</td><td>Boolean</td><td>True</td><td>Yes</td></tr>
- *<tr><th scope="row">javax.xml.stream.isSupportingExternalEntities</th><td>Resolve external parsed entities</td><td>Boolean</td><td>Unspecified</td><td>Yes</td></tr>
- *<tr><th scope="row">javax.xml.stream.supportDTD</th><td>Use this property to request processors that do not support DTDs</td><td>Boolean</td><td>True</td><td>Yes</td></tr>
- *<tr><th scope="row">javax.xml.stream.reporter</th><td>sets/gets the impl of the XMLReporter </td><td>javax.xml.stream.XMLReporter</td><td>Null</td><td>Yes</td></tr>
- *<tr><th scope="row">javax.xml.stream.resolver</th><td>sets/gets the impl of the XMLResolver interface</td><td>javax.xml.stream.XMLResolver</td><td>Null</td><td>Yes</td></tr>
- *<tr><th scope="row">javax.xml.stream.allocator</th><td>sets/gets the impl of the XMLEventAllocator interface</td><td>javax.xml.stream.util.XMLEventAllocator</td><td>Null</td><td>Yes</td></tr>
+ * <tr><th scope="row">android.xml.stream.isValidating</th><td>Turns on/off implementation specific DTD validation</td><td>Boolean</td><td>False</td><td>No</td></tr>
+ * <tr><th scope="row">android.xml.stream.isNamespaceAware</th><td>Turns on/off namespace processing for XML 1.0 support</td><td>Boolean</td><td>True</td><td>True (required) / False (optional)</td></tr>
+ * <tr><th scope="row">android.xml.stream.isCoalescing</th><td>Requires the processor to coalesce adjacent character data</td><td>Boolean</td><td>False</td><td>Yes</td></tr>
+ * <tr><th scope="row">android.xml.stream.isReplacingEntityReferences</th><td>replace internal entity references with their replacement text and report them as characters</td><td>Boolean</td><td>True</td><td>Yes</td></tr>
+ *<tr><th scope="row">android.xml.stream.isSupportingExternalEntities</th><td>Resolve external parsed entities</td><td>Boolean</td><td>Unspecified</td><td>Yes</td></tr>
+ *<tr><th scope="row">android.xml.stream.supportDTD</th><td>Use this property to request processors that do not support DTDs</td><td>Boolean</td><td>True</td><td>Yes</td></tr>
+ *<tr><th scope="row">android.xml.stream.reporter</th><td>sets/gets the impl of the XMLReporter </td><td>android.xml.stream.XMLReporter</td><td>Null</td><td>Yes</td></tr>
+ *<tr><th scope="row">android.xml.stream.resolver</th><td>sets/gets the impl of the XMLResolver interface</td><td>android.xml.stream.XMLResolver</td><td>Null</td><td>Yes</td></tr>
+ *<tr><th scope="row">android.xml.stream.allocator</th><td>sets/gets the impl of the XMLEventAllocator interface</td><td>android.xml.stream.util.XMLEventAllocator</td><td>Null</td><td>Yes</td></tr>
  *    </tbody>
  *  </table>
  *
@@ -82,19 +82,19 @@ public abstract class XMLInputFactory {
    * only the true setting must be supported
    */
   public static final String IS_NAMESPACE_AWARE=
-    "javax.xml.stream.isNamespaceAware";
+    "android.xml.stream.isNamespaceAware";
 
   /**
    * The property used to turn on/off implementation specific validation
    */
   public static final String IS_VALIDATING=
-    "javax.xml.stream.isValidating";
+    "android.xml.stream.isValidating";
 
   /**
    * The property that requires the parser to coalesce adjacent character data sections
    */
   public static final String IS_COALESCING=
-    "javax.xml.stream.isCoalescing";
+    "android.xml.stream.isCoalescing";
 
   /**
    * Requires the parser to replace internal
@@ -102,38 +102,38 @@ public abstract class XMLInputFactory {
    * text and report them as characters
    */
   public static final String IS_REPLACING_ENTITY_REFERENCES=
-    "javax.xml.stream.isReplacingEntityReferences";
+    "android.xml.stream.isReplacingEntityReferences";
 
   /**
    *  The property that requires the parser to resolve external parsed entities
    */
   public static final String IS_SUPPORTING_EXTERNAL_ENTITIES=
-    "javax.xml.stream.isSupportingExternalEntities";
+    "android.xml.stream.isSupportingExternalEntities";
 
   /**
    *  The property that requires the parser to support DTDs
    */
   public static final String SUPPORT_DTD=
-    "javax.xml.stream.supportDTD";
+    "android.xml.stream.supportDTD";
 
   /**
    * The property used to
    * set/get the implementation of the XMLReporter interface
    */
   public static final String REPORTER=
-    "javax.xml.stream.reporter";
+    "android.xml.stream.reporter";
 
   /**
    * The property used to set/get the implementation of the XMLResolver
    */
   public static final String RESOLVER=
-    "javax.xml.stream.resolver";
+    "android.xml.stream.resolver";
 
   /**
    * The property used to set/get the implementation of the allocator
    */
   public static final String ALLOCATOR=
-    "javax.xml.stream.allocator";
+    "android.xml.stream.allocator";
 
   static final String DEFAULIMPL = "com.sun.xml.internal.stream.XMLInputFactoryImpl";
 
@@ -243,7 +243,7 @@ public abstract class XMLInputFactory {
    * </li>
    * <li>
    *   <p>
-   *   If {@code factoryId} is "javax.xml.stream.XMLInputFactory",
+   *   If {@code factoryId} is "android.xml.stream.XMLInputFactory",
    *   use the service-provider loading facility, defined by the
    *   {@link java.util.ServiceLoader} class, to attempt to {@linkplain
    *   java.util.ServiceLoader#load(java.lang.Class, java.lang.ClassLoader) locate and load}

@@ -25,8 +25,8 @@
 
 package com.sun.xml.internal.stream.events;
 
-import javax.xml.stream.events.Namespace;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.events.Namespace;
+import android.xml.stream.events.XMLEvent;
 import javax.xml.namespace.QName;
 
 import javax.xml.XMLConstants;

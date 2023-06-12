@@ -28,10 +28,10 @@ import java.util.List;
 import java.util.ArrayList;
 
 import javax.xml.namespace.QName;
-import javax.xml.stream.events.EndElement;
-import javax.xml.stream.events.Namespace;
+import android.xml.stream.events.EndElement;
+import android.xml.stream.events.Namespace;
 import java.util.Iterator;
-import javax.xml.stream.events.XMLEvent;
+import android.xml.stream.events.XMLEvent;
 import com.sun.xml.internal.stream.util.ReadOnlyIterator;
 
 /**

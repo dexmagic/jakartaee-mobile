@@ -56,7 +56,7 @@ import javax.xml.catalog.CatalogFeatures.Feature;
 import javax.xml.catalog.CatalogFeatures;
 import javax.xml.catalog.CatalogManager;
 import javax.xml.catalog.CatalogResolver;
-import javax.xml.stream.XMLInputFactory;
+import android.xml.stream.XMLInputFactory;
 import javax.xml.transform.Source;
 import jdk.xml.internal.JdkConstants;
 import jdk.xml.internal.JdkXmlUtils;

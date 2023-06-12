@@ -75,39 +75,39 @@
  * </tr>
  * <tr>
  * <th scope="row" style="font-weight:normal" id="StAXEvent">
- *     {@link javax.xml.stream.XMLEventFactory XMLEventFactory}
+ *     {@link android.xml.stream.XMLEventFactory XMLEventFactory}
  * </th>
- * <td style="text-align:center">{@link javax.xml.stream.XMLEventFactory#newFactory() newFactory()}</td>
- * <td style="text-align:center">{@code javax.xml.stream.XMLEventFactory}</td>
+ * <td style="text-align:center">{@link android.xml.stream.XMLEventFactory#newFactory() newFactory()}</td>
+ * <td style="text-align:center">{@code android.xml.stream.XMLEventFactory}</td>
  * <td style="text-align:center">
  *     <a href="#StAXProperties">stax.properties</a> and then
  *     <a href="#JaxpProperties">jaxp.properties</a>
  * </td>
- * <td style="text-align:center">{@link javax.xml.stream.XMLEventFactory#newDefaultFactory() newDefaultFactory()}</td>
+ * <td style="text-align:center">{@link android.xml.stream.XMLEventFactory#newDefaultFactory() newDefaultFactory()}</td>
  * </tr>
  * <tr>
  * <th scope="row" style="font-weight:normal" id="StAXInput">
- *     {@link javax.xml.stream.XMLInputFactory XMLInputFactory}
+ *     {@link android.xml.stream.XMLInputFactory XMLInputFactory}
  * </th>
- * <td style="text-align:center">{@link javax.xml.stream.XMLInputFactory#newFactory() newFactory()}</td>
- * <td style="text-align:center">{@code javax.xml.stream.XMLInputFactory}</td>
+ * <td style="text-align:center">{@link android.xml.stream.XMLInputFactory#newFactory() newFactory()}</td>
+ * <td style="text-align:center">{@code android.xml.stream.XMLInputFactory}</td>
  * <td style="text-align:center">
  *     <a href="#StAXProperties">stax.properties</a> and then
  *     <a href="#JaxpProperties">jaxp.properties</a>
  * </td>
- * <td style="text-align:center">{@link javax.xml.stream.XMLInputFactory#newDefaultFactory() newDefaultFactory()}</td>
+ * <td style="text-align:center">{@link android.xml.stream.XMLInputFactory#newDefaultFactory() newDefaultFactory()}</td>
  * </tr>
  * <tr>
  * <th scope="row" style="font-weight:normal" id="StAXOutput">
- *     {@link javax.xml.stream.XMLOutputFactory XMLOutputFactory}
+ *     {@link android.xml.stream.XMLOutputFactory XMLOutputFactory}
  * </th>
- * <td style="text-align:center">{@link javax.xml.stream.XMLOutputFactory#newFactory() newFactory()}</td>
- * <td style="text-align:center">{@code javax.xml.stream.XMLOutputFactory}</td>
+ * <td style="text-align:center">{@link android.xml.stream.XMLOutputFactory#newFactory() newFactory()}</td>
+ * <td style="text-align:center">{@code android.xml.stream.XMLOutputFactory}</td>
  * <td style="text-align:center">
  *     <a href="#StAXProperties">stax.properties</a> and then
  *     <a href="#JaxpProperties">jaxp.properties</a>
  * </td>
- * <td style="text-align:center">{@link javax.xml.stream.XMLOutputFactory#newDefaultFactory() newDefaultFactory()}</td>
+ * <td style="text-align:center">{@link android.xml.stream.XMLOutputFactory#newDefaultFactory() newDefaultFactory()}</td>
  * </tr>
  * <tr>
  * <th scope="row" style="font-weight:normal" id="XSLT">
@@ -863,9 +863,9 @@
  * @uses javax.xml.datatype.DatatypeFactory
  * @uses javax.xml.parsers.DocumentBuilderFactory
  * @uses javax.xml.parsers.SAXParserFactory
- * @uses javax.xml.stream.XMLEventFactory
- * @uses javax.xml.stream.XMLInputFactory
- * @uses javax.xml.stream.XMLOutputFactory
+ * @uses android.xml.stream.XMLEventFactory
+ * @uses android.xml.stream.XMLInputFactory
+ * @uses android.xml.stream.XMLOutputFactory
  * @uses javax.xml.transform.TransformerFactory
  * @uses javax.xml.validation.SchemaFactory
  * @uses javax.xml.xpath.XPathFactory
@@ -881,8 +881,8 @@ module java.xml {
     exports javax.xml.namespace;
     exports javax.xml.parsers;
     exports javax.xml.stream;
-    exports javax.xml.stream.events;
-    exports javax.xml.stream.util;
+    exports android.xml.stream.events;
+    exports android.xml.stream.util;
     exports javax.xml.transform;
     exports javax.xml.transform.dom;
     exports javax.xml.transform.sax;
@@ -919,9 +919,9 @@ module java.xml {
     uses javax.xml.datatype.DatatypeFactory;
     uses javax.xml.parsers.DocumentBuilderFactory;
     uses javax.xml.parsers.SAXParserFactory;
-    uses javax.xml.stream.XMLEventFactory;
-    uses javax.xml.stream.XMLInputFactory;
-    uses javax.xml.stream.XMLOutputFactory;
+    uses android.xml.stream.XMLEventFactory;
+    uses android.xml.stream.XMLInputFactory;
+    uses android.xml.stream.XMLOutputFactory;
     uses javax.xml.transform.TransformerFactory;
     uses javax.xml.validation.SchemaFactory;
     uses javax.xml.xpath.XPathFactory;

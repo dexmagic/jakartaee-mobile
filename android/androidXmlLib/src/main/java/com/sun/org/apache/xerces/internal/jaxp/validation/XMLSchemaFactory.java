@@ -43,7 +43,7 @@ import java.io.InputStream;
 import java.io.Reader;
 import javax.xml.XMLConstants;
 import javax.xml.catalog.CatalogFeatures.Feature;
-import javax.xml.stream.XMLEventReader;
+import android.xml.stream.XMLEventReader;
 import javax.xml.transform.Source;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.sax.SAXSource;

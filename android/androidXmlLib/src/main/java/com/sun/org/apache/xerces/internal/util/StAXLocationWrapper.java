@@ -22,7 +22,7 @@
 package com.sun.org.apache.xerces.internal.util;
 
 
-import javax.xml.stream.Location;
+import android.xml.stream.Location;
 
 import com.sun.org.apache.xerces.internal.xni.XMLLocator;
 

@@ -27,9 +27,9 @@ package com.sun.org.apache.xalan.internal.xsltc.trax;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.stream.Location;
-import javax.xml.stream.XMLReporter;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.Location;
+import android.xml.stream.XMLReporter;
+import android.xml.stream.XMLStreamException;
 import org.xml.sax.Attributes;
 import org.xml.sax.Locator;
 import org.xml.sax.SAXException;

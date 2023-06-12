@@ -26,14 +26,14 @@ package com.sun.xml.internal.stream.events;
 
 import com.sun.org.apache.xerces.internal.impl.PropertyManager;
 import java.util.List;
-import javax.xml.stream.util.XMLEventAllocator;
-import javax.xml.stream.*;
-import javax.xml.stream.events.*;
+import android.xml.stream.util.XMLEventAllocator;
+import android.xml.stream.*;
+import android.xml.stream.events.*;
 import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
 import com.sun.org.apache.xerces.internal.util.NamespaceContextWrapper;
 import com.sun.org.apache.xerces.internal.util.NamespaceSupport;
-import javax.xml.stream.util.XMLEventConsumer;
+import android.xml.stream.util.XMLEventConsumer;
 
 /**
  * Implementation of XMLEvent Allocator.
@@ -67,7 +67,7 @@ public class XMLEventAllocatorImpl implements XMLEventAllocator {
         return;
     }
 
-    public javax.xml.stream.util.XMLEventAllocator newInstance() {
+    public android.xml.stream.util.XMLEventAllocator newInstance() {
         return new XMLEventAllocatorImpl();
     }
 

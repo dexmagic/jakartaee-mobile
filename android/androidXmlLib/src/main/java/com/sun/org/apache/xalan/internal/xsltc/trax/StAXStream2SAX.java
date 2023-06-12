@@ -45,9 +45,9 @@ import com.sun.org.apache.xalan.internal.xsltc.dom.SAXImpl;
 
 
 import javax.xml.namespace.QName;
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
+import android.xml.stream.XMLStreamConstants;
+import android.xml.stream.XMLStreamException;
 
 
 

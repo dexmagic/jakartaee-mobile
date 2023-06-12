@@ -31,7 +31,7 @@ import android.xml.stream.events.ProcessingInstruction;
 import android.xml.stream.events.StartElement;
 import android.xml.stream.events.XMLEvent;
 
-import javax.xml.stream.events.*;
+import android.xml.stream.events.*;
 import android.xml.stream.util.XMLEventConsumer;
 import javax.xml.namespace.NamespaceContext;
 

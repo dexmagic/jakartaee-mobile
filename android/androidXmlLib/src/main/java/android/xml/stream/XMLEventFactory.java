@@ -60,7 +60,7 @@ import javax.xml.namespace.QName;
  * @since 1.6
  */
 public abstract class XMLEventFactory {
-    static final String JAXPFACTORYID = "javax.xml.stream.XMLEventFactory";
+    static final String JAXPFACTORYID = "android.xml.stream.XMLEventFactory";
     static final String DEFAULIMPL = "com.sun.xml.internal.stream.events.XMLEventFactoryImpl";
 
     /**
@@ -169,7 +169,7 @@ public abstract class XMLEventFactory {
    * </li>
    * <li>
    *   <p>
-   *   If {@code factoryId} is "javax.xml.stream.XMLEventFactory",
+   *   If {@code factoryId} is "android.xml.stream.XMLEventFactory",
    *   use the service-provider loading facility, defined by the
    *   {@link java.util.ServiceLoader} class, to attempt to {@linkplain
    *   java.util.ServiceLoader#load(java.lang.Class, java.lang.ClassLoader) locate and load}

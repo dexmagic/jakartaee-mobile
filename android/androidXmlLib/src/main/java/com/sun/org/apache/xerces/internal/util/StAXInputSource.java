@@ -21,9 +21,9 @@
 
 package com.sun.org.apache.xerces.internal.util;
 
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
+import android.xml.stream.XMLEventReader;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
 
 import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
 

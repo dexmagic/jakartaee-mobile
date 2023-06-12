@@ -49,9 +49,9 @@ import java.util.Random;
 import java.util.Set;
 import javax.xml.XMLConstants;
 import javax.xml.namespace.NamespaceContext;
-import javax.xml.stream.XMLOutputFactory;
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLOutputFactory;
+import android.xml.stream.XMLStreamConstants;
+import android.xml.stream.XMLStreamException;
 import javax.xml.transform.stream.StreamResult;
 import jdk.xml.internal.SecuritySupport;
 

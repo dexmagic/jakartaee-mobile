@@ -59,12 +59,12 @@ import javax.xml.namespace.QName;
  * associated identifiers to the application.  This information is
  * provided through the property API on this interface.
  * The following two properties allow access to this information:
- * javax.xml.stream.notations and javax.xml.stream.entities.
+ * android.xml.stream.notations and android.xml.stream.entities.
  * When the current event is a DTD the following call will return a
  * list of Notations
- * {@code List l = (List) getProperty("javax.xml.stream.notations");}
+ * {@code List l = (List) getProperty("android.xml.stream.notations");}
  * The following call will return a list of entity declarations:
- * {@code List l = (List) getProperty("javax.xml.stream.entities");}
+ * {@code List l = (List) getProperty("android.xml.stream.entities");}
  * These properties can only be accessed during a DTD event and
  * are defined to return null if the information is not available.
  *
@@ -176,7 +176,7 @@ public interface XMLStreamReader extends XMLStreamConstants {
   /**
    * Get next parsing event - a processor may return all contiguous
    * character data in a single chunk, or it may split it into several chunks.
-   * If the property javax.xml.stream.isCoalescing is set to true
+   * If the property android.xml.stream.isCoalescing is set to true
    * element content must be coalesced and only one CHARACTERS event
    * must be returned for contiguous element content or
    * CDATA Sections.
@@ -220,7 +220,7 @@ public interface XMLStreamReader extends XMLStreamConstants {
   /**
    * Reads the content of a text-only element, an exception is thrown if this is
    * not a text-only element.
-   * Regardless of value of javax.xml.stream.isCoalescing this method always returns coalesced content.
+   * Regardless of value of android.xml.stream.isCoalescing this method always returns coalesced content.
    * <br> Precondition: the current event is START_ELEMENT.
    * <br> Postcondition: the current event is the corresponding END_ELEMENT.
    *

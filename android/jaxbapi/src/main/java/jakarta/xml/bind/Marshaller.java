@@ -116,7 +116,7 @@ import java.io.File;
  * </blockquote>
  *
  * <p>
- * Marshalling to a javax.xml.stream.XMLStreamWriter:
+ * Marshalling to a android.xml.stream.XMLStreamWriter:
  * <blockquote>
  *    <pre>
  *       XMLStreamWriter xmlStreamWriter =
@@ -127,7 +127,7 @@ import java.io.File;
  * </blockquote>
  *
  * <p>
- * Marshalling to a javax.xml.stream.XMLEventWriter:
+ * Marshalling to a android.xml.stream.XMLEventWriter:
  * <blockquote>
  *    <pre>
  *       XMLEventWriter xmlEventWriter =

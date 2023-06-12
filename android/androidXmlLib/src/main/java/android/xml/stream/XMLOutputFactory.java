@@ -48,7 +48,7 @@ import javax.xml.transform.Result;
  *              </tr>
  *    </thead>
  *    <tbody>
- *         <tr><th scope="row">javax.xml.stream.isRepairingNamespaces</th><td>defaults prefixes
+ *         <tr><th scope="row">android.xml.stream.isRepairingNamespaces</th><td>defaults prefixes
  *                 on the output side</td><td>Boolean</td><td>False</td><td>Yes</td></tr>
  *      </tbody>
  *   </table>
@@ -56,7 +56,7 @@ import javax.xml.transform.Result;
  * <p>The following paragraphs describe the namespace and prefix repair algorithm:
  *
  * <p>The property can be set with the following code line:
- * {@code setProperty("javax.xml.stream.isRepairingNamespaces", new Boolean(true|false));}
+ * {@code setProperty("android.xml.stream.isRepairingNamespaces", new Boolean(true|false));}
  *
  * <p>This property specifies that the writer default namespace prefix declarations.
  * The default value is false.
@@ -108,7 +108,7 @@ public abstract class XMLOutputFactory {
    * Property used to set prefix defaulting on the output side
    */
   public static final String IS_REPAIRING_NAMESPACES=
-    "javax.xml.stream.isRepairingNamespaces";
+    "android.xml.stream.isRepairingNamespaces";
 
   static final String DEFAULIMPL = "com.sun.xml.internal.stream.XMLOutputFactoryImpl";
 
@@ -216,7 +216,7 @@ public abstract class XMLOutputFactory {
    * </li>
    * <li>
    *   <p>
-   *   If {@code factoryId} is "javax.xml.stream.XMLOutputFactory",
+   *   If {@code factoryId} is "android.xml.stream.XMLOutputFactory",
    *   use the service-provider loading facility, defined by the
    *   {@link java.util.ServiceLoader} class, to attempt to {@linkplain
    *   java.util.ServiceLoader#load(java.lang.Class, java.lang.ClassLoader) locate and load}

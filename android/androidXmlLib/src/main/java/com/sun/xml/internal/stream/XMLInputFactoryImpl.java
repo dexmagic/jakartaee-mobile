@@ -28,8 +28,8 @@ package com.sun.xml.internal.stream;
 import java.io.InputStream;
 import java.io.Reader;
 
-import javax.xml.stream.*;
-import javax.xml.stream.util.XMLEventAllocator ;
+import android.xml.stream.*;
+import android.xml.stream.util.XMLEventAllocator ;
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
 import com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource;
@@ -44,7 +44,7 @@ import com.sun.org.apache.xerces.internal.impl.Constants;
  */
 
 //xxx: Should we be reusing the XMLInputSource object
-public class XMLInputFactoryImpl extends javax.xml.stream.XMLInputFactory {
+public class XMLInputFactoryImpl extends android.xml.stream.XMLInputFactory {
 
 
     //List of supported properties and default values.
@@ -255,7 +255,7 @@ public class XMLInputFactoryImpl extends javax.xml.stream.XMLInputFactory {
         fPropertyManager.setProperty(name,value);
     }
 
-    XMLStreamReader getXMLStreamReaderImpl(XMLInputSource inputSource) throws javax.xml.stream.XMLStreamException{
+    XMLStreamReader getXMLStreamReaderImpl(XMLInputSource inputSource) throws android.xml.stream.XMLStreamException{
         //1. if the temp reader is null -- create the instance and return
         if(fTempReader == null){
             fPropertyChanged = false;

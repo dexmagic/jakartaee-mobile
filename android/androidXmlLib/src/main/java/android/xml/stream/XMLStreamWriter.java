@@ -39,7 +39,7 @@ import javax.xml.namespace.NamespaceContext;
  * and ATTRIBUTE must be individually written.
  *
  * <table class="striped">
- *     <caption>XML Namespaces, {@code javax.xml.stream.isRepairingNamespaces} and write method behaviour</caption>
+ *     <caption>XML Namespaces, {@code android.xml.stream.isRepairingNamespaces} and write method behaviour</caption>
  *     <thead>
  *         <tr style="border-bottom: 1px solid black">
  *             <th scope="col" rowspan="2">Method</th> <!-- method -->
@@ -202,7 +202,7 @@ public interface XMLStreamWriter {
    * @param namespaceURI the namespaceURI of the prefix to use, may not be null
    * @param localName local name of the tag, may not be null
    * @throws XMLStreamException if the namespace URI has not been bound to a prefix and
-   * javax.xml.stream.isRepairingNamespaces has not been set to true
+   * android.xml.stream.isRepairingNamespaces has not been set to true
    */
   public void writeStartElement(String namespaceURI, String localName)
     throws XMLStreamException;
@@ -224,7 +224,7 @@ public interface XMLStreamWriter {
    * @param namespaceURI the uri to bind the tag to, may not be null
    * @param localName local name of the tag, may not be null
    * @throws XMLStreamException if the namespace URI has not been bound to a prefix and
-   * javax.xml.stream.isRepairingNamespaces has not been set to true
+   * android.xml.stream.isRepairingNamespaces has not been set to true
    */
   public void writeEmptyElement(String namespaceURI, String localName)
     throws XMLStreamException;
@@ -310,7 +310,7 @@ public interface XMLStreamWriter {
    * @param value the value of the attribute
    * @throws IllegalStateException if the current state does not allow Attribute writing
    * @throws XMLStreamException if the namespace URI has not been bound to a prefix and
-   * javax.xml.stream.isRepairingNamespaces has not been set to true
+   * android.xml.stream.isRepairingNamespaces has not been set to true
    */
 
   public void writeAttribute(String prefix,
@@ -326,7 +326,7 @@ public interface XMLStreamWriter {
    * @param value the value of the attribute
    * @throws IllegalStateException if the current state does not allow Attribute writing
    * @throws XMLStreamException if the namespace URI has not been bound to a prefix and
-   * javax.xml.stream.isRepairingNamespaces has not been set to true
+   * android.xml.stream.isRepairingNamespaces has not been set to true
    */
   public void writeAttribute(String namespaceURI,
                              String localName,

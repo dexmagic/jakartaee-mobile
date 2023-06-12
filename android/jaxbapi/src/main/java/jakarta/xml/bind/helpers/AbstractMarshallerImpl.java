@@ -42,8 +42,8 @@ import java.io.IOException;
  * <p>
  * The only methods that a Jakarta XML Binding Provider has to implement are
  * {@link Marshaller#marshal(Object, javax.xml.transform.Result) marshal(Object, javax.xml.transform.Result)},
- * {@link Marshaller#marshal(Object, javax.xml.transform.Result) marshal(Object, javax.xml.stream.XMLStreamWriter)}, and
- * {@link Marshaller#marshal(Object, javax.xml.transform.Result) marshal(Object, javax.xml.stream.XMLEventWriter)}.
+ * {@link Marshaller#marshal(Object, javax.xml.transform.Result) marshal(Object, android.xml.stream.XMLStreamWriter)}, and
+ * {@link Marshaller#marshal(Object, javax.xml.transform.Result) marshal(Object, android.xml.stream.XMLEventWriter)}.
  *
  * @author <ul><li>Kohsuke Kawaguchi, Sun Microsystems, Inc.</li></ul>
  * @see jakarta.xml.bind.Marshaller

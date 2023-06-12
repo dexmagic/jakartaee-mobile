@@ -144,8 +144,8 @@ import java.io.Reader;
  *       JAXBContext jc = JAXBContext.newInstance( "com.acme.foo" );
  *       Unmarshaller u = jc.createUnmarshaller();
  *
- *       javax.xml.stream.XMLStreamReader xmlStreamReader =
- *           javax.xml.stream.XMLInputFactory().newInstance().createXMLStreamReader( ... );
+ *       android.xml.stream.XMLStreamReader xmlStreamReader =
+ *           android.xml.stream.XMLInputFactory().newInstance().createXMLStreamReader( ... );
  *
  *       Object o = u.unmarshal( xmlStreamReader );
  *    </pre>
@@ -158,8 +158,8 @@ import java.io.Reader;
  *       JAXBContext jc = JAXBContext.newInstance( "com.acme.foo" );
  *       Unmarshaller u = jc.createUnmarshaller();
  *
- *       javax.xml.stream.XMLEventReader xmlEventReader =
- *           javax.xml.stream.XMLInputFactory().newInstance().createXMLEventReader( ... );
+ *       android.xml.stream.XMLEventReader xmlEventReader =
+ *           android.xml.stream.XMLInputFactory().newInstance().createXMLEventReader( ... );
  *
  *       Object o = u.unmarshal( xmlEventReader );
  *    </pre>

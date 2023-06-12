@@ -98,8 +98,8 @@ public interface XMLDTDScanner
         throws IOException, XNIException;
 
     /**
-     * Skip the DTD if javax.xml.stream.supportDTD is false.
-     * @param supportDTD The value of the property javax.xml.stream.supportDTD.
+     * Skip the DTD if android.xml.stream.supportDTD is false.
+     * @param supportDTD The value of the property android.xml.stream.supportDTD.
      * @return true if DTD is skipped, false otherwise.
      * @throws java.io.IOException if i/o error occurs
      */
