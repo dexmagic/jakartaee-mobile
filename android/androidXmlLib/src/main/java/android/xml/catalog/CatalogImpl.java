@@ -24,7 +24,10 @@
  */
 package android.xml.catalog;
 
-import com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl;
+import static android.xml.catalog.CatalogMessages.formatMessage;
+
+import org.xml.sax.SAXException;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -38,11 +41,9 @@ import java.util.Spliterators;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-import static android.xml.catalog.CatalogMessages.formatMessage;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-import org.xml.sax.SAXException;
 
 /**
  * Implementation of the Catalog.
@@ -302,7 +303,7 @@ class CatalogImpl extends GroupEntry implements Catalog {
     private SAXParser getParser() {
         SAXParser p = null;
         try {
-            SAXParserFactory spf = new SAXParserFactoryImpl();
+            SAXParserFactory spf = SAXParserFactory.newInstance();
             spf.setNamespaceAware(true);
             spf.setValidating(false);
             spf.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
