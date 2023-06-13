@@ -39,7 +39,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
     Button(onClick = {
         Toast.makeText(context, "button pressed", Toast.LENGTH_SHORT).show()
-        Main.main(null)
+        Main.main(context)
     }){
         Text("Process XML")
     }

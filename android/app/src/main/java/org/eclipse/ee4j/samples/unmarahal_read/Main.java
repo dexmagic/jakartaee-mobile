@@ -1,15 +1,19 @@
 package org.eclipse.ee4j.samples.unmarahal_read;
 
-import java.io.FileInputStream;
-import java.io.IOException;
+import android.content.Context;
+
+import java.io.InputStream;
 import java.util.Iterator;
 import java.util.List;
 
+import jakarta.ee.R;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Unmarshaller;
-import primer.po.*;
+import primer.po.Items;
+import primer.po.PurchaseOrderType;
+import primer.po.USAddress;
 
 /*
  * $Id: Main.java,v 1.1 2007-12-05 00:49:46 kohsuke Exp $
@@ -20,8 +24,11 @@ public class Main {
     // This sample application demonstrates how to unmarshal an instance
     // document into a Java content tree and access data contained within it.
 
-    public static void main( String[] args ) {
+    public static void main( Context ctx ) {
+        InputStream istream = ctx.getResources().openRawResource(R.raw.po);
+
         try {
+
             // create a JAXBContext capable of handling classes generated into
             // the primer.po package
             JAXBContext jc = JAXBContext.newInstance( "primer.po" );
@@ -31,10 +38,11 @@ public class Main {
 
             // unmarshal a po instance document into a tree of Java content
             // objects composed of classes from the primer.po package.
-            JAXBElement<?> poElement =
+            /*JAXBElement<?> poElement =
                     (JAXBElement<?>)u.unmarshal( new FileInputStream( "po.xml" ) );
+            PurchaseOrderType po = (PurchaseOrderType)poElement.getValue();*/
+            JAXBElement<?> poElement = (JAXBElement<?>)u.unmarshal( istream );
             PurchaseOrderType po = (PurchaseOrderType)poElement.getValue();
-
 
             // examine some of the content in the PurchaseOrder
             System.out.println( "Ship the following items to: " );
@@ -49,9 +57,9 @@ public class Main {
 
         } catch( JAXBException je ) {
             je.printStackTrace();
-        } catch( IOException ioe ) {
+        }/* catch( IOException ioe ) {
             ioe.printStackTrace();
-        }
+        }*/
     }
 
     public static void displayAddress( USAddress address ) {
