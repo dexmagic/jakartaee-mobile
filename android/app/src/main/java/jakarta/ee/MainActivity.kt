@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import jakarta.ee.ui.theme.JakartaEETheme
+import org.eclipse.ee4j.samples.unmarahal_read.Main
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +39,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
     Button(onClick = {
         Toast.makeText(context, "button pressed", Toast.LENGTH_SHORT).show()
+        Main.main(null)
     }){
         Text("Process XML")
     }
