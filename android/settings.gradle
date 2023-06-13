@@ -33,4 +33,4 @@ include ':jaxbapi'
  */
 // include ':fauxLib'
 include ':androidXmlLib'
-include ':jaxbReferenceImplementationLib'
+include ':jaxb-riLib'
