@@ -19,8 +19,8 @@ import org.glassfish.jaxb.runtime.v2.util.ByteArrayOutputStreamEx;
 import jakarta.activation.DataHandler;
 import jakarta.activation.DataSource;
 
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamWriter;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamWriter;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;

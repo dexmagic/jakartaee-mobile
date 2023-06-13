@@ -16,9 +16,9 @@ import org.xml.sax.helpers.AttributesImpl;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.Location;
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLEventReader;
+import android.xml.stream.XMLStreamConstants;
+import android.xml.stream.XMLStreamException;
 import javax.xml.stream.events.*;
 import java.util.Iterator;
 

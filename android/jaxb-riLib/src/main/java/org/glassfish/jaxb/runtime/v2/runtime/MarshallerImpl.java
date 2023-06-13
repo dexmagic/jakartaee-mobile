@@ -10,36 +10,66 @@
 
 package org.glassfish.jaxb.runtime.v2.runtime;
 
-import org.glassfish.jaxb.core.marshaller.*;
+import android.xml.stream.XMLEventWriter;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamWriter;
+
+import org.glassfish.jaxb.core.marshaller.CharacterEscapeHandler;
+import org.glassfish.jaxb.core.marshaller.DataWriter;
+import org.glassfish.jaxb.core.marshaller.DumbEscapeHandler;
+import org.glassfish.jaxb.core.marshaller.MinimumEscapeHandler;
+import org.glassfish.jaxb.core.marshaller.SAX2DOMEx;
+import org.glassfish.jaxb.core.marshaller.XMLWriter;
 import org.glassfish.jaxb.runtime.api.JAXBRIContext;
 import org.glassfish.jaxb.runtime.marshaller.NamespacePrefixMapper;
 import org.glassfish.jaxb.runtime.marshaller.NioEscapeHandler;
-import org.glassfish.jaxb.runtime.v2.runtime.output.*;
+import org.glassfish.jaxb.runtime.v2.runtime.output.C14nXmlOutput;
+import org.glassfish.jaxb.runtime.v2.runtime.output.Encoded;
+import org.glassfish.jaxb.runtime.v2.runtime.output.ForkXmlOutput;
+import org.glassfish.jaxb.runtime.v2.runtime.output.IndentingUTF8XmlOutput;
+import org.glassfish.jaxb.runtime.v2.runtime.output.NamespaceContextImpl;
+import org.glassfish.jaxb.runtime.v2.runtime.output.SAXOutput;
+import org.glassfish.jaxb.runtime.v2.runtime.output.UTF8XmlOutput;
+import org.glassfish.jaxb.runtime.v2.runtime.output.XMLEventWriterOutput;
+import org.glassfish.jaxb.runtime.v2.runtime.output.XMLStreamWriterOutput;
+import org.glassfish.jaxb.runtime.v2.runtime.output.XmlOutput;
 import org.glassfish.jaxb.runtime.v2.util.FatalAdapter;
-import jakarta.xml.bind.*;
-import jakarta.xml.bind.annotation.adapters.XmlAdapter;
-import jakarta.xml.bind.attachment.AttachmentMarshaller;
-import jakarta.xml.bind.helpers.AbstractMarshallerImpl;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.XMLFilterImpl;
 
+import java.io.BufferedWriter;
+import java.io.Closeable;
+import java.io.FileOutputStream;
+import java.io.Flushable;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javax.xml.namespace.NamespaceContext;
-import javax.xml.stream.XMLEventWriter;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamWriter;
 import javax.xml.transform.Result;
 import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.sax.SAXResult;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.validation.Schema;
 import javax.xml.validation.ValidatorHandler;
-import java.io.*;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.MarshalException;
+import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.PropertyException;
+import jakarta.xml.bind.ValidationEvent;
+import jakarta.xml.bind.ValidationEventHandler;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.attachment.AttachmentMarshaller;
+import jakarta.xml.bind.helpers.AbstractMarshallerImpl;
 
 /**
  * Implementation of {@link Marshaller} interface for the JAXB RI.

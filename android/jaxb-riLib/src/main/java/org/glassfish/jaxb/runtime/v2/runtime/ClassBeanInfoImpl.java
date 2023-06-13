@@ -33,7 +33,7 @@ import org.xml.sax.helpers.LocatorImpl;
 
 import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

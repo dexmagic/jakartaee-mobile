@@ -10,20 +10,22 @@
 
 package org.glassfish.jaxb.runtime.v2.runtime.unmarshaller;
 
-import org.glassfish.jaxb.runtime.IDResolver;
-import org.glassfish.jaxb.runtime.api.ClassResolver;
+import android.xml.stream.XMLEventReader;
+import android.xml.stream.XMLStreamConstants;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
+import android.xml.stream.events.XMLEvent;
+
 import org.glassfish.jaxb.core.unmarshaller.DOMScanner;
 import org.glassfish.jaxb.core.unmarshaller.InfosetScanner;
 import org.glassfish.jaxb.core.v2.ClassFactory;
+import org.glassfish.jaxb.core.v2.util.XmlFactory;
+import org.glassfish.jaxb.runtime.IDResolver;
+import org.glassfish.jaxb.runtime.api.ClassResolver;
+import org.glassfish.jaxb.runtime.unmarshaller.Messages;
 import org.glassfish.jaxb.runtime.v2.runtime.AssociationMap;
 import org.glassfish.jaxb.runtime.v2.runtime.JAXBContextImpl;
 import org.glassfish.jaxb.runtime.v2.runtime.JaxBeanInfo;
-import org.glassfish.jaxb.core.v2.util.XmlFactory;
-import jakarta.xml.bind.*;
-import jakarta.xml.bind.annotation.adapters.XmlAdapter;
-import jakarta.xml.bind.attachment.AttachmentUnmarshaller;
-import jakarta.xml.bind.helpers.AbstractUnmarshallerImpl;
-import org.glassfish.jaxb.runtime.unmarshaller.Messages;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -32,21 +34,30 @@ import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
 
+import java.io.Closeable;
+import java.io.IOException;
+import java.io.InputStream;
+
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.events.XMLEvent;
 import javax.xml.transform.Source;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.sax.SAXSource;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
-import java.io.Closeable;
-import java.io.IOException;
-import java.io.InputStream;
+
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.PropertyException;
+import jakarta.xml.bind.UnmarshalException;
+import jakarta.xml.bind.Unmarshaller;
+import jakarta.xml.bind.UnmarshallerHandler;
+import jakarta.xml.bind.ValidationEvent;
+import jakarta.xml.bind.ValidationEventHandler;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.attachment.AttachmentUnmarshaller;
+import jakarta.xml.bind.helpers.AbstractUnmarshallerImpl;
 
 /**
  * Default Unmarshaller implementation.

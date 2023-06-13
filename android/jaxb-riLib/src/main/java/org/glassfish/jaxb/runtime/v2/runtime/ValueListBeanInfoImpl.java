@@ -20,7 +20,7 @@ import jakarta.xml.bind.ValidationEvent;
 import jakarta.xml.bind.helpers.ValidationEventImpl;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.List;

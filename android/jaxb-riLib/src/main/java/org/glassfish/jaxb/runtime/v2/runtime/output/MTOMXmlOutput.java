@@ -17,7 +17,7 @@ import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.Base64Data;
 import jakarta.xml.bind.attachment.AttachmentMarshaller;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 
 /**

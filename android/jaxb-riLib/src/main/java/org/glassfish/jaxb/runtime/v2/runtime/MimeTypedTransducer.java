@@ -14,7 +14,7 @@ import org.glassfish.jaxb.runtime.api.AccessorException;
 import jakarta.activation.MimeType;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.awt.*;
 import java.io.IOException;
 

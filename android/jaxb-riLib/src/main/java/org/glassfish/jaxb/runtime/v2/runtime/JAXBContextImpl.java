@@ -51,7 +51,6 @@ import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.Loader;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.TagName;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext;
-import org.glassfish.jaxb.runtime.v2.schemagen.XmlSchemaGenerator;
 import org.glassfish.jaxb.runtime.v2.util.QNameMap;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -825,47 +824,6 @@ public final class JAXBContextImpl extends JAXBRIContext {
         if (w[0]!=null) {
             throw new IOException(Messages.ERROR_PROCESSING_SCHEMA.format(), w[0]);
         }
-    }
-
-    private XmlSchemaGenerator<Type,Class,Field,Method> createSchemaGenerator() {
-        RuntimeTypeInfoSet tis;
-        try {
-            tis = getTypeInfoSet();
-        } catch (IllegalAnnotationsException e) {
-            // this shouldn't happen because we've already
-            throw new AssertionError(e);
-        }
-
-        XmlSchemaGenerator<Type,Class,Field,Method> xsdgen =
-                new XmlSchemaGenerator<>(tis.getNavigator(),tis);
-
-        // JAX-RPC uses Bridge objects that collide with
-        // @XmlRootElement.
-        // we will avoid collision here
-        Set<QName> rootTagNames = new HashSet<>();
-        for (RuntimeElementInfo ei : tis.getAllElements()) {
-            rootTagNames.add(ei.getElementName());
-        }
-        for (RuntimeClassInfo ci : tis.beans().values()) {
-            if(ci.isElement())
-                rootTagNames.add(ci.asElement().getElementName());
-        }
-
-        for (TypeReference tr : bridges.keySet()) {
-            if(rootTagNames.contains(tr.tagName))
-                continue;
-
-            if(tr.type==void.class || tr.type==Void.class) {
-                xsdgen.add(tr.tagName,false,null);
-            } else
-            if(tr.type==CompositeStructure.class) {
-                // this is a special class we introduced for JAX-WS that we *don't* want in the schema
-            } else {
-                NonElement<Type,Class> typeInfo = getXmlType(tis,tr);
-                xsdgen.add(tr.tagName, !tis.getNavigator().isPrimitive(tr.type),typeInfo);
-            }
-        }
-        return xsdgen;
     }
 
     @Override

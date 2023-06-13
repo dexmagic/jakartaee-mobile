@@ -26,9 +26,9 @@ import org.xml.sax.ContentHandler;
 import org.xml.sax.SAXException;
 
 import javax.xml.namespace.NamespaceContext;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.XMLStreamWriter;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
+import android.xml.stream.XMLStreamWriter;
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import java.io.IOException;

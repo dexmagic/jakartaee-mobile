@@ -16,7 +16,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 
 /**

@@ -17,7 +17,7 @@ import org.xml.sax.SAXException;
 
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.stream.Location;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 
 /**
  * @author Kohsuke Kawaguchi

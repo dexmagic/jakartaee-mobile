@@ -15,9 +15,9 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
 import javax.xml.stream.Location;
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
+import android.xml.stream.XMLStreamConstants;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
 import java.lang.reflect.Constructor;
 
 /**

@@ -10,13 +10,12 @@
 
 package org.glassfish.jaxb.runtime.v2.schemagen;
 
-import org.glassfish.jaxb.runtime.v2.schemagen.xmlschema.LocalAttribute;
-import org.glassfish.jaxb.runtime.v2.schemagen.xmlschema.LocalElement;
-import org.glassfish.jaxb.runtime.v2.schemagen.xmlschema.Schema;
 import com.sun.xml.txw2.TypedXmlWriter;
-import jakarta.xml.bind.annotation.XmlNsForm;
 
 import javax.xml.namespace.QName;
+import javax.xml.validation.Schema;
+
+import jakarta.xml.bind.annotation.XmlNsForm;
 
 /**
  * Represents the form default value.

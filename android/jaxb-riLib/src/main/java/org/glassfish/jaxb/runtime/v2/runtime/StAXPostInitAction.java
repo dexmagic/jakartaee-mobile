@@ -11,8 +11,8 @@
 package org.glassfish.jaxb.runtime.v2.runtime;
 
 import javax.xml.namespace.NamespaceContext;
-import javax.xml.stream.XMLEventWriter;
-import javax.xml.stream.XMLStreamWriter;
+import android.xml.stream.XMLEventWriter;
+import android.xml.stream.XMLStreamWriter;
 
 /**
  * Post-init action for {@link MarshallerImpl} that incorporate the in-scope namespace bindings

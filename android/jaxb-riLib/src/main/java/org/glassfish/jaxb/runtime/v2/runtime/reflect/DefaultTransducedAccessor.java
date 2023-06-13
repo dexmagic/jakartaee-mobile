@@ -15,7 +15,7 @@ import org.glassfish.jaxb.runtime.v2.runtime.Name;
 import org.glassfish.jaxb.runtime.v2.runtime.XMLSerializer;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 
 /**

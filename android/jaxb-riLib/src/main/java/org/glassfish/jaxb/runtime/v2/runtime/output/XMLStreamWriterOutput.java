@@ -16,8 +16,8 @@ import org.glassfish.jaxb.runtime.v2.runtime.JAXBContextImpl;
 import org.glassfish.jaxb.runtime.v2.runtime.XMLSerializer;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamWriter;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamWriter;
 import java.io.IOException;
 import java.io.Writer;
 import java.lang.reflect.Constructor;

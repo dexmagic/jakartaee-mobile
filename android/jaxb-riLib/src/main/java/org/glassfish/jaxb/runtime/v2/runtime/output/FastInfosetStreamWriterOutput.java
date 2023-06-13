@@ -21,7 +21,7 @@ import jakarta.xml.bind.JAXBContext;
 import org.jvnet.fastinfoset.VocabularyApplicationData;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;

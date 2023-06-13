@@ -13,8 +13,8 @@ package org.glassfish.jaxb.runtime.v2.runtime.unmarshaller;
 import org.jvnet.staxex.XMLStreamReaderEx;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
 
 /**
  * Reads XML from StAX {@link XMLStreamReader} and

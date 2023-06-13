@@ -10,13 +10,16 @@
 
 package org.glassfish.jaxb.runtime.marshaller;
 
-import jakarta.xml.bind.JAXBContext;
+import android.xml.stream.XMLEventWriter;
+
 import org.w3c.dom.Node;
 
-import javax.xml.stream.XMLEventWriter;
-import javax.xml.stream.XMLStreamWriter;
-import javax.xml.transform.dom.DOMResult;
 import java.io.OutputStream;
+
+import android.xml.stream.XMLStreamWriter;
+import javax.xml.transform.dom.DOMResult;
+
+import jakarta.xml.bind.JAXBContext;
 
 // be careful about changing this class. this class is supposed to be
 // extended by users and therefore we are not allowed to break

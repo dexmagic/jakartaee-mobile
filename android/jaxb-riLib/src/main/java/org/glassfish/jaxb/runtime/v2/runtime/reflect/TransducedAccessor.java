@@ -30,7 +30,7 @@ import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.annotation.XmlValue;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.util.concurrent.Callable;
 

@@ -22,8 +22,8 @@ import org.w3c.dom.Node;
 import org.xml.sax.ContentHandler;
 
 import javax.xml.namespace.NamespaceContext;
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.XMLStreamWriter;
+import android.xml.stream.XMLStreamReader;
+import android.xml.stream.XMLStreamWriter;
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import java.io.InputStream;

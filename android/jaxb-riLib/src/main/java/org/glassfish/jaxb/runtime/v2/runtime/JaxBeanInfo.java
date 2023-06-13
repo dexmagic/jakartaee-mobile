@@ -10,20 +10,17 @@
 
 package org.glassfish.jaxb.runtime.v2.runtime;
 
+import android.xml.stream.XMLStreamException;
+
 import com.sun.istack.NotNull;
+
 import org.glassfish.jaxb.core.Utils;
 import org.glassfish.jaxb.runtime.v2.model.runtime.RuntimeTypeInfo;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.Loader;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallerImpl;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext;
-import jakarta.xml.bind.JAXBContext;
-import jakarta.xml.bind.Marshaller;
-import jakarta.xml.bind.Unmarshaller;
 import org.xml.sax.SAXException;
 
-import javax.xml.datatype.XMLGregorianCalendar;
-import javax.xml.namespace.QName;
-import javax.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -34,6 +31,13 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javax.xml.datatype.XMLGregorianCalendar;
+import javax.xml.namespace.QName;
+
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.Unmarshaller;
 
 /**
  * Encapsulates various JAXB operations on objects bound by JAXB.

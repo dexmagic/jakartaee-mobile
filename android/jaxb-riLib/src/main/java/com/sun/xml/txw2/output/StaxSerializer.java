@@ -12,8 +12,8 @@ package com.sun.xml.txw2.output;
 
 import com.sun.xml.txw2.TxwException;
 
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamWriter;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamWriter;
 
 /**
  * XML serializer for StAX XMLStreamWriter.

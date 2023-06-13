@@ -24,7 +24,7 @@ import org.glassfish.jaxb.runtime.v2.util.QNameMap;
 import jakarta.xml.bind.annotation.XmlValue;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 
 /**

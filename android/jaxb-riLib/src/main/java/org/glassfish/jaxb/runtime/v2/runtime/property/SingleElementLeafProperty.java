@@ -25,7 +25,7 @@ import jakarta.xml.bind.JAXBElement;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.*;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.lang.reflect.Modifier;
 

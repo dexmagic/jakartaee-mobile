@@ -43,7 +43,7 @@ import org.xml.sax.Locator;
 import org.xml.sax.SAXException;
 
 import javax.xml.namespace.QName;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.*;

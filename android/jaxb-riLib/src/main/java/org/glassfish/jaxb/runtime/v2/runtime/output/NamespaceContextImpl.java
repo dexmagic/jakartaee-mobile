@@ -20,7 +20,7 @@ import org.glassfish.jaxb.runtime.v2.runtime.XMLSerializer;
 import org.xml.sax.SAXException;
 
 import javax.xml.XMLConstants;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Iterator;

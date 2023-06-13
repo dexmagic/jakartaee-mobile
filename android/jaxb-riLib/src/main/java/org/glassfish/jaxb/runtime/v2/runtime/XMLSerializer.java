@@ -10,10 +10,13 @@
 
 package org.glassfish.jaxb.runtime.v2.runtime;
 
+import android.xml.stream.XMLStreamException;
+
 import com.sun.istack.SAXException2;
+
 import org.glassfish.jaxb.runtime.CycleRecoverable;
-import org.glassfish.jaxb.runtime.marshaller.NamespacePrefixMapper;
 import org.glassfish.jaxb.runtime.api.AccessorException;
+import org.glassfish.jaxb.runtime.marshaller.NamespacePrefixMapper;
 import org.glassfish.jaxb.runtime.util.ValidationEventLocatorExImpl;
 import org.glassfish.jaxb.runtime.v2.model.runtime.RuntimeBuiltinLeafInfo;
 import org.glassfish.jaxb.runtime.v2.runtime.output.MTOMXmlOutput;
@@ -24,28 +27,34 @@ import org.glassfish.jaxb.runtime.v2.runtime.property.Property;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.Base64Data;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.IntData;
 import org.glassfish.jaxb.runtime.v2.util.CollisionCheckStack;
+import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+import javax.xml.XMLConstants;
+import javax.xml.namespace.QName;
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.sax.SAXResult;
+
 import jakarta.activation.MimeType;
-import jakarta.xml.bind.*;
+import jakarta.xml.bind.DatatypeConverter;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.ValidationEvent;
+import jakarta.xml.bind.ValidationEventHandler;
+import jakarta.xml.bind.ValidationEventLocator;
 import jakarta.xml.bind.annotation.DomHandler;
 import jakarta.xml.bind.annotation.XmlNs;
 import jakarta.xml.bind.attachment.AttachmentMarshaller;
 import jakarta.xml.bind.helpers.NotIdentifiableEventImpl;
 import jakarta.xml.bind.helpers.ValidationEventImpl;
 import jakarta.xml.bind.helpers.ValidationEventLocatorImpl;
-import org.xml.sax.SAXException;
-
-import javax.xml.XMLConstants;
-import javax.xml.namespace.QName;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.transform.Source;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.sax.SAXResult;
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * Receives XML serialization event and writes to {@link XmlOutput}.
