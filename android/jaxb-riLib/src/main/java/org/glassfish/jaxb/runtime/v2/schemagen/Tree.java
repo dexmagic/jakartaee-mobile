@@ -11,6 +11,7 @@
 package org.glassfish.jaxb.runtime.v2.schemagen;
 
 import org.glassfish.jaxb.runtime.v2.schemagen.xmlschema.ContentModelContainer;
+// Occurs is generated during the build process for jaxb-runtime (jaxb-ri at https://github.com/eclipse-ee4j/jaxb-ri)
 import org.glassfish.jaxb.runtime.v2.schemagen.xmlschema.Occurs;
 import org.glassfish.jaxb.runtime.v2.schemagen.xmlschema.Particle;
 import org.glassfish.jaxb.runtime.v2.schemagen.xmlschema.TypeDefParticle;

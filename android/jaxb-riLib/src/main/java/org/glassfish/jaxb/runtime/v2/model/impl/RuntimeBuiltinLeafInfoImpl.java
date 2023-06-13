@@ -10,12 +10,16 @@
 
 package org.glassfish.jaxb.runtime.v2.model.impl;
 
+import android.media.Image;
+import android.xml.stream.XMLStreamException;
+
 import com.sun.istack.ByteArrayDataSource;
+
 import org.glassfish.jaxb.core.Utils;
 import org.glassfish.jaxb.core.WhiteSpaceProcessor;
+import org.glassfish.jaxb.core.v2.TODO;
 import org.glassfish.jaxb.runtime.DatatypeConverterImpl;
 import org.glassfish.jaxb.runtime.api.AccessorException;
-import org.glassfish.jaxb.core.v2.TODO;
 import org.glassfish.jaxb.runtime.v2.model.runtime.RuntimeBuiltinLeafInfo;
 import org.glassfish.jaxb.runtime.v2.runtime.Name;
 import org.glassfish.jaxb.runtime.v2.runtime.Transducer;
@@ -25,31 +29,12 @@ import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.Base64Data;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext;
 import org.glassfish.jaxb.runtime.v2.util.ByteArrayOutputStreamEx;
 import org.glassfish.jaxb.runtime.v2.util.DataSourceSource;
-import jakarta.activation.DataHandler;
-import jakarta.activation.DataSource;
-import jakarta.activation.MimeType;
-import jakarta.activation.MimeTypeParseException;
-import jakarta.xml.bind.ValidationEvent;
-import jakarta.xml.bind.helpers.ValidationEventImpl;
 import org.xml.sax.SAXException;
 
-import javax.imageio.ImageIO;
-import javax.imageio.ImageWriter;
-import javax.imageio.stream.ImageOutputStream;
-import javax.xml.XMLConstants;
-import javax.xml.datatype.DatatypeConstants;
-import javax.xml.datatype.Duration;
-import javax.xml.datatype.XMLGregorianCalendar;
-import javax.xml.namespace.QName;
-import android.xml.stream.XMLStreamException;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Source;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.stream.StreamResult;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Type;
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -59,10 +44,35 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.HashMap;
 import java.util.List;
-import java.util.*;
+import java.util.Map;
+import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javax.xml.XMLConstants;
+import javax.xml.datatype.DatatypeConstants;
+import javax.xml.datatype.Duration;
+import javax.xml.datatype.XMLGregorianCalendar;
+import javax.xml.namespace.QName;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.stream.StreamResult;
+
+import jakarta.activation.DataHandler;
+import jakarta.activation.DataSource;
+import jakarta.activation.MimeType;
+import jakarta.activation.MimeTypeParseException;
+import jakarta.xml.bind.ValidationEvent;
+import jakarta.xml.bind.helpers.ValidationEventImpl;
 
 /**
  * {@link BuiltinLeafInfoImpl} with a support for runtime.
@@ -373,91 +383,13 @@ public abstract class RuntimeBuiltinLeafInfoImpl<T> extends BuiltinLeafInfoImpl<
             new PcdataImpl<Image>(Image.class, createXS("base64Binary")) {
                 @Override
                 public Image parse(CharSequence text) throws SAXException  {
-                    try {
-                        InputStream is;
-                        if(text instanceof Base64Data)
-                            is = ((Base64Data)text).getInputStream();
-                        else
-                            is = new ByteArrayInputStream(decodeBase64(text)); // TODO: buffering is inefficient
-
-                        // technically we should check the MIME type here, but
-                        // normally images can be content-sniffed.
-                        // so the MIME type check will only make us slower and draconian, both of which
-                        // JAXB 2.0 isn't interested.
-                        try {
-                            return ImageIO.read(is);
-                        } finally {
-                            is.close();
-                        }
-                    } catch (IOException e) {
-                        UnmarshallingContext.getInstance().handleError(e);
-                        return null;
-                    }
+                    throw new UnsupportedOperationException("not supported on Android");
                 }
 
-                private BufferedImage convertToBufferedImage(Image image) throws IOException {
-                    if (image instanceof BufferedImage) {
-                        return (BufferedImage)image;
-
-                    } else {
-                        MediaTracker tracker = new MediaTracker(new Component(){}); // not sure if this is the right thing to do.
-                        tracker.addImage(image, 0);
-                        try {
-                            tracker.waitForAll();
-                        } catch (InterruptedException e) {
-                            throw new IOException(e.getMessage());
-                        }
-                        BufferedImage bufImage = new BufferedImage(
-                                image.getWidth(null),
-                                image.getHeight(null),
-                                BufferedImage.TYPE_INT_ARGB);
-
-                        Graphics g = bufImage.createGraphics();
-                        g.drawImage(image, 0, 0, null);
-                        return bufImage;
-                    }
-                }
 
                 @Override
                 public Base64Data print(Image v) {
-                    ByteArrayOutputStreamEx imageData = new ByteArrayOutputStreamEx();
-                    XMLSerializer xs = XMLSerializer.getInstance();
-
-                    String mimeType = xs.getXMIMEContentType();
-                    if(mimeType==null || mimeType.startsWith("image/*"))
-                        // because PNG is lossless, it's a good default
-                        //
-                        // mime type can be a range, in which case we can't just pass that
-                        // to ImageIO.getImageWritersByMIMEType, so here I'm just assuming
-                        // the default of PNG. Not sure if this is complete.
-                        mimeType = "image/png";
-
-                    try {
-                        Iterator<ImageWriter> itr = ImageIO.getImageWritersByMIMEType(mimeType);
-                        if(itr.hasNext()) {
-                            ImageWriter w = itr.next();
-                            ImageOutputStream os = ImageIO.createImageOutputStream(imageData);
-                            w.setOutput(os);
-                            w.write(convertToBufferedImage(v));
-                            os.close();
-                            w.dispose();
-                        } else {
-                            // no encoder
-                            xs.handleEvent(new ValidationEventImpl(
-                                ValidationEvent.ERROR,
-                                Messages.NO_IMAGE_WRITER.format(mimeType),
-                                xs.getCurrentLocation(null) ));
-                            // TODO: proper error reporting
-                            throw new RuntimeException("no encoder for MIME type "+mimeType);
-                        }
-                    } catch (IOException e) {
-                        xs.handleError(e);
-                        // TODO: proper error reporting
-                        throw new RuntimeException(e);
-                    }
-                    Base64Data bd = new Base64Data();
-                    imageData.set(bd,mimeType);
-                    return bd;
+                    throw new UnsupportedOperationException("not supported on Android");
                 }
             });
         secondaryList.add(
