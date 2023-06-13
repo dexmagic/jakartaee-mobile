@@ -14,7 +14,6 @@ import org.glassfish.jaxb.core.v2.model.annotation.Locatable;
 import org.glassfish.jaxb.core.v2.model.core.PropertyInfo;
 import org.glassfish.jaxb.core.v2.runtime.Location;
 
-import java.beans.Introspector;
 import java.lang.annotation.Annotation;
 
 /**
@@ -77,7 +76,8 @@ class GetterSetterPropertySeed<TypeT,ClassDeclT,FieldT,MethodT> implements
 
 
     private static String camelize(String s) {
-        return Introspector.decapitalize(s);
+        // FIXME: add support on android.
+        return s.toUpperCase();
     }
 
     /**

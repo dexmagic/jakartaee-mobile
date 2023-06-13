@@ -10,17 +10,24 @@
 
 package org.glassfish.jaxb.runtime.v2.runtime.unmarshaller;
 
-import org.xml.sax.Attributes;
-import org.xml.sax.SAXException;
-import org.xml.sax.helpers.AttributesImpl;
-
-import javax.xml.namespace.QName;
 import android.xml.stream.Location;
 import android.xml.stream.XMLEventReader;
 import android.xml.stream.XMLStreamConstants;
 import android.xml.stream.XMLStreamException;
-import javax.xml.stream.events.*;
+import android.xml.stream.events.Attribute;
+import android.xml.stream.events.Characters;
+import android.xml.stream.events.EndElement;
+import android.xml.stream.events.Namespace;
+import android.xml.stream.events.StartElement;
+import android.xml.stream.events.XMLEvent;
+
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.AttributesImpl;
+
 import java.util.Iterator;
+
+import javax.xml.namespace.QName;
 
 /**
  * This is a simple utility class that adapts StAX events from an

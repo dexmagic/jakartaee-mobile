@@ -10,11 +10,11 @@
 
 package org.glassfish.jaxb.runtime.v2.runtime.output;
 
+import android.xml.stream.XMLStreamException;
+
 import org.glassfish.jaxb.core.marshaller.NoEscapeHandler;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.Base64Data;
 import org.jvnet.staxex.XMLStreamWriterEx;
-
-import android.xml.stream.XMLStreamException;
 
 /**
  * {@link XmlOutput} for {@link XMLStreamWriterEx}.
