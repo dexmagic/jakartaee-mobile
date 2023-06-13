@@ -12,7 +12,6 @@ package org.glassfish.jaxb.runtime.v2.runtime;
 
 import com.sun.istack.NotNull;
 import com.sun.istack.Pool;
-import com.sun.xml.txw2.output.ResultFactory;
 
 import org.glassfish.jaxb.core.api.ErrorListener;
 import org.glassfish.jaxb.core.unmarshaller.DOMScanner;
@@ -784,9 +783,10 @@ public final class JAXBContextImpl extends JAXBRIContext {
 
     @Override
     public void generateEpisode(Result output) {
-        if(output==null)
+        throw new UnsupportedOperationException("not supported on Android");
+        /*if(output==null)
             throw new IllegalArgumentException();
-        createSchemaGenerator().writeEpisodeFile(ResultFactory.createSerializer(output));
+        createSchemaGenerator().writeEpisodeFile(ResultFactory.createSerializer(output));*/
     }
 
     @Override

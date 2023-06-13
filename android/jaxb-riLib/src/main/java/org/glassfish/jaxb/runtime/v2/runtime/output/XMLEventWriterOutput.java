@@ -10,14 +10,15 @@
 
 package org.glassfish.jaxb.runtime.v2.runtime.output;
 
+import android.xml.stream.XMLEventFactory;
+import android.xml.stream.XMLEventWriter;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.events.Attribute;
+import android.xml.stream.events.Characters;
+
 import org.glassfish.jaxb.runtime.v2.runtime.XMLSerializer;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.XMLEventFactory;
-import android.xml.stream.XMLEventWriter;
-import android.xml.stream.XMLStreamException;
-import javax.xml.stream.events.Attribute;
-import javax.xml.stream.events.Characters;
 import java.io.IOException;
 
 /**

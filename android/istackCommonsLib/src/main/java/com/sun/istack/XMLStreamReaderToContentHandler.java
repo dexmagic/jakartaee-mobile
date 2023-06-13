@@ -10,15 +10,16 @@
 
 package com.sun.istack;
 
-import org.xml.sax.ContentHandler;
-import org.xml.sax.SAXException;
-import org.xml.sax.Locator;
+import android.xml.stream.XMLStreamConstants;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
+
 import org.xml.sax.Attributes;
+import org.xml.sax.ContentHandler;
+import org.xml.sax.Locator;
+import org.xml.sax.SAXException;
 import org.xml.sax.helpers.AttributesImpl;
 
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamConstants;
 import javax.xml.namespace.QName;
 
 /**

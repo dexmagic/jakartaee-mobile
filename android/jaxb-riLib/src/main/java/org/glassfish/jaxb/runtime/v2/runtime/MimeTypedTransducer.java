@@ -10,13 +10,15 @@
 
 package org.glassfish.jaxb.runtime.v2.runtime;
 
+import android.media.Image;
+import android.xml.stream.XMLStreamException;
+
 import org.glassfish.jaxb.runtime.api.AccessorException;
-import jakarta.activation.MimeType;
 import org.xml.sax.SAXException;
 
-import android.xml.stream.XMLStreamException;
-import java.awt.*;
 import java.io.IOException;
+
+import jakarta.activation.MimeType;
 
 /**
  * {@link Transducer} decorator that wraps another {@link Transducer}

@@ -10,8 +10,8 @@
 
 package com.sun.istack;
 
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.Location;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.Location;
 
 /**
  * {@link XMLStreamException} that properly handles exception chaining.

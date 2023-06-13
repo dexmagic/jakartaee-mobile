@@ -24,13 +24,14 @@ class StackHelper {
      * @return caller method name from the call stack of the current {@link Thread}.
      */
     static String getCallerMethodName() {
-        return StackWalker.getInstance(StackWalker.Option.RETAIN_CLASS_REFERENCE)
+        return "UNKNOWN METHOD (NOT SUPPORTED ON ANDROID)";
+        /*return StackWalker.getInstance(StackWalker.Option.RETAIN_CLASS_REFERENCE)
                 .walk(frames -> frames
                         //Its a method of first declaring class after istack Logger class
                         .dropWhile(f -> !Logger.class.equals(f.getDeclaringClass()))
                         .dropWhile(f -> Logger.class.equals(f.getDeclaringClass()))
                         .findFirst()
                         .map(StackWalker.StackFrame::getMethodName)
-                        .orElse("UNKNOWN METHOD"));
+                        .orElse("UNKNOWN METHOD"));*/
     }
 }
