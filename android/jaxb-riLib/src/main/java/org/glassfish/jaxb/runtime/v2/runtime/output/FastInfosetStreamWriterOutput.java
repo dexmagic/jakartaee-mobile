@@ -10,27 +10,26 @@
 
 package org.glassfish.jaxb.runtime.v2.runtime.output;
 
+import android.xml.stream.XMLStreamException;
+
+import com.sun.xml.fastinfoset.EncodingConstants;
+import com.sun.xml.fastinfoset.stax.StAXDocumentSerializer;
+
 import org.glassfish.jaxb.core.marshaller.NoEscapeHandler;
 import org.glassfish.jaxb.runtime.v2.runtime.JAXBContextImpl;
 import org.glassfish.jaxb.runtime.v2.runtime.Name;
 import org.glassfish.jaxb.runtime.v2.runtime.XMLSerializer;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.Base64Data;
-
-// Use FastInfoSet.
-// see https://docs.oracle.com/en/database/oracle/oracle-database/21/adxdk/XML-parsing-for-Java.html#GUID-7088780C-4754-4732-B097-35CC02906FEC
-// see also https://docs.oracle.com/cd/E17802_01/webservices/webservices/docs/1.6/jaxrpc/fastinfoset/manual.html
-// import com.sun.xml.fastinfoset.EncodingConstants;
-import com.sun.xml.fastinfoset.stax.StAXDocumentSerializer;
-import jakarta.xml.bind.JAXBContext;
 import org.jvnet.fastinfoset.VocabularyApplicationData;
 import org.xml.sax.SAXException;
 
-import android.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map;
 import java.util.WeakHashMap;
+
+import jakarta.xml.bind.JAXBContext;
 
 /**
  * {@link XmlOutput} for {@link StAXDocumentSerializer}.
