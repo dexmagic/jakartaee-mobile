@@ -10,21 +10,29 @@
 
 package org.glassfish.jaxb.runtime;
 
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamWriter;
+
 import org.glassfish.jaxb.core.WhiteSpaceProcessor;
-import jakarta.xml.bind.DatatypeConverter;
-import jakarta.xml.bind.DatatypeConverterInterface;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.security.AccessController;
+import java.security.PrivilegedAction;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.GregorianCalendar;
+import java.util.Map;
+import java.util.TimeZone;
+import java.util.WeakHashMap;
 
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.namespace.QName;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamWriter;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
-import java.util.*;
+
+import jakarta.xml.bind.DatatypeConverter;
+import jakarta.xml.bind.DatatypeConverterInterface;
 
 /**
  * This class is the JAXB RI's default implementation of the 

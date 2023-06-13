@@ -10,26 +10,32 @@
 
 package org.glassfish.jaxb.runtime.v2.runtime.reflect;
 
-import com.sun.istack.Nullable;
+import androidx.annotation.Nullable;
+
+import org.glassfish.jaxb.core.v2.model.core.Adapter;
 import org.glassfish.jaxb.runtime.api.AccessorException;
 import org.glassfish.jaxb.runtime.api.JAXBRIContext;
-import org.glassfish.jaxb.core.v2.model.core.Adapter;
 import org.glassfish.jaxb.runtime.v2.model.impl.RuntimeModelBuilder;
 import org.glassfish.jaxb.runtime.v2.runtime.JAXBContextImpl;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.Loader;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.Receiver;
 import org.glassfish.jaxb.runtime.v2.runtime.unmarshaller.UnmarshallingContext;
-import jakarta.xml.bind.JAXBElement;
-import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 import org.xml.sax.SAXException;
 
-import java.lang.reflect.*;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.lang.reflect.Type;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 /**
  * Accesses a particular property of a bean.
@@ -140,7 +146,7 @@ public abstract class Accessor<BeanT, ValueT> implements Receiver {
             java.util.Calendar.class,
             javax.xml.datatype.Duration.class,
             javax.xml.datatype.XMLGregorianCalendar.class,
-            java.awt.Image.class,
+            /*java.awt.Image.class,*/
             jakarta.activation.DataHandler.class,
             javax.xml.transform.Source.class,
             java.util.Date.class,
