@@ -18,20 +18,24 @@
 
 package com.sun.xml.fastinfoset.stax;
 
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamWriter;
+
+import com.sun.xml.fastinfoset.CommonResourceBundle;
 import com.sun.xml.fastinfoset.Encoder;
 import com.sun.xml.fastinfoset.EncodingConstants;
+import com.sun.xml.fastinfoset.QualifiedName;
+import com.sun.xml.fastinfoset.util.LocalNameQualifiedNamesMap;
 import com.sun.xml.fastinfoset.util.NamespaceContextImplementation;
+
+import org.jvnet.fastinfoset.EncodingAlgorithmIndexes;
+import org.jvnet.fastinfoset.stax.LowLevelFastInfosetStreamWriter;
+
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.EmptyStackException;
+
 import javax.xml.namespace.NamespaceContext;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamWriter;
-import org.jvnet.fastinfoset.EncodingAlgorithmIndexes;
-import com.sun.xml.fastinfoset.CommonResourceBundle;
-import com.sun.xml.fastinfoset.QualifiedName;
-import com.sun.xml.fastinfoset.util.LocalNameQualifiedNamesMap;
-import org.jvnet.fastinfoset.stax.LowLevelFastInfosetStreamWriter;
 
 /**
  * The Fast Infoset StAX serializer.

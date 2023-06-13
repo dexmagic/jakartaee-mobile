@@ -18,15 +18,27 @@
 
 package com.sun.xml.fastinfoset.stax.events;
 
-import java.util.Iterator;
-import javax.xml.namespace.QName;
-import javax.xml.namespace.NamespaceContext;
-import javax.xml.stream.XMLEventWriter;
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLStreamWriter;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.events.*;
+import android.xml.stream.XMLEventReader;
+import android.xml.stream.XMLEventWriter;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamWriter;
+import android.xml.stream.events.Attribute;
+import android.xml.stream.events.Characters;
+import android.xml.stream.events.Comment;
+import android.xml.stream.events.DTD;
+import android.xml.stream.events.EntityReference;
+import android.xml.stream.events.Namespace;
+import android.xml.stream.events.ProcessingInstruction;
+import android.xml.stream.events.StartDocument;
+import android.xml.stream.events.StartElement;
+import android.xml.stream.events.XMLEvent;
+
 import com.sun.xml.fastinfoset.CommonResourceBundle;
+
+import java.util.Iterator;
+
+import javax.xml.namespace.NamespaceContext;
+import javax.xml.namespace.QName;
 
 public class StAXEventWriter implements XMLEventWriter {
     
@@ -49,7 +61,7 @@ public class StAXEventWriter implements XMLEventWriter {
     * Frees any resources associated with this stream
      */
     @Override
-    public void close() throws javax.xml.stream.XMLStreamException {
+    public void close() throws android.xml.stream.XMLStreamException {
         _streamWriter.close();
     }
     

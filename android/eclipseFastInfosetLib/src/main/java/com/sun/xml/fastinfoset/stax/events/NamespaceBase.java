@@ -19,7 +19,7 @@
 package com.sun.xml.fastinfoset.stax.events;
 
 import javax.xml.namespace.QName;
-import javax.xml.stream.events.Namespace;
+import android.xml.stream.events.Namespace;
 
 
 public class NamespaceBase extends AttributeBase implements Namespace{

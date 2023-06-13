@@ -18,11 +18,11 @@
 
 package com.sun.xml.fastinfoset.stax.events;
 
-import java.util.List;
+import android.xml.stream.events.DTD;
+import android.xml.stream.events.EntityDeclaration;
+import android.xml.stream.events.NotationDeclaration;
 
-import javax.xml.stream.events.DTD;
-import javax.xml.stream.events.EntityDeclaration;
-import javax.xml.stream.events.NotationDeclaration;
+import java.util.List;
 
 /**
  * DTDEvent. Notations and Entities are not used

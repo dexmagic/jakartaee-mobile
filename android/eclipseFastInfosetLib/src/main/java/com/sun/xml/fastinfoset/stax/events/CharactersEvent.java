@@ -19,7 +19,7 @@
 package com.sun.xml.fastinfoset.stax.events ;
 
 import com.sun.xml.fastinfoset.org.apache.xerces.util.XMLChar;
-import javax.xml.stream.events.Characters;
+import android.xml.stream.events.Characters;
 
 
 public class CharactersEvent extends EventBase implements Characters {

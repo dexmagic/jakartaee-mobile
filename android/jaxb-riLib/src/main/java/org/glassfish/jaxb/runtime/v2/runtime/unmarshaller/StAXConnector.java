@@ -16,7 +16,7 @@ import jakarta.xml.bind.helpers.ValidationEventLocatorImpl;
 import org.xml.sax.SAXException;
 
 import javax.xml.namespace.NamespaceContext;
-import javax.xml.stream.Location;
+import android.xml.stream.Location;
 import android.xml.stream.XMLStreamException;
 
 /**

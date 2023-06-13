@@ -18,7 +18,7 @@
 
 package com.sun.xml.fastinfoset.stax.events ;
 
-import javax.xml.stream.events.EndDocument;
+import android.xml.stream.events.EndDocument;
 
 
 public class EndDocumentEvent extends EventBase implements EndDocument {

@@ -18,9 +18,11 @@
 
 package org.jvnet.fastinfoset.stax;
 
-import java.io.IOException;
-import javax.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamException;
+
 import org.xml.sax.helpers.DefaultHandler;
+
+import java.io.IOException;
 
 /**
  * Low level Fast Infoset stream writer.

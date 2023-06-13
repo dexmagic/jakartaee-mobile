@@ -19,7 +19,7 @@
 package com.sun.xml.fastinfoset.stax.events;
 
 import javax.xml.namespace.QName;
-import javax.xml.stream.events.Attribute;
+import android.xml.stream.events.Attribute;
 
 
 

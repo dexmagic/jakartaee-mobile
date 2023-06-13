@@ -18,20 +18,24 @@
 
 package com.sun.xml.fastinfoset.stax.factory;
 
-import com.sun.xml.fastinfoset.stax.*;
+import android.xml.stream.XMLEventWriter;
+import android.xml.stream.XMLOutputFactory;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamWriter;
+
+import com.sun.xml.fastinfoset.CommonResourceBundle;
+import com.sun.xml.fastinfoset.stax.StAXDocumentSerializer;
+import com.sun.xml.fastinfoset.stax.StAXManager;
 import com.sun.xml.fastinfoset.stax.events.StAXEventWriter;
-import javax.xml.transform.Result;
-import javax.xml.stream.XMLOutputFactory ;
-import javax.xml.stream.XMLEventWriter;
-import javax.xml.stream.XMLStreamWriter;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.transform.stream.StreamResult;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.Writer;
-import com.sun.xml.fastinfoset.CommonResourceBundle;
+
+import javax.xml.transform.Result;
+import javax.xml.transform.stream.StreamResult;
 
 public class StAXOutputFactory extends XMLOutputFactory {
         

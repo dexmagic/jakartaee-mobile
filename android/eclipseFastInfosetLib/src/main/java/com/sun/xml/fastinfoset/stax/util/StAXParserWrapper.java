@@ -18,12 +18,12 @@
 
 package com.sun.xml.fastinfoset.stax.util;
 
-import javax.xml.namespace.QName;
-import javax.xml.namespace.NamespaceContext;
+import android.xml.stream.Location;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
 
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.Location;
-import javax.xml.stream.XMLStreamException;
+import javax.xml.namespace.NamespaceContext;
+import javax.xml.namespace.QName;
 
 
 public class StAXParserWrapper implements XMLStreamReader{

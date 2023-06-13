@@ -18,7 +18,7 @@
 
 package com.sun.xml.fastinfoset.stax.events;
 
-import javax.xml.stream.XMLStreamConstants;
+import android.xml.stream.XMLStreamConstants;
 
 /** A Utility class for the StAX Events implementation.
  */

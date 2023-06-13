@@ -18,18 +18,20 @@
 
 package com.sun.xml.fastinfoset.stax.events;
 
-import com.sun.xml.fastinfoset.stax.*;
-import java.util.NoSuchElementException;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.events.XMLEvent;
-import javax.xml.stream.util.XMLEventAllocator;
+import android.xml.stream.XMLInputFactory;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
+import android.xml.stream.events.XMLEvent;
+import android.xml.stream.util.XMLEventAllocator;
+
 import com.sun.xml.fastinfoset.CommonResourceBundle;
+import com.sun.xml.fastinfoset.stax.StAXDocumentParser;
+
+import java.util.NoSuchElementException;
 
 
 
-public class StAXEventReader implements javax.xml.stream.XMLEventReader{
+public class StAXEventReader implements android.xml.stream.XMLEventReader{
     protected XMLStreamReader _streamReader ;
     protected XMLEventAllocator _eventAllocator;
     private XMLEvent _currentEvent;     //the current event

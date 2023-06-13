@@ -18,9 +18,9 @@
 
 package com.sun.xml.fastinfoset.stax.util;
 
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.StreamFilter;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
+import android.xml.stream.StreamFilter;
 import com.sun.xml.fastinfoset.CommonResourceBundle;
 
 

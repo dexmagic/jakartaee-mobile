@@ -18,14 +18,15 @@
 
 package org.jvnet.fastinfoset.stax;
 
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
+import android.xml.stream.XMLStreamException;
+
+import android.xml.stream.XMLStreamReader;
 
 /**
  * Fast Infoset Stream Reader.
  * <p>
  * This interface provides additional optimized methods to that of
- * {@link javax.xml.stream.XMLStreamReader}.
+ * {@link android.xml.stream.XMLStreamReader}.
  */
 public interface FastInfosetStreamReader {
     /**

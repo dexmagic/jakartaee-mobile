@@ -18,7 +18,7 @@
 
 package com.sun.xml.fastinfoset.stax.events;
 
-import javax.xml.stream.events.EntityDeclaration;
+import android.xml.stream.events.EntityDeclaration;
 
 
 public class EntityDeclarationImpl extends EventBase implements EntityDeclaration {

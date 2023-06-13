@@ -14,7 +14,7 @@ import org.glassfish.jaxb.core.WhiteSpaceProcessor;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.Location;
+import android.xml.stream.Location;
 import android.xml.stream.XMLStreamConstants;
 import android.xml.stream.XMLStreamException;
 import android.xml.stream.XMLStreamReader;

@@ -18,13 +18,13 @@
 
 package com.sun.xml.fastinfoset.stax.events;
 
-import javax.xml.stream.XMLEventFactory;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.events.Namespace;
-import javax.xml.stream.events.XMLEvent;
-import javax.xml.stream.util.XMLEventAllocator;
-import javax.xml.stream.util.XMLEventConsumer;
+import android.xml.stream.XMLEventFactory;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
+import android.xml.stream.events.Namespace;
+import android.xml.stream.events.XMLEvent;
+import android.xml.stream.util.XMLEventAllocator;
+import android.xml.stream.util.XMLEventConsumer;
 
 import com.sun.xml.fastinfoset.CommonResourceBundle;
 

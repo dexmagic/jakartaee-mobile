@@ -18,15 +18,18 @@
 
 package com.sun.xml.fastinfoset.stax.events ;
 
-import javax.xml.stream.Location;
-import javax.xml.stream.events.XMLEvent;
-import javax.xml.stream.events.Characters;
-import javax.xml.stream.events.EndElement;
-import javax.xml.stream.events.StartElement;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.namespace.QName;
-import java.io.Writer;
+import android.xml.stream.Location;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.events.Characters;
+import android.xml.stream.events.EndElement;
+import android.xml.stream.events.StartElement;
+import android.xml.stream.events.XMLEvent;
+
 import com.sun.xml.fastinfoset.CommonResourceBundle;
+
+import java.io.Writer;
+
+import javax.xml.namespace.QName;
 
 
 public abstract class EventBase implements XMLEvent {
@@ -83,7 +86,7 @@ public abstract class EventBase implements XMLEvent {
    * Return the location of this event.  The Location
    * returned from this method is non-volatile and
    * will retain its information.
-   * @see javax.xml.stream.Location
+   * @see android.xml.stream.Location
    */
     public Location getLocation(){
         return _location;
@@ -141,21 +144,21 @@ public abstract class EventBase implements XMLEvent {
     }
 
     /** A utility function to check if this event is an Attribute.
-     * @see javax.xml.stream.events.Attribute
+     * @see android.xml.stream.events.Attribute
      */
     public boolean isAttribute() {
         return _eventType == ATTRIBUTE;
     }
 
     /** A utility function to check if this event is Characters.
-     * @see javax.xml.stream.events.Characters
+     * @see android.xml.stream.events.Characters
      */
     public boolean isCharacters() {
         return _eventType == CHARACTERS;
     }
 
     /** A utility function to check if this event is a Namespace.
-     * @see javax.xml.stream.events.Namespace
+     * @see android.xml.stream.events.Namespace
      */
     public boolean isNamespace() {
         return _eventType == NAMESPACE;

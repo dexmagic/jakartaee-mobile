@@ -18,10 +18,12 @@
 
 package com.sun.xml.fastinfoset.stax;
 
-import java.util.HashMap;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLOutputFactory;
+import android.xml.stream.XMLInputFactory;
+import android.xml.stream.XMLOutputFactory;
+
 import com.sun.xml.fastinfoset.CommonResourceBundle;
+
+import java.util.HashMap;
 
 public class StAXManager {
     protected static final String STAX_NOTATIONS = "javax.xml.stream.notations";

@@ -18,8 +18,8 @@
 
 package com.sun.xml.fastinfoset.stax.events ;
 
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.events.ProcessingInstruction;
+import android.xml.stream.XMLStreamConstants;
+import android.xml.stream.events.ProcessingInstruction;
 
 
 public class ProcessingInstructionEvent extends EventBase implements ProcessingInstruction {

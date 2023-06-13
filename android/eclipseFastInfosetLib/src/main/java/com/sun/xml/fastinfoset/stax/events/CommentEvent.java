@@ -19,7 +19,7 @@
 package com.sun.xml.fastinfoset.stax.events ;
 
 
-import javax.xml.stream.events.Comment;
+import android.xml.stream.events.Comment;
 
 public class CommentEvent extends EventBase implements Comment {
     

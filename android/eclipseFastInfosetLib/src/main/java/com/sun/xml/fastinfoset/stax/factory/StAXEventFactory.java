@@ -18,13 +18,37 @@
 
 package com.sun.xml.fastinfoset.stax.factory;
 
-import javax.xml.namespace.QName;
-import javax.xml.namespace.NamespaceContext;
-import javax.xml.stream.Location;
-import javax.xml.stream.XMLEventFactory;
-import javax.xml.stream.events.*;
+import android.xml.stream.Location;
+import android.xml.stream.XMLEventFactory;
+import android.xml.stream.events.Attribute;
+import android.xml.stream.events.Characters;
+import android.xml.stream.events.Comment;
+import android.xml.stream.events.DTD;
+import android.xml.stream.events.EndDocument;
+import android.xml.stream.events.EndElement;
+import android.xml.stream.events.EntityDeclaration;
+import android.xml.stream.events.EntityReference;
+import android.xml.stream.events.Namespace;
+import android.xml.stream.events.ProcessingInstruction;
+import android.xml.stream.events.StartDocument;
+import android.xml.stream.events.StartElement;
+
+import com.sun.xml.fastinfoset.stax.events.AttributeBase;
+import com.sun.xml.fastinfoset.stax.events.CharactersEvent;
+import com.sun.xml.fastinfoset.stax.events.CommentEvent;
+import com.sun.xml.fastinfoset.stax.events.DTDEvent;
+import com.sun.xml.fastinfoset.stax.events.EndDocumentEvent;
+import com.sun.xml.fastinfoset.stax.events.EndElementEvent;
+import com.sun.xml.fastinfoset.stax.events.EntityReferenceEvent;
+import com.sun.xml.fastinfoset.stax.events.NamespaceBase;
+import com.sun.xml.fastinfoset.stax.events.ProcessingInstructionEvent;
+import com.sun.xml.fastinfoset.stax.events.StartDocumentEvent;
+import com.sun.xml.fastinfoset.stax.events.StartElementEvent;
+
 import java.util.Iterator;
-import com.sun.xml.fastinfoset.stax.events.*;
+
+import javax.xml.namespace.NamespaceContext;
+import javax.xml.namespace.QName;
 
 
 public class StAXEventFactory extends XMLEventFactory {
@@ -117,7 +141,7 @@ public class StAXEventFactory extends XMLEventFactory {
     // Generics removed because they break build with release=8
     @Override
     public StartElement createStartElement(QName name,
-            Iterator attributes, Iterator namespaces) {
+                                           Iterator attributes, Iterator namespaces) {
         return createStartElement(name.getPrefix(), name.getNamespaceURI(), name.getLocalPart(), attributes, namespaces);
     }
     

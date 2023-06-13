@@ -18,11 +18,11 @@
 
 package com.sun.xml.fastinfoset.stax.events;
 
-import javax.xml.stream.events.XMLEvent;
-import javax.xml.stream.EventFilter;
-import javax.xml.stream.events.Characters;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLEventReader;
+import android.xml.stream.events.XMLEvent;
+import android.xml.stream.EventFilter;
+import android.xml.stream.events.Characters;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLEventReader;
 import com.sun.xml.fastinfoset.CommonResourceBundle;
 
 public class StAXFilteredEvent implements XMLEventReader {

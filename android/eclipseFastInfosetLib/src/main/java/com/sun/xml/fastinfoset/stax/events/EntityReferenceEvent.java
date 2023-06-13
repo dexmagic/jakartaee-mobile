@@ -18,8 +18,8 @@
 
 package com.sun.xml.fastinfoset.stax.events ;
 
-import javax.xml.stream.events.EntityDeclaration;
-import javax.xml.stream.events.EntityReference;
+import android.xml.stream.events.EntityDeclaration;
+import android.xml.stream.events.EntityReference;
 
 
 public class EntityReferenceEvent extends EventBase implements EntityReference {

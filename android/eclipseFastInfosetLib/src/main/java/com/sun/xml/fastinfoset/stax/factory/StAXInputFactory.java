@@ -18,26 +18,34 @@
 
 package com.sun.xml.fastinfoset.stax.factory;
 
-import com.sun.xml.fastinfoset.stax.*;
+import android.xml.stream.EventFilter;
+import android.xml.stream.StreamFilter;
+import android.xml.stream.XMLEventReader;
+import android.xml.stream.XMLInputFactory;
+import android.xml.stream.XMLReporter;
+import android.xml.stream.XMLResolver;
+import android.xml.stream.XMLStreamException;
+import android.xml.stream.XMLStreamReader;
+import android.xml.stream.util.XMLEventAllocator;
+
+import com.sun.xml.fastinfoset.CommonResourceBundle;
+import com.sun.xml.fastinfoset.stax.StAXDocumentParser;
+import com.sun.xml.fastinfoset.stax.StAXManager;
 import com.sun.xml.fastinfoset.stax.events.StAXEventReader;
 import com.sun.xml.fastinfoset.stax.events.StAXFilteredEvent;
 import com.sun.xml.fastinfoset.stax.util.StAXFilteredParser;
 import com.sun.xml.fastinfoset.tools.XML_SAX_FI;
 
-import java.io.InputStream;
-import java.io.Reader;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.io.Reader;
 
-import javax.xml.stream.*;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.util.XMLEventAllocator ;
 import javax.xml.transform.Source;
-import com.sun.xml.fastinfoset.CommonResourceBundle;
 
-public class StAXInputFactory extends XMLInputFactory {    
+public class StAXInputFactory extends XMLInputFactory {
     //List of supported properties and default values.
     private StAXManager _manager = new StAXManager(StAXManager.CONTEXT_READER) ;
     

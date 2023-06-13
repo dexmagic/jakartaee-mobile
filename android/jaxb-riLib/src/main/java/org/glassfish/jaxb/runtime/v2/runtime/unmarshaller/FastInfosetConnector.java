@@ -15,7 +15,7 @@ import com.sun.xml.fastinfoset.stax.StAXDocumentParser;
 import org.jvnet.fastinfoset.EncodingAlgorithmIndexes;
 import org.xml.sax.SAXException;
 
-import javax.xml.stream.Location;
+import android.xml.stream.Location;
 import android.xml.stream.XMLStreamConstants;
 import android.xml.stream.XMLStreamException;
 

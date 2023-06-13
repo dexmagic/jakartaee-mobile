@@ -18,7 +18,7 @@
 
 package com.sun.xml.fastinfoset.stax;
 
-import javax.xml.stream.Location;
+import android.xml.stream.Location;
 
 
 public class EventLocation implements Location{
