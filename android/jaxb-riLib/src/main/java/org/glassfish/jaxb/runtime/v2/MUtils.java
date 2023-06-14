@@ -10,7 +10,6 @@
 
 package org.glassfish.jaxb.runtime.v2;
 
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import jakarta.xml.bind.JAXBException;
@@ -28,7 +27,8 @@ final class MUtils {
      * @throws JAXBException if any of a classes package is not open to our module.
      */
     static void open(Class[] classes) throws JAXBException {
-        final Module coreModule = org.glassfish.jaxb.core.v2.ClassFactory.class.getModule();
+        // FIXME: Module is not not supported in Android - create overlay.
+        /*final Module coreModule = org.glassfish.jaxb.core.v2.ClassFactory.class.getModule();
         final Module rtModule = JAXBContextFactory.class.getModule();
 
         if (rtModule == coreModule || !rtModule.isNamed()) {
@@ -58,7 +58,7 @@ final class MUtils {
                 throw new JAXBException(java.text.MessageFormat.format("Package {0} with class {1} defined in a module {2} must be open to at least {3} module.",
                         packageName, jaxbClass.getName(), classModule.getName(), rtModule.getName()));
             }
-        }
+        }*/
     }
 
 }

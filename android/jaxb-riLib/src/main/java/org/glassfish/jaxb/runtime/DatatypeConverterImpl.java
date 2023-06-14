@@ -729,7 +729,7 @@ public final class DatatypeConverterImpl implements DatatypeConverterInterface {
                 df = DF_CACHE.get(tccl);
                 if (df == null) { // to prevent multiple initialization
                     try {
-                        df = DatatypeFactory.newInstance();
+                        df = DatatypeFactory.newInstance("android.com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl", null);
                     } catch (DatatypeConfigurationException e) {
                         throw new Error(Messages.FAILED_TO_INITIALE_DATATYPE_FACTORY.format(),e);
                     }

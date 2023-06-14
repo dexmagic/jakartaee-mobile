@@ -93,7 +93,10 @@ public class XmlFactory {
      */
     public static SAXParserFactory createParserFactory(boolean disableSecureProcessing) throws IllegalStateException {
         try {
-            SAXParserFactory factory = SAXParserFactory.newInstance();
+            SAXParserFactory factory = SAXParserFactory.newInstance(
+                    "android.com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl",
+                    null);
+                //
             if (LOGGER.isLoggable(Level.FINE)) {
                 LOGGER.log(Level.FINE, "SAXParserFactory instance: {0}", factory);
             }

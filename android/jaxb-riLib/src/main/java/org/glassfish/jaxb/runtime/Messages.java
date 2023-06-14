@@ -11,7 +11,6 @@
 package org.glassfish.jaxb.runtime;
 
 import java.text.MessageFormat;
-import java.util.ResourceBundle;
 
 /**
  * Message resources
@@ -20,7 +19,7 @@ enum Messages {
     FAILED_TO_INITIALE_DATATYPE_FACTORY, // 0 args
     ;
 
-    private static final ResourceBundle rb = ResourceBundle.getBundle(Messages.class.getName());
+    // private static final ResourceBundle rb = ResourceBundle.getBundle(Messages.class.getName());
 
     @Override
     public String toString() {
@@ -28,6 +27,6 @@ enum Messages {
     }
 
     public String format( Object... args ) {
-        return MessageFormat.format( rb.getString(name()), args );
+        return MessageFormat.format( name() /*rb.getString(name())*/, args );
     }
 }
