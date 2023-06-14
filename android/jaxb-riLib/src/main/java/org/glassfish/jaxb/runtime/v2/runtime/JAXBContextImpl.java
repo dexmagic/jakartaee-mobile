@@ -13,7 +13,6 @@ package org.glassfish.jaxb.runtime.v2.runtime;
 import com.sun.istack.NotNull;
 import com.sun.istack.Pool;
 
-import org.glassfish.jaxb.core.api.ErrorListener;
 import org.glassfish.jaxb.core.unmarshaller.DOMScanner;
 import org.glassfish.jaxb.core.util.Which;
 import org.glassfish.jaxb.core.v2.WellKnownNamespace;
@@ -798,7 +797,7 @@ public final class JAXBContextImpl extends JAXBRIContext {
         final SAXParseException[] e = new SAXParseException[1];
         final SAXParseException[] w = new SAXParseException[1];
 
-        createSchemaGenerator().write(outputResolver, new ErrorListener() {
+        /*createSchemaGenerator().write(outputResolver, new ErrorListener() {
             @Override
             public void error(SAXParseException exception) {
                 e[0] = exception;
@@ -816,7 +815,7 @@ public final class JAXBContextImpl extends JAXBRIContext {
 
             @Override
             public void info(SAXParseException exception) {}
-        });
+        });*/
 
         if (e[0]!=null) {
             throw new IOException(Messages.FAILED_TO_GENERATE_SCHEMA.format(), e[0]);
