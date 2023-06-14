@@ -24,11 +24,12 @@ public final class Utils {
      * @since 2.0
      */
     public static Logger getClassLogger() {
-        try {
+        return Logger.getAnonymousLogger();
+        /*try {
             return Logger.getLogger(StackHelper.getCallerClassName());
         } catch( SecurityException e) {
             return Logger.getLogger("org.glassfish.jaxb.core"); // use the default
-        }
+        }*/
     }
 
     /**

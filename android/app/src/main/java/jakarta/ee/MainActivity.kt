@@ -1,16 +1,20 @@
 package jakarta.ee
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import jakarta.ee.ui.theme.JakartaEETheme
+import org.eclipse.ee4j.samples.unmarahal_read.Main
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,10 +32,17 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
+    val context  = LocalContext.current
     Text(
         text = "Hello $name!",
         modifier = modifier
     )
+    Button(onClick = {
+        Toast.makeText(context, "button pressed", Toast.LENGTH_SHORT).show()
+        Main.main(context)
+    }){
+        Text("Process XML")
+    }
 }
 
 @Preview(showBackground = true)

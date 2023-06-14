@@ -102,7 +102,8 @@ class ModuleUtil {
      * Not used on Android
      */
     public static void delegateAddOpensToImplModule(Class<?>[] classes, Class<?> factorySPI) throws JAXBException {
-        throw new UnsupportedOperationException("not supported on Android.");
+        // TODO: fix this? throw new UnsupportedOperationException("not supported on Android.");
+        // M-T
     }
 
 }
